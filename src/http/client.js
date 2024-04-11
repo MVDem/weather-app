@@ -1,4 +1,5 @@
 import axiosInstance from ".";
+import { API_KEY } from "../config/index";
 
 export async function searchCity(searchStr) {
   return [
@@ -2511,14 +2512,30 @@ export async function get5DayForecast(cityKeyStr) {
 }
 
 var globalLocationCity;
+const defaultLocationCity = { name: "Tel Aviv", key: "215854", country: "Israel" };
 
 export async function getLocationCity() {
-    if (!globalLocationCity) {
-        globalLocationCity = {
-            name: "Jerusalem",
-            key: "213225",
-          }; 
-          console.log("Location city defined: ", globalLocationCity);
-    } 
-     return globalLocationCity;
+  if (!globalLocationCity) {
+    try {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(async (position) => {
+          const { latitude, longitude } = position.coords;
+          const result = (
+            await axiosInstance.get(
+              `locations/v1/cities/geoposition/search?apikey=${API_KEY}&q=${latitude},${longitude}&toplevel=true`
+            )
+          ).data;
+          globalLocationCity = {
+            name: result.EnglishName,
+            key: result.Key,
+            country: result.Country.EnglishName,
+          };
+        });
+      } else globalLocationCity = defaultLocationCity;
+    } catch (error) {
+      console.error("Error while getting location city:", error);
+      globalLocationCity = defaultLocationCity;
+    }
+  }
+  return globalLocationCity;
 }
