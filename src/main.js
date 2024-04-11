@@ -1,14 +1,35 @@
+<<<<<<< HEAD
 
 import './style.scss';
 import { get5DayForecast, getCityKey, getCurrentWeather, getLocationCity, searchCity } from './http/client.js';
+=======
+import './style.scss';
+import {
+  get5DayForecast,
+  getCityKey,
+  getCurrentWeather,
+  getLocationCity,
+  searchCity,
+} from './http/client.js';
+import { renderWeather } from './utils.js';
+>>>>>>> 51cd285 (added weather render function)
 
 document.addEventListener('DOMContentLoaded', init);
 
 export async function init() {
+<<<<<<< HEAD
     const currCity = await getLocationCity();
     getCurrentWeather(currCity.key).then((resolve) => {
         console.log(`Current weather in ${currCity.name} is: ${resolve[0].WeatherText}`);    
     })
+=======
+  const currCity = await getLocationCity();
+  getCurrentWeather(currCity.key).then((resolve) => {
+    console.log(
+      `Current weather in ${currCity.name} is: ${resolve[0].WeatherText}`
+    );
+  });
+>>>>>>> 51cd285 (added weather render function)
 }
 
 const bookmarkEl = document.querySelector('#bookmark');
@@ -40,6 +61,9 @@ searchFormEl.addEventListener('submit', () => {
   const data = new FormData(event.target);
   const cityName = data.get('city');
   console.log(cityName);
+  // request
+  const dataFromServer = [12, 13, 14, 15, 16];
+  renderWeather(dataFromServer);
 });
 
 const unitsRadioBtn = document.querySelector('#header-units-radioBtn');
