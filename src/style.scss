@@ -1,3 +1,24 @@
+$dark-background: #071323;
+$dark-main-color: white;
+$dark-border-color: #d7dae0;
+$dark-background-filter: rgba(0, 0, 0, 0.7);
+$dark-background-filter-light: rgba(0, 0, 0, 0.5);
+
+$max-tablet-width: 1279px;
+$max-mobile-width: 780px;
+
+@mixin tablet {
+  @media (max-width: $max-tablet-width) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: $max-mobile-width) {
+    @content;
+  }
+}
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -5,7 +26,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #071323;
+  background-color: $dark-background;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -39,7 +60,6 @@ body {
     left: 2rem;
     border: none;
     background-color: inherit;
-    color: white;
     cursor: pointer;
   }
 
@@ -54,7 +74,7 @@ body {
     left: 0;
     padding: 3rem 2rem;
     box-sizing: border-box;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: $dark-background-filter-light;
     display: flex;
     flex-direction: column;
     transform: translateX(0);
@@ -84,12 +104,11 @@ body {
     width: 7vh;
     background-color: inherit;
     border: none;
-    color: white;
   }
   &__nextBtn:hover,
   &__prevBtn:hover {
     background-color: inherit;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: $dark-background-filter-light;
     color: white;
     cursor: pointer;
   }
@@ -108,7 +127,7 @@ body {
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: $dark-background-filter-light;
   }
 
   & div {
@@ -148,9 +167,9 @@ form[data-show-city] {
     height: 100%;
     min-width: 4rem;
     border: none;
-    color: white;
+    color: $dark-main-color;
     border-radius: 0 1.4rem 1.4rem 0;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: $dark-background-filter;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -162,28 +181,58 @@ form[data-show-city] {
   width: 90vw;
   max-width: 1280px;
   margin: 2rem auto;
-  border: 1px solid gray;
+  border: 1px solid $dark-border-color;
 
   &__list {
     list-style: none;
     display: grid;
+    padding: 0;
     gap: 2rem;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: 1fr;
     grid-auto-rows: minmax(auto, 1fr);
-    background-color: rgba(1, 1, 1, 0.1);
   }
 }
 
 .forecastItem {
-  &__info {
+  display: flex;
+  justify-content: space-evenly;
+  & p {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+  &__date {
     display: flex;
-    align-items: center;
     justify-content: center;
-    gap: 1rem;
     & p {
-      margin: 0;
-      font-size: 1.2rem;
+      font-size: 1.5rem;
     }
+  }
+}
+
+.forecastToday {
+  width: 90vw;
+  max-width: 1280px;
+  margin: 2rem auto;
+  padding: 1rem;
+  border: 1px solid $dark-border-color;
+  border-radius: 0.6rem;
+
+  &__list {
+    padding: 0;
+    list-style: none;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  & p {
+    margin: 0;
+    font-size: 1.2rem;
   }
 
   &__date {
@@ -224,9 +273,9 @@ form[data-show-city] {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid #d7dae0;
+    border: 1px solid $dark-border-color;
     border-radius: 0.5rem;
-    color: white;
+    color: $dark-main-color;
     box-sizing: border-box;
     cursor: pointer;
   }

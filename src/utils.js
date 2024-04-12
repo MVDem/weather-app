@@ -15,23 +15,21 @@ const renderWeather = (data) => {
     forecastItemEl.classList.add('forecastItem');
     const date = new Date(data[i].Date);
     const htmlStr = /*html*/ `
-            <div class="forecastItem__info">
               <img src='https://developer.accuweather.com/sites/default/files/${
                 data[i].Day.Icon < 10
                   ? '0' + data[i].Day.Icon
                   : data[i].Day.Icon
               }-s.png'/>
-              <div>
+              <p class="forecastItem__date">${
+                days[date.getDay()]
+              } ${date.getDate()} <sup>th</sup></p>
                 <p>${
                   data[i].Temperature.Minimum.Value +
                   data[i].Temperature.Minimum.Unit
                 }</p>
                 <p>${data[i].Day.IconPhrase}</p>
-              </div>
-            </div>
-            <div class="forecastItem__date">
-              <p>${days[date.getDay()]} ${date.getDate()} <sup>th</sup></p>
-            </div>`;
+              
+            `;
     forecastItemEl.innerHTML = htmlStr;
     forecastListEl.appendChild(forecastItemEl);
   }

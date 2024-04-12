@@ -9,47 +9,13 @@
   <body>
     <header class="header">
       <button id="burger" class="header__burger">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="32"
-          height="32"
-          fill="currentColor"
-          class="bi bi-list"
-          viewBox="0 0 16 16"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
-          />
-        </svg>
+        <img src="./list.svg" />
       </button>
       <button id="next-page" class="header__nextBtn">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          fill="currentColor"
-          class="bi bi-caret-right-fill"
-          viewBox="0 0 16 16"
-        >
-          <path
-            d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
-          />
-        </svg>
+        <img src="./caret-right-fill.svg" />
       </button>
       <button id="prev-page" class="header__prevBtn disabled">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          fill="currentColor"
-          class="bi bi-caret-left-fill"
-          viewBox="0 0 16 16"
-        >
-          <path
-            d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"
-          />
-        </svg>
+        <img src="./caret-left-fill.svg" />
       </button>
       <div id="header-dropdown" class="header__dropdown hidden">
         <div id="header-units-radioBtn" class="radioGroup">
@@ -58,7 +24,7 @@
             <div class="radioGroup__text">F</div>
           </label>
           <label class="radioGroup__item">
-            <input name="type" type="radio" value="celsius" />
+            <input name="type" type="radio" value="celsius" checked />
             <div class="radioGroup__text">°C</div>
           </label>
         </div>
@@ -106,23 +72,46 @@
             placeholder="Enter a city"
           />
           <button type="submit">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              fill="currentColor"
-              class="bi bi-search"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
-              />
-            </svg>
+            <img src="./search.svg" />
           </button>
         </form>
       </div>
     </header>
     <main>
+      <div class="forecastToday">
+        <div class="forecastToday__date">
+          <p>Thursday 11 <sup>th</sup></p>
+        </div>
+        <ul class="forecastToday__list">
+          <li class="forecastToday__item">
+            <p>day</p>
+            <img
+              src="https://developer.accuweather.com/sites/default/files/02-s.png"
+            />
+
+            <p>22C</p>
+            <p>Mostly sunny</p>
+          </li>
+          <li class="forecastToday__item">
+            <p>day</p>
+            <img
+              src="https://developer.accuweather.com/sites/default/files/02-s.png"
+            />
+
+            <p>22C</p>
+            <p>Mostly sunny</p>
+          </li>
+          <li class="forecastToday__item">
+            <p>day</p>
+            <img
+              src="https://developer.accuweather.com/sites/default/files/02-s.png"
+            />
+
+            <p>22C</p>
+            <p>Mostly sunny</p>
+          </li>
+        </ul>
+      </div>
       <div class="forecast">
         <ul id="forecast-list" class="forecast__list"></ul>
       </div>
