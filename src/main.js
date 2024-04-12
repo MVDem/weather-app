@@ -6,7 +6,12 @@ import {
   getLocationCity,
   searchCity,
 } from './http/client.js';
-import { renderWeather, renderCityName, renderCityPhoto } from './utils.js';
+import {
+  renderWeather,
+  renderCityName,
+  renderCityPhoto,
+  render5DaysWeather,
+} from './utils.js';
 
 document.addEventListener('DOMContentLoaded', init);
 
@@ -16,14 +21,15 @@ export async function init() {
 
   renderCityName(currCity.name, true); // true if city is favorite
 
-  getCurrentWeather(currCity.key).then((resolve) => {
+  getCurrentWeather(currCity.key, true).then((resolve) => {
+    renderWeather(resolve[0]);
     console.log(
       `Current weather in ${currCity.name} is: ${resolve[0].WeatherText}`
     );
   });
 
-  get5DayForecast(currCity.key).then((data) => {
-    renderWeather(data.DailyForecasts);
+  get5DayForecast(currCity.key, true).then((data) => {
+    render5DaysWeather(data.DailyForecasts);
   });
 
   if (true) {
