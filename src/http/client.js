@@ -28,26 +28,28 @@ export async function getCityKey(cityNameStr) {
   }
 }
 
-export async function getCurrentWeather(cityKeyStr) {
+export async function getCurrentWeather(cityKeyStr, details = false) {
   if (cityKeyStr.length == 0 || isNaN(cityKeyStr)) return null;
 
   try {
-    const result = await axiosInstance.get(
-      `currentconditions/v1/${Number(cityKeyStr)}?apikey=${API_KEY}`
-    );
+    const urlStr = `currentconditions/v1/${Number(
+      cityKeyStr
+    )}?apikey=${API_KEY}&details=${details}`;
+    const result = await axiosInstance.get(urlStr);
     return result.data;
   } catch (error) {
     console.error("Error while getting Current Weather conditions:", error);
   }
 }
 
-export async function get5DayForecast(cityKeyStr) {
+export async function get5DayForecast(cityKeyStr, details = false) {
   if (cityKeyStr.length == 0 || isNaN(cityKeyStr)) return null;
 
   try {
-    const result = await axiosInstance.get(
-      `forecasts/v1/daily/5day/${Number(cityKeyStr)}.json?apikey=${API_KEY}`
-    );
+    const urlStr = `forecasts/v1/daily/5day/${Number(
+      cityKeyStr
+    )}.json?apikey=${API_KEY}&details=${details}`;
+    const result = await axiosInstance.get(urlStr);
     return result.data;
   } catch (error) {
     console.error("Error while getting 5 Day Forecast:", error);
