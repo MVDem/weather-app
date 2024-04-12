@@ -1,3 +1,5 @@
+import { getPhoto } from './http/unsplash';
+
 const days = [
   'Sunday',
   'Monday',
@@ -93,3 +95,11 @@ const renderCityName = (cityName, isFavorite) => {
 };
 
 export { renderCityName };
+
+async function renderCityPhoto(name) {
+  const photoUrl = await getPhoto(name);
+  const headerEl = document.querySelector('header');
+  headerEl.style.backgroundImage = `url(${photoUrl})`;
+}
+
+export { renderCityPhoto };
