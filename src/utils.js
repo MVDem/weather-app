@@ -10,79 +10,20 @@ const days = [
   'Saturday',
   'Sunday',
 ];
-
-const renderWeather = (data) => {
-  const forecastListEl = document.querySelector('#forecast-list');
-  const forecastTodayListEl = document.querySelector('#forecast-today');
-  for (let i = 0; i < data.length; i++) {
-    if (i === 0) {
-      renderTodayForecast(data[i], forecastTodayListEl);
-    } else {
-      render4daysForecast(data[i], forecastListEl);
-    }
-  }
-};
-
-const render4daysForecast = (data, parentEl) => {
-  const forecastItemEl = document.createElement('li');
-  forecastItemEl.classList.add('forecastItem');
-  const date = new Date(data.Date);
-  const htmlStr = /*html*/ `
-       <img src='https://developer.accuweather.com/sites/default/files/${
-         data.Day.Icon < 10 ? '0' + data.Day.Icon : data.Day.Icon
-       }-s.png'/>
-       <p class="forecastItem__date">${
-         days[date.getDay()]
-       } ${date.getDate()} <sup>th</sup></p>
-         <p>${
-           data.Temperature.Minimum.Value + data.Temperature.Minimum.Unit
-         }</p>
-         <p>${data.Day.IconPhrase}</p>
-       
-     `;
-  forecastItemEl.innerHTML = htmlStr;
-  parentEl.appendChild(forecastItemEl);
-};
-
-const renderTodayForecast = (data, parentEl) => {
-  const date = new Date(data.Date);
-  const htmlStr = /*html*/ `
-        <div class="forecastToday__date">
-          <p>${days[date.getDay()]} ${date.getDate()} <sup>th</sup></p>
-        </div>
-        <ul class="forecastToday__list">
-        <li class="forecastToday__item">
-            <p>Day</p>
-            <img
-              src="https://developer.accuweather.com/sites/default/files/${
-                data.Day.Icon < 10 ? '0' + data.Day.Icon : data.Day.Icon
-              }-s.png"
-            />
-            <p>${
-              data.Temperature.Maximum.Value + data.Temperature.Maximum.Unit
-            }</p>
-            <p>${data.Day.IconPhrase}</p>
-          </li>
-          <li class="forecastToday__item">
-            <p>Night</p>
-            <img
-              src="https://developer.accuweather.com/sites/default/files/${
-                data.Night.Icon < 10 ? '0' + data.Night.Icon : data.Night.Icon
-              }-s.png"
-            />
-
-            <p>${
-              data.Temperature.Minimum.Value + data.Temperature.Minimum.Unit
-            }</p>
-            <p>${data.Night.IconPhrase}</p>
-          </li>
-          </ul>
-      </div>
-     `;
-  parentEl.innerHTML = htmlStr;
-};
-
-export { renderWeather };
+const months = [
+  'January',
+  'February',
+  'March',
+  'April',
+  'May',
+  'June',
+  'July',
+  'August',
+  'September',
+  'October',
+  'November',
+  'December',
+];
 
 const renderCityName = (cityName, isFavorite) => {
   const cityNameEl = document.querySelector('#sity-name');
@@ -103,3 +44,98 @@ async function renderCityPhoto(name) {
 }
 
 export { renderCityPhoto };
+
+const renderWeather = (data) => {
+  const forecastTodayListEl = document.querySelector('#forecast-today');
+  const date = new Date(data.LocalObservationDateTime);
+  const logo =
+    data.WeatherIcon < 10 ? '0' + data.WeatherIcon : data.WeatherIcon;
+  const temp = data.Temperature.Metric.Value + data.Temperature.Metric.Unit;
+  const feelTemperature =
+    data.RealFeelTemperature?.Metric.Value +
+    data.RealFeelTemperature?.Metric.Unit;
+  const wind =
+    data.Wind.Speed.Metric.Value +
+    data.Wind.Speed.Metric.Unit +
+    ' ' +
+    data.Wind.Direction.English;
+  const windGust =
+    data.WindGust.Speed.Metric.Value + data.WindGust.Speed.Metric.Unit;
+  const UVIndex = data.UVIndexText + ' - ' + data.UVIndex;
+  const visibility = data.Visibility.Value + data.Visibility.Unit;
+  const pressure = data.Pressure.Metric.Value + data.Pressure.Metric.Unit;
+  const htmlStr = /*html*/ `
+            <h3 class='forecastToday__date'>${
+              days[date.getDay()]
+            }, ${date.getDate()}<sup>th</sup></h3>
+            <div class='forecastToday__logo'>
+              <img src='https://developer.accuweather.com/sites/default/files/${logo}-s.png'/>
+            </div>
+            <div  class='forecastToday__info'>
+              <p>Temperature: ${temp}, feels like ${feelTemperature}</p>
+              <p>Wind: ${wind}</p>
+              <p>WindGust: ${windGust}</p>
+              <p>UV Index: ${UVIndex}</p>
+              <p>Visibility: ${visibility}</p>
+              <p>Pressure: ${pressure}</p>
+            </div>`;
+  forecastTodayListEl.innerHTML = htmlStr;
+};
+
+const render5DaysWeather = (data) => {
+  for (let i = 1; i < data.length; i++) {
+    renderDaysForecast(data[i]);
+  }
+};
+
+const renderDaysForecast = (data) => {
+  const forecastListEl = document.querySelector('#forecast-list');
+  const forecastItemEl = document.createElement('li');
+  forecastItemEl.classList.add('forecastItem');
+  const date = new Date(data.Date);
+  console.log(date);
+  const logo = data.Day.Icon < 10 ? '0' + data.Day.Icon : data.Day.Icon;
+  const logoNight =
+    data.Night.Icon < 10 ? '0' + data.Night.Icon : data.Night.Icon;
+  const temperatureMax =
+    data.Temperature.Maximum.Value + data.Temperature.Maximum.Unit;
+  const temperatureMin =
+    data.Temperature.Maximum.Value + data.Temperature.Maximum.Unit;
+  const windDay =
+    data.Day.Wind.Speed.Value +
+    data.Day.Wind.Speed.Unit +
+    ' ' +
+    data.Day.Wind.Direction.English;
+  const windNight =
+    data.Night.Wind.Speed.Value +
+    data.Night.Wind.Speed.Unit +
+    ' ' +
+    data.Night.Wind.Direction.English;
+  const htmlStr = /*html*/ `
+            <div class='forecastItem__date'>
+              <h3>${days[date.getDay()]}</h3>
+              <h4>${date.getDate() + months[date.getMonth()]}</h4>
+            </div> 
+            <div class='forecastItem__innerContainer'>
+              <div class='forecastItem__logo'>
+                <img src='https://developer.accuweather.com/sites/default/files/${logo}-s.png'/>
+              </div>
+              <div class='forecastItem__info'>
+                <p>Temperature: ${temperatureMax}</p>
+                <p>Wind: ${windDay}</p>
+              </div>
+            </div>
+            <div class='forecastItem__innerContainer'>
+              <div class='forecastItem__logo'>
+                <img src='https://developer.accuweather.com/sites/default/files/${logoNight}-s.png'/>
+              </div>
+              <div class='forecastItem__info'>
+                <p>Temperature: ${temperatureMin}</p>
+                <p>Wind: ${windNight}</p>
+              </div>
+            </div>`;
+  forecastItemEl.innerHTML = htmlStr;
+  forecastListEl.appendChild(forecastItemEl);
+};
+
+export { renderWeather, render5DaysWeather };
