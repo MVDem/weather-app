@@ -42,13 +42,13 @@ export async function getCurrentWeather(cityKeyStr, details = false) {
   }
 }
 
-export async function get5DayForecast(cityKeyStr, details = false) {
+export async function get5DayForecast(cityKeyStr, details = false, metric=true) {
   if (cityKeyStr.length == 0 || isNaN(cityKeyStr)) return null;
 
   try {
     const urlStr = `forecasts/v1/daily/5day/${Number(
       cityKeyStr
-    )}.json?apikey=${API_KEY}&details=${details}`;
+    )}.json?apikey=${API_KEY}&details=${details}&metric=${metric}`;
     const result = await axiosInstance.get(urlStr);
     return result.data;
   } catch (error) {
@@ -64,21 +64,9 @@ const defaultLocationCity = {
 };
 
 export async function getLocationCity() {
-  // helper function to enable return of a result of getCurrentPosition in a function
-  function getLocationInternal() {
-    return new Promise((resolve, reject) => {
-      if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(
-          (position) => resolve(position.coords),
-          (error) => reject(error)
-        );
-      } else reject(new Error("Geolocation is not supported by this browser."));
-    });
-  }
-
-  if (!globalLocationCity) {
+   if (!globalLocationCity) {
     try {
-      const { latitude, longitude } = await getLocationInternal();
+      const { latitude, longitude } = await getLocationCoordinates();
       const result = (
         await axiosInstance.get(
           `locations/v1/cities/geoposition/search?apikey=${API_KEY}&q=${latitude},${longitude}&toplevel=true`
@@ -96,4 +84,16 @@ export async function getLocationCity() {
     globalLocationCity = defaultLocationCity;
   }
   return globalLocationCity;
+}
+
+// helper function to enable return of a result of getCurrentPosition in a function
+export function getLocationCoordinates() {
+  return new Promise((resolve, reject) => {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(
+        (position) => resolve(position.coords),
+        (error) => reject(error)
+      );
+    } else reject(new Error("Geolocation is not supported by this browser."));
+  });
 }
