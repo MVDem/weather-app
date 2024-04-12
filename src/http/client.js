@@ -97,3 +97,10 @@ export function getLocationCoordinates() {
     } else reject(new Error("Geolocation is not supported by this browser."));
   });
 }
+
+
+// {
+//   "Code": "ServiceUnavailable",
+//   "Message": "The allowed number of requests has been exceeded.",
+//   "Reference": "/locations/v1/cities/autocomplete?q=jerus&apikey=sXUIgqs7nxy2e9xEZThg42gEVZEGghnu"
+// }
