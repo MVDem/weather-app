@@ -6,12 +6,13 @@ import {
   getLocationCity,
   searchCity,
 } from './http/client.js';
-import { renderWeather } from './utils.js';
+import { renderWeather, renderCityName } from './utils.js';
 
 document.addEventListener('DOMContentLoaded', init);
 
 export async function init() {
   const currCity = await getLocationCity();
+  renderCityName(currCity.name, true); // true if city is favorite
   getCurrentWeather(currCity.key).then((resolve) => {
     console.log(
       `Current weather in ${currCity.name} is: ${resolve[0].WeatherText}`
@@ -23,7 +24,7 @@ export async function init() {
 }
 
 const bookmarkEl = document.querySelector('#bookmark');
-bookmarkEl.addEventListener('click', (event) => {
+bookmarkEl?.addEventListener('click', (event) => {
   const buttonEl = event.currentTarget;
   if (buttonEl.classList.contains('active')) {
     buttonEl.classList.remove('active');
@@ -46,7 +47,7 @@ burgerEl.addEventListener('click', () => {
 
 const searchFormEl = document.querySelector('[data-show-city]');
 
-searchFormEl.addEventListener('submit', () => {
+searchFormEl.addEventListener('submit', (event) => {
   event.preventDefault();
   const data = new FormData(event.target);
   const cityName = data.get('city');
