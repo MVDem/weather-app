@@ -2738,1562 +2738,1735 @@ export async function getCurrentWeather(cityKeyStr, details = false) {
     ];
 }
 
-export async function get5DayForecast(cityKeyStr, details = false) {
-  if (details)
-    return {
-      Headline: {
-        EffectiveDate: "2024-04-13T20:00:00+03:00",
-        EffectiveEpochDate: 1713027600,
-        Severity: 7,
-        Text: "Mild Saturday night",
-        Category: "heat",
-        EndDate: "2024-04-14T08:00:00+03:00",
-        EndEpochDate: 1713070800,
-        MobileLink:
-          "http://www.accuweather.com/en/il/tel-aviv/215854/daily-weather-forecast/215854?lang=en-us",
-        Link: "http://www.accuweather.com/en/il/tel-aviv/215854/daily-weather-forecast/215854?lang=en-us",
-      },
-      DailyForecasts: [
-        {
-          Date: "2024-04-12T07:00:00+03:00",
-          EpochDate: 1712894400,
-          Sun: {
-            Rise: "2024-04-12T06:15:00+03:00",
-            EpochRise: 1712891700,
-            Set: "2024-04-12T19:09:00+03:00",
-            EpochSet: 1712938140,
-          },
-          Moon: {
-            Rise: "2024-04-12T08:35:00+03:00",
-            EpochRise: 1712900100,
-            Set: "2024-04-12T23:38:00+03:00",
-            EpochSet: 1712954280,
-            Phase: "WaxingCrescent",
-            Age: 4,
-          },
-          Temperature: {
-            Minimum: {
-              Value: 60.0,
-              Unit: "F",
-              UnitType: 18,
+export async function get5DayForecast(
+  cityKeyStr,
+  details = false,
+  metric = true
+) {
+  if (details) {
+    if (metric)
+      return {
+        Headline: {
+          EffectiveDate: "2024-04-13T20:00:00+03:00",
+          EffectiveEpochDate: 1713027600,
+          Severity: 7,
+          Text: "Mild Saturday night",
+          Category: "heat",
+          EndDate: "2024-04-14T08:00:00+03:00",
+          EndEpochDate: 1713070800,
+          MobileLink:
+            "http://www.accuweather.com/en/il/tel-aviv/215854/daily-weather-forecast/215854?unit=c&lang=en-us",
+          Link: "http://www.accuweather.com/en/il/tel-aviv/215854/daily-weather-forecast/215854?unit=c&lang=en-us",
+        },
+        DailyForecasts: [
+          {
+            Date: "2024-04-12T07:00:00+03:00",
+            EpochDate: 1712894400,
+            Sun: {
+              Rise: "2024-04-12T06:15:00+03:00",
+              EpochRise: 1712891700,
+              Set: "2024-04-12T19:09:00+03:00",
+              EpochSet: 1712938140,
             },
-            Maximum: {
-              Value: 74.0,
-              Unit: "F",
-              UnitType: 18,
+            Moon: {
+              Rise: "2024-04-12T08:35:00+03:00",
+              EpochRise: 1712900100,
+              Set: "2024-04-12T23:38:00+03:00",
+              EpochSet: 1712954280,
+              Phase: "WaxingCrescent",
+              Age: 4,
             },
-          },
-          RealFeelTemperature: {
-            Minimum: {
-              Value: 61.0,
-              Unit: "F",
-              UnitType: 18,
-              Phrase: "Cool",
-            },
-            Maximum: {
-              Value: 79.0,
-              Unit: "F",
-              UnitType: 18,
-              Phrase: "Pleasant",
-            },
-          },
-          RealFeelTemperatureShade: {
-            Minimum: {
-              Value: 61.0,
-              Unit: "F",
-              UnitType: 18,
-              Phrase: "Cool",
-            },
-            Maximum: {
-              Value: 70.0,
-              Unit: "F",
-              UnitType: 18,
-              Phrase: "Pleasant",
-            },
-          },
-          HoursOfSun: 11.0,
-          DegreeDaySummary: {
-            Heating: {
-              Value: 0.0,
-              Unit: "F",
-              UnitType: 18,
-            },
-            Cooling: {
-              Value: 2.0,
-              Unit: "F",
-              UnitType: 18,
-            },
-          },
-          AirAndPollen: [
-            {
-              Name: "AirQuality",
-              Value: 0,
-              Category: "Good",
-              CategoryValue: 1,
-              Type: "Ozone",
-            },
-            {
-              Name: "Grass",
-              Value: 0,
-              Category: "Low",
-              CategoryValue: 1,
-            },
-            {
-              Name: "Mold",
-              Value: 0,
-              Category: "Low",
-              CategoryValue: 1,
-            },
-            {
-              Name: "Ragweed",
-              Value: 0,
-              Category: "Low",
-              CategoryValue: 1,
-            },
-            {
-              Name: "Tree",
-              Value: 0,
-              Category: "Low",
-              CategoryValue: 1,
-            },
-            {
-              Name: "UVIndex",
-              Value: 9,
-              Category: "Very High",
-              CategoryValue: 4,
-            },
-          ],
-          Day: {
-            Icon: 2,
-            IconPhrase: "Mostly sunny",
-            HasPrecipitation: false,
-            ShortPhrase: "Mostly sunny",
-            LongPhrase: "Mostly sunny",
-            PrecipitationProbability: 1,
-            ThunderstormProbability: 0,
-            RainProbability: 1,
-            SnowProbability: 0,
-            IceProbability: 0,
-            Wind: {
-              Speed: {
-                Value: 8.1,
-                Unit: "mi/h",
-                UnitType: 9,
+            Temperature: {
+              Minimum: {
+                Value: 15.5,
+                Unit: "C",
+                UnitType: 17,
               },
-              Direction: {
-                Degrees: 318,
-                Localized: "NW",
-                English: "NW",
+              Maximum: {
+                Value: 23.2,
+                Unit: "C",
+                UnitType: 17,
               },
             },
-            WindGust: {
-              Speed: {
+            RealFeelTemperature: {
+              Minimum: {
                 Value: 16.1,
-                Unit: "mi/h",
-                UnitType: 9,
-              },
-              Direction: {
-                Degrees: 328,
-                Localized: "NNW",
-                English: "NNW",
-              },
-            },
-            TotalLiquid: {
-              Value: 0.0,
-              Unit: "in",
-              UnitType: 1,
-            },
-            Rain: {
-              Value: 0.0,
-              Unit: "in",
-              UnitType: 1,
-            },
-            Snow: {
-              Value: 0.0,
-              Unit: "in",
-              UnitType: 1,
-            },
-            Ice: {
-              Value: 0.0,
-              Unit: "in",
-              UnitType: 1,
-            },
-            HoursOfPrecipitation: 0.0,
-            HoursOfRain: 0.0,
-            HoursOfSnow: 0.0,
-            HoursOfIce: 0.0,
-            CloudCover: 10,
-            Evapotranspiration: {
-              Value: 0.17,
-              Unit: "in",
-              UnitType: 1,
-            },
-            SolarIrradiance: {
-              Value: 7945.7,
-              Unit: "W/m²",
-              UnitType: 33,
-            },
-            RelativeHumidity: {
-              Minimum: 55,
-              Maximum: 82,
-              Average: 64,
-            },
-            WetBulbTemperature: {
-              Minimum: {
-                Value: 61.0,
-                Unit: "F",
-                UnitType: 18,
+                Unit: "C",
+                UnitType: 17,
+                Phrase: "Cool",
               },
               Maximum: {
-                Value: 63.0,
-                Unit: "F",
-                UnitType: 18,
-              },
-              Average: {
-                Value: 63.0,
-                Unit: "F",
-                UnitType: 18,
+                Value: 26.0,
+                Unit: "C",
+                UnitType: 17,
+                Phrase: "Pleasant",
               },
             },
-            WetBulbGlobeTemperature: {
+            RealFeelTemperatureShade: {
               Minimum: {
-                Value: 65.0,
-                Unit: "F",
-                UnitType: 18,
-              },
-              Maximum: {
-                Value: 69.0,
-                Unit: "F",
-                UnitType: 18,
-              },
-              Average: {
-                Value: 68.0,
-                Unit: "F",
-                UnitType: 18,
-              },
-            },
-          },
-          Night: {
-            Icon: 36,
-            IconPhrase: "Intermittent clouds",
-            HasPrecipitation: false,
-            ShortPhrase: "Partly cloudy",
-            LongPhrase: "Mainly clear early, then areas of low clouds forming",
-            PrecipitationProbability: 1,
-            ThunderstormProbability: 0,
-            RainProbability: 1,
-            SnowProbability: 0,
-            IceProbability: 0,
-            Wind: {
-              Speed: {
-                Value: 4.6,
-                Unit: "mi/h",
-                UnitType: 9,
-              },
-              Direction: {
-                Degrees: 30,
-                Localized: "NNE",
-                English: "NNE",
-              },
-            },
-            WindGust: {
-              Speed: {
-                Value: 11.5,
-                Unit: "mi/h",
-                UnitType: 9,
-              },
-              Direction: {
-                Degrees: 359,
-                Localized: "N",
-                English: "N",
-              },
-            },
-            TotalLiquid: {
-              Value: 0.0,
-              Unit: "in",
-              UnitType: 1,
-            },
-            Rain: {
-              Value: 0.0,
-              Unit: "in",
-              UnitType: 1,
-            },
-            Snow: {
-              Value: 0.0,
-              Unit: "in",
-              UnitType: 1,
-            },
-            Ice: {
-              Value: 0.0,
-              Unit: "in",
-              UnitType: 1,
-            },
-            HoursOfPrecipitation: 0.0,
-            HoursOfRain: 0.0,
-            HoursOfSnow: 0.0,
-            HoursOfIce: 0.0,
-            CloudCover: 54,
-            Evapotranspiration: {
-              Value: 0.01,
-              Unit: "in",
-              UnitType: 1,
-            },
-            SolarIrradiance: {
-              Value: 75.0,
-              Unit: "W/m²",
-              UnitType: 33,
-            },
-            RelativeHumidity: {
-              Minimum: 69,
-              Maximum: 93,
-              Average: 80,
-            },
-            WetBulbTemperature: {
-              Minimum: {
-                Value: 59.0,
-                Unit: "F",
-                UnitType: 18,
-              },
-              Maximum: {
-                Value: 63.0,
-                Unit: "F",
-                UnitType: 18,
-              },
-              Average: {
-                Value: 61.0,
-                Unit: "F",
-                UnitType: 18,
-              },
-            },
-            WetBulbGlobeTemperature: {
-              Minimum: {
-                Value: 61.0,
-                Unit: "F",
-                UnitType: 18,
-              },
-              Maximum: {
-                Value: 67.0,
-                Unit: "F",
-                UnitType: 18,
-              },
-              Average: {
-                Value: 64.0,
-                Unit: "F",
-                UnitType: 18,
-              },
-            },
-          },
-          Sources: ["AccuWeather"],
-          MobileLink:
-            "http://www.accuweather.com/en/il/tel-aviv/215854/daily-weather-forecast/215854?day=1&lang=en-us",
-          Link: "http://www.accuweather.com/en/il/tel-aviv/215854/daily-weather-forecast/215854?day=1&lang=en-us",
-        },
-        {
-          Date: "2024-04-13T07:00:00+03:00",
-          EpochDate: 1712980800,
-          Sun: {
-            Rise: "2024-04-13T06:14:00+03:00",
-            EpochRise: 1712978040,
-            Set: "2024-04-13T19:09:00+03:00",
-            EpochSet: 1713024540,
-          },
-          Moon: {
-            Rise: "2024-04-13T09:27:00+03:00",
-            EpochRise: 1712989620,
-            Set: "2024-04-14T00:39:00+03:00",
-            EpochSet: 1713044340,
-            Phase: "WaxingCrescent",
-            Age: 5,
-          },
-          Temperature: {
-            Minimum: {
-              Value: 63.0,
-              Unit: "F",
-              UnitType: 18,
-            },
-            Maximum: {
-              Value: 74.0,
-              Unit: "F",
-              UnitType: 18,
-            },
-          },
-          RealFeelTemperature: {
-            Minimum: {
-              Value: 63.0,
-              Unit: "F",
-              UnitType: 18,
-              Phrase: "Pleasant",
-            },
-            Maximum: {
-              Value: 79.0,
-              Unit: "F",
-              UnitType: 18,
-              Phrase: "Pleasant",
-            },
-          },
-          RealFeelTemperatureShade: {
-            Minimum: {
-              Value: 63.0,
-              Unit: "F",
-              UnitType: 18,
-              Phrase: "Pleasant",
-            },
-            Maximum: {
-              Value: 71.0,
-              Unit: "F",
-              UnitType: 18,
-              Phrase: "Pleasant",
-            },
-          },
-          HoursOfSun: 9.9,
-          DegreeDaySummary: {
-            Heating: {
-              Value: 0.0,
-              Unit: "F",
-              UnitType: 18,
-            },
-            Cooling: {
-              Value: 4.0,
-              Unit: "F",
-              UnitType: 18,
-            },
-          },
-          AirAndPollen: [
-            {
-              Name: "AirQuality",
-              Value: 0,
-              Category: "Good",
-              CategoryValue: 1,
-              Type: "Ozone",
-            },
-            {
-              Name: "Grass",
-              Value: 0,
-              Category: "Low",
-              CategoryValue: 1,
-            },
-            {
-              Name: "Mold",
-              Value: 0,
-              Category: "Low",
-              CategoryValue: 1,
-            },
-            {
-              Name: "Ragweed",
-              Value: 0,
-              Category: "Low",
-              CategoryValue: 1,
-            },
-            {
-              Name: "Tree",
-              Value: 0,
-              Category: "Low",
-              CategoryValue: 1,
-            },
-            {
-              Name: "UVIndex",
-              Value: 9,
-              Category: "Very High",
-              CategoryValue: 4,
-            },
-          ],
-          Day: {
-            Icon: 2,
-            IconPhrase: "Mostly sunny",
-            HasPrecipitation: false,
-            ShortPhrase: "Mostly sunny",
-            LongPhrase: "Mostly sunny",
-            PrecipitationProbability: 2,
-            ThunderstormProbability: 0,
-            RainProbability: 2,
-            SnowProbability: 0,
-            IceProbability: 0,
-            Wind: {
-              Speed: {
-                Value: 8.1,
-                Unit: "mi/h",
-                UnitType: 9,
-              },
-              Direction: {
-                Degrees: 267,
-                Localized: "W",
-                English: "W",
-              },
-            },
-            WindGust: {
-              Speed: {
                 Value: 16.1,
-                Unit: "mi/h",
-                UnitType: 9,
-              },
-              Direction: {
-                Degrees: 311,
-                Localized: "NW",
-                English: "NW",
-              },
-            },
-            TotalLiquid: {
-              Value: 0.0,
-              Unit: "in",
-              UnitType: 1,
-            },
-            Rain: {
-              Value: 0.0,
-              Unit: "in",
-              UnitType: 1,
-            },
-            Snow: {
-              Value: 0.0,
-              Unit: "in",
-              UnitType: 1,
-            },
-            Ice: {
-              Value: 0.0,
-              Unit: "in",
-              UnitType: 1,
-            },
-            HoursOfPrecipitation: 0.0,
-            HoursOfRain: 0.0,
-            HoursOfSnow: 0.0,
-            HoursOfIce: 0.0,
-            CloudCover: 19,
-            Evapotranspiration: {
-              Value: 0.16,
-              Unit: "in",
-              UnitType: 1,
-            },
-            SolarIrradiance: {
-              Value: 7978.5,
-              Unit: "W/m²",
-              UnitType: 33,
-            },
-            RelativeHumidity: {
-              Minimum: 55,
-              Maximum: 79,
-              Average: 64,
-            },
-            WetBulbTemperature: {
-              Minimum: {
-                Value: 61.0,
-                Unit: "F",
-                UnitType: 18,
+                Unit: "C",
+                UnitType: 17,
+                Phrase: "Cool",
               },
               Maximum: {
-                Value: 64.0,
-                Unit: "F",
-                UnitType: 18,
-              },
-              Average: {
-                Value: 63.0,
-                Unit: "F",
-                UnitType: 18,
+                Value: 21.4,
+                Unit: "C",
+                UnitType: 17,
+                Phrase: "Pleasant",
               },
             },
-            WetBulbGlobeTemperature: {
-              Minimum: {
-                Value: 66.0,
-                Unit: "F",
-                UnitType: 18,
+            HoursOfSun: 11.0,
+            DegreeDaySummary: {
+              Heating: {
+                Value: 0.0,
+                Unit: "C",
+                UnitType: 17,
               },
-              Maximum: {
-                Value: 70.0,
-                Unit: "F",
-                UnitType: 18,
-              },
-              Average: {
-                Value: 68.0,
-                Unit: "F",
-                UnitType: 18,
+              Cooling: {
+                Value: 1.0,
+                Unit: "C",
+                UnitType: 17,
               },
             },
+            AirAndPollen: [
+              {
+                Name: "AirQuality",
+                Value: 0,
+                Category: "Good",
+                CategoryValue: 1,
+                Type: "Ozone",
+              },
+              {
+                Name: "Grass",
+                Value: 0,
+                Category: "Low",
+                CategoryValue: 1,
+              },
+              {
+                Name: "Mold",
+                Value: 0,
+                Category: "Low",
+                CategoryValue: 1,
+              },
+              {
+                Name: "Ragweed",
+                Value: 0,
+                Category: "Low",
+                CategoryValue: 1,
+              },
+              {
+                Name: "Tree",
+                Value: 0,
+                Category: "Low",
+                CategoryValue: 1,
+              },
+              {
+                Name: "UVIndex",
+                Value: 9,
+                Category: "Very High",
+                CategoryValue: 4,
+              },
+            ],
+            Day: {
+              Icon: 2,
+              IconPhrase: "Mostly sunny",
+              HasPrecipitation: false,
+              ShortPhrase: "Mostly sunny",
+              LongPhrase: "Mostly sunny",
+              PrecipitationProbability: 1,
+              ThunderstormProbability: 0,
+              RainProbability: 1,
+              SnowProbability: 0,
+              IceProbability: 0,
+              Wind: {
+                Speed: {
+                  Value: 13.0,
+                  Unit: "km/h",
+                  UnitType: 7,
+                },
+                Direction: {
+                  Degrees: 318,
+                  Localized: "NW",
+                  English: "NW",
+                },
+              },
+              WindGust: {
+                Speed: {
+                  Value: 25.9,
+                  Unit: "km/h",
+                  UnitType: 7,
+                },
+                Direction: {
+                  Degrees: 328,
+                  Localized: "NNW",
+                  English: "NNW",
+                },
+              },
+              TotalLiquid: {
+                Value: 0.0,
+                Unit: "mm",
+                UnitType: 3,
+              },
+              Rain: {
+                Value: 0.0,
+                Unit: "mm",
+                UnitType: 3,
+              },
+              Snow: {
+                Value: 0.0,
+                Unit: "cm",
+                UnitType: 4,
+              },
+              Ice: {
+                Value: 0.0,
+                Unit: "mm",
+                UnitType: 3,
+              },
+              HoursOfPrecipitation: 0.0,
+              HoursOfRain: 0.0,
+              HoursOfSnow: 0.0,
+              HoursOfIce: 0.0,
+              CloudCover: 10,
+              Evapotranspiration: {
+                Value: 4.3,
+                Unit: "mm",
+                UnitType: 3,
+              },
+              SolarIrradiance: {
+                Value: 7945.7,
+                Unit: "W/m²",
+                UnitType: 33,
+              },
+              RelativeHumidity: {
+                Minimum: 55,
+                Maximum: 82,
+                Average: 64,
+              },
+              WetBulbTemperature: {
+                Minimum: {
+                  Value: 15.9,
+                  Unit: "C",
+                  UnitType: 17,
+                },
+                Maximum: {
+                  Value: 17.4,
+                  Unit: "C",
+                  UnitType: 17,
+                },
+                Average: {
+                  Value: 17.1,
+                  Unit: "C",
+                  UnitType: 17,
+                },
+              },
+              WetBulbGlobeTemperature: {
+                Minimum: {
+                  Value: 18.1,
+                  Unit: "C",
+                  UnitType: 17,
+                },
+                Maximum: {
+                  Value: 20.7,
+                  Unit: "C",
+                  UnitType: 17,
+                },
+                Average: {
+                  Value: 19.9,
+                  Unit: "C",
+                  UnitType: 17,
+                },
+              },
+            },
+            Night: {
+              Icon: 36,
+              IconPhrase: "Intermittent clouds",
+              HasPrecipitation: false,
+              ShortPhrase: "Partly cloudy",
+              LongPhrase:
+                "Mainly clear early, then areas of low clouds forming",
+              PrecipitationProbability: 1,
+              ThunderstormProbability: 0,
+              RainProbability: 1,
+              SnowProbability: 0,
+              IceProbability: 0,
+              Wind: {
+                Speed: {
+                  Value: 7.4,
+                  Unit: "km/h",
+                  UnitType: 7,
+                },
+                Direction: {
+                  Degrees: 30,
+                  Localized: "NNE",
+                  English: "NNE",
+                },
+              },
+              WindGust: {
+                Speed: {
+                  Value: 18.5,
+                  Unit: "km/h",
+                  UnitType: 7,
+                },
+                Direction: {
+                  Degrees: 359,
+                  Localized: "N",
+                  English: "N",
+                },
+              },
+              TotalLiquid: {
+                Value: 0.0,
+                Unit: "mm",
+                UnitType: 3,
+              },
+              Rain: {
+                Value: 0.0,
+                Unit: "mm",
+                UnitType: 3,
+              },
+              Snow: {
+                Value: 0.0,
+                Unit: "cm",
+                UnitType: 4,
+              },
+              Ice: {
+                Value: 0.0,
+                Unit: "mm",
+                UnitType: 3,
+              },
+              HoursOfPrecipitation: 0.0,
+              HoursOfRain: 0.0,
+              HoursOfSnow: 0.0,
+              HoursOfIce: 0.0,
+              CloudCover: 54,
+              Evapotranspiration: {
+                Value: 0.3,
+                Unit: "mm",
+                UnitType: 3,
+              },
+              SolarIrradiance: {
+                Value: 75.0,
+                Unit: "W/m²",
+                UnitType: 33,
+              },
+              RelativeHumidity: {
+                Minimum: 69,
+                Maximum: 93,
+                Average: 80,
+              },
+              WetBulbTemperature: {
+                Minimum: {
+                  Value: 15.0,
+                  Unit: "C",
+                  UnitType: 17,
+                },
+                Maximum: {
+                  Value: 17.2,
+                  Unit: "C",
+                  UnitType: 17,
+                },
+                Average: {
+                  Value: 16.2,
+                  Unit: "C",
+                  UnitType: 17,
+                },
+              },
+              WetBulbGlobeTemperature: {
+                Minimum: {
+                  Value: 16.2,
+                  Unit: "C",
+                  UnitType: 17,
+                },
+                Maximum: {
+                  Value: 19.6,
+                  Unit: "C",
+                  UnitType: 17,
+                },
+                Average: {
+                  Value: 18.0,
+                  Unit: "C",
+                  UnitType: 17,
+                },
+              },
+            },
+            Sources: ["AccuWeather"],
+            MobileLink:
+              "http://www.accuweather.com/en/il/tel-aviv/215854/daily-weather-forecast/215854?day=1&unit=c&lang=en-us",
+            Link: "http://www.accuweather.com/en/il/tel-aviv/215854/daily-weather-forecast/215854?day=1&unit=c&lang=en-us",
           },
-          Night: {
-            Icon: 38,
-            IconPhrase: "Mostly cloudy",
-            HasPrecipitation: false,
-            ShortPhrase: "Mostly cloudy and mild",
-            LongPhrase: "Mostly cloudy and mild",
-            PrecipitationProbability: 3,
-            ThunderstormProbability: 0,
-            RainProbability: 3,
-            SnowProbability: 0,
-            IceProbability: 0,
-            Wind: {
-              Speed: {
-                Value: 4.6,
-                Unit: "mi/h",
-                UnitType: 9,
-              },
-              Direction: {
-                Degrees: 279,
-                Localized: "W",
-                English: "W",
-              },
+          {
+            Date: "2024-04-13T07:00:00+03:00",
+            EpochDate: 1712980800,
+            Sun: {
+              Rise: "2024-04-13T06:14:00+03:00",
+              EpochRise: 1712978040,
+              Set: "2024-04-13T19:09:00+03:00",
+              EpochSet: 1713024540,
             },
-            WindGust: {
-              Speed: {
-                Value: 11.5,
-                Unit: "mi/h",
-                UnitType: 9,
-              },
-              Direction: {
-                Degrees: 316,
-                Localized: "NW",
-                English: "NW",
-              },
+            Moon: {
+              Rise: "2024-04-13T09:27:00+03:00",
+              EpochRise: 1712989620,
+              Set: "2024-04-14T00:39:00+03:00",
+              EpochSet: 1713044340,
+              Phase: "WaxingCrescent",
+              Age: 5,
             },
-            TotalLiquid: {
-              Value: 0.0,
-              Unit: "in",
-              UnitType: 1,
-            },
-            Rain: {
-              Value: 0.0,
-              Unit: "in",
-              UnitType: 1,
-            },
-            Snow: {
-              Value: 0.0,
-              Unit: "in",
-              UnitType: 1,
-            },
-            Ice: {
-              Value: 0.0,
-              Unit: "in",
-              UnitType: 1,
-            },
-            HoursOfPrecipitation: 0.0,
-            HoursOfRain: 0.0,
-            HoursOfSnow: 0.0,
-            HoursOfIce: 0.0,
-            CloudCover: 53,
-            Evapotranspiration: {
-              Value: 0.0,
-              Unit: "in",
-              UnitType: 1,
-            },
-            SolarIrradiance: {
-              Value: 42.0,
-              Unit: "W/m²",
-              UnitType: 33,
-            },
-            RelativeHumidity: {
-              Minimum: 72,
-              Maximum: 91,
-              Average: 81,
-            },
-            WetBulbTemperature: {
+            Temperature: {
               Minimum: {
-                Value: 62.0,
-                Unit: "F",
-                UnitType: 18,
+                Value: 17.2,
+                Unit: "C",
+                UnitType: 17,
               },
               Maximum: {
-                Value: 64.0,
-                Unit: "F",
-                UnitType: 18,
-              },
-              Average: {
-                Value: 63.0,
-                Unit: "F",
-                UnitType: 18,
+                Value: 23.3,
+                Unit: "C",
+                UnitType: 17,
               },
             },
-            WetBulbGlobeTemperature: {
+            RealFeelTemperature: {
               Minimum: {
-                Value: 64.0,
-                Unit: "F",
-                UnitType: 18,
+                Value: 17.2,
+                Unit: "C",
+                UnitType: 17,
+                Phrase: "Pleasant",
               },
               Maximum: {
-                Value: 69.0,
-                Unit: "F",
-                UnitType: 18,
-              },
-              Average: {
-                Value: 66.0,
-                Unit: "F",
-                UnitType: 18,
+                Value: 26.1,
+                Unit: "C",
+                UnitType: 17,
+                Phrase: "Pleasant",
               },
             },
+            RealFeelTemperatureShade: {
+              Minimum: {
+                Value: 17.2,
+                Unit: "C",
+                UnitType: 17,
+                Phrase: "Pleasant",
+              },
+              Maximum: {
+                Value: 21.5,
+                Unit: "C",
+                UnitType: 17,
+                Phrase: "Pleasant",
+              },
+            },
+            HoursOfSun: 9.9,
+            DegreeDaySummary: {
+              Heating: {
+                Value: 0.0,
+                Unit: "C",
+                UnitType: 17,
+              },
+              Cooling: {
+                Value: 2.0,
+                Unit: "C",
+                UnitType: 17,
+              },
+            },
+            AirAndPollen: [
+              {
+                Name: "AirQuality",
+                Value: 0,
+                Category: "Good",
+                CategoryValue: 1,
+                Type: "Ozone",
+              },
+              {
+                Name: "Grass",
+                Value: 0,
+                Category: "Low",
+                CategoryValue: 1,
+              },
+              {
+                Name: "Mold",
+                Value: 0,
+                Category: "Low",
+                CategoryValue: 1,
+              },
+              {
+                Name: "Ragweed",
+                Value: 0,
+                Category: "Low",
+                CategoryValue: 1,
+              },
+              {
+                Name: "Tree",
+                Value: 0,
+                Category: "Low",
+                CategoryValue: 1,
+              },
+              {
+                Name: "UVIndex",
+                Value: 9,
+                Category: "Very High",
+                CategoryValue: 4,
+              },
+            ],
+            Day: {
+              Icon: 2,
+              IconPhrase: "Mostly sunny",
+              HasPrecipitation: false,
+              ShortPhrase: "Mostly sunny",
+              LongPhrase: "Mostly sunny",
+              PrecipitationProbability: 2,
+              ThunderstormProbability: 0,
+              RainProbability: 2,
+              SnowProbability: 0,
+              IceProbability: 0,
+              Wind: {
+                Speed: {
+                  Value: 13.0,
+                  Unit: "km/h",
+                  UnitType: 7,
+                },
+                Direction: {
+                  Degrees: 267,
+                  Localized: "W",
+                  English: "W",
+                },
+              },
+              WindGust: {
+                Speed: {
+                  Value: 25.9,
+                  Unit: "km/h",
+                  UnitType: 7,
+                },
+                Direction: {
+                  Degrees: 311,
+                  Localized: "NW",
+                  English: "NW",
+                },
+              },
+              TotalLiquid: {
+                Value: 0.0,
+                Unit: "mm",
+                UnitType: 3,
+              },
+              Rain: {
+                Value: 0.0,
+                Unit: "mm",
+                UnitType: 3,
+              },
+              Snow: {
+                Value: 0.0,
+                Unit: "cm",
+                UnitType: 4,
+              },
+              Ice: {
+                Value: 0.0,
+                Unit: "mm",
+                UnitType: 3,
+              },
+              HoursOfPrecipitation: 0.0,
+              HoursOfRain: 0.0,
+              HoursOfSnow: 0.0,
+              HoursOfIce: 0.0,
+              CloudCover: 19,
+              Evapotranspiration: {
+                Value: 4.1,
+                Unit: "mm",
+                UnitType: 3,
+              },
+              SolarIrradiance: {
+                Value: 7978.5,
+                Unit: "W/m²",
+                UnitType: 33,
+              },
+              RelativeHumidity: {
+                Minimum: 55,
+                Maximum: 79,
+                Average: 64,
+              },
+              WetBulbTemperature: {
+                Minimum: {
+                  Value: 16.4,
+                  Unit: "C",
+                  UnitType: 17,
+                },
+                Maximum: {
+                  Value: 17.7,
+                  Unit: "C",
+                  UnitType: 17,
+                },
+                Average: {
+                  Value: 17.4,
+                  Unit: "C",
+                  UnitType: 17,
+                },
+              },
+              WetBulbGlobeTemperature: {
+                Minimum: {
+                  Value: 18.7,
+                  Unit: "C",
+                  UnitType: 17,
+                },
+                Maximum: {
+                  Value: 20.9,
+                  Unit: "C",
+                  UnitType: 17,
+                },
+                Average: {
+                  Value: 20.2,
+                  Unit: "C",
+                  UnitType: 17,
+                },
+              },
+            },
+            Night: {
+              Icon: 38,
+              IconPhrase: "Mostly cloudy",
+              HasPrecipitation: false,
+              ShortPhrase: "Mostly cloudy and mild",
+              LongPhrase: "Mostly cloudy and mild",
+              PrecipitationProbability: 3,
+              ThunderstormProbability: 0,
+              RainProbability: 3,
+              SnowProbability: 0,
+              IceProbability: 0,
+              Wind: {
+                Speed: {
+                  Value: 7.4,
+                  Unit: "km/h",
+                  UnitType: 7,
+                },
+                Direction: {
+                  Degrees: 279,
+                  Localized: "W",
+                  English: "W",
+                },
+              },
+              WindGust: {
+                Speed: {
+                  Value: 18.5,
+                  Unit: "km/h",
+                  UnitType: 7,
+                },
+                Direction: {
+                  Degrees: 316,
+                  Localized: "NW",
+                  English: "NW",
+                },
+              },
+              TotalLiquid: {
+                Value: 0.0,
+                Unit: "mm",
+                UnitType: 3,
+              },
+              Rain: {
+                Value: 0.0,
+                Unit: "mm",
+                UnitType: 3,
+              },
+              Snow: {
+                Value: 0.0,
+                Unit: "cm",
+                UnitType: 4,
+              },
+              Ice: {
+                Value: 0.0,
+                Unit: "mm",
+                UnitType: 3,
+              },
+              HoursOfPrecipitation: 0.0,
+              HoursOfRain: 0.0,
+              HoursOfSnow: 0.0,
+              HoursOfIce: 0.0,
+              CloudCover: 53,
+              Evapotranspiration: {
+                Value: 0.0,
+                Unit: "mm",
+                UnitType: 3,
+              },
+              SolarIrradiance: {
+                Value: 42.0,
+                Unit: "W/m²",
+                UnitType: 33,
+              },
+              RelativeHumidity: {
+                Minimum: 72,
+                Maximum: 91,
+                Average: 81,
+              },
+              WetBulbTemperature: {
+                Minimum: {
+                  Value: 16.5,
+                  Unit: "C",
+                  UnitType: 17,
+                },
+                Maximum: {
+                  Value: 17.9,
+                  Unit: "C",
+                  UnitType: 17,
+                },
+                Average: {
+                  Value: 17.2,
+                  Unit: "C",
+                  UnitType: 17,
+                },
+              },
+              WetBulbGlobeTemperature: {
+                Minimum: {
+                  Value: 17.5,
+                  Unit: "C",
+                  UnitType: 17,
+                },
+                Maximum: {
+                  Value: 20.4,
+                  Unit: "C",
+                  UnitType: 17,
+                },
+                Average: {
+                  Value: 19.0,
+                  Unit: "C",
+                  UnitType: 17,
+                },
+              },
+            },
+            Sources: ["AccuWeather"],
+            MobileLink:
+              "http://www.accuweather.com/en/il/tel-aviv/215854/daily-weather-forecast/215854?day=2&unit=c&lang=en-us",
+            Link: "http://www.accuweather.com/en/il/tel-aviv/215854/daily-weather-forecast/215854?day=2&unit=c&lang=en-us",
           },
-          Sources: ["AccuWeather"],
+          {
+            Date: "2024-04-14T07:00:00+03:00",
+            EpochDate: 1713067200,
+            Sun: {
+              Rise: "2024-04-14T06:13:00+03:00",
+              EpochRise: 1713064380,
+              Set: "2024-04-14T19:10:00+03:00",
+              EpochSet: 1713111000,
+            },
+            Moon: {
+              Rise: "2024-04-14T10:24:00+03:00",
+              EpochRise: 1713079440,
+              Set: "2024-04-15T01:33:00+03:00",
+              EpochSet: 1713133980,
+              Phase: "WaxingCrescent",
+              Age: 6,
+            },
+            Temperature: {
+              Minimum: {
+                Value: 18.3,
+                Unit: "C",
+                UnitType: 17,
+              },
+              Maximum: {
+                Value: 23.3,
+                Unit: "C",
+                UnitType: 17,
+              },
+            },
+            RealFeelTemperature: {
+              Minimum: {
+                Value: 17.6,
+                Unit: "C",
+                UnitType: 17,
+                Phrase: "Pleasant",
+              },
+              Maximum: {
+                Value: 26.0,
+                Unit: "C",
+                UnitType: 17,
+                Phrase: "Pleasant",
+              },
+            },
+            RealFeelTemperatureShade: {
+              Minimum: {
+                Value: 17.6,
+                Unit: "C",
+                UnitType: 17,
+                Phrase: "Pleasant",
+              },
+              Maximum: {
+                Value: 21.5,
+                Unit: "C",
+                UnitType: 17,
+                Phrase: "Pleasant",
+              },
+            },
+            HoursOfSun: 8.8,
+            DegreeDaySummary: {
+              Heating: {
+                Value: 0.0,
+                Unit: "C",
+                UnitType: 17,
+              },
+              Cooling: {
+                Value: 3.0,
+                Unit: "C",
+                UnitType: 17,
+              },
+            },
+            AirAndPollen: [
+              {
+                Name: "AirQuality",
+                Value: 0,
+                Category: "Good",
+                CategoryValue: 1,
+                Type: "Ozone",
+              },
+              {
+                Name: "Grass",
+                Value: 0,
+                Category: "Low",
+                CategoryValue: 1,
+              },
+              {
+                Name: "Mold",
+                Value: 0,
+                Category: "Low",
+                CategoryValue: 1,
+              },
+              {
+                Name: "Ragweed",
+                Value: 0,
+                Category: "Low",
+                CategoryValue: 1,
+              },
+              {
+                Name: "Tree",
+                Value: 0,
+                Category: "Low",
+                CategoryValue: 1,
+              },
+              {
+                Name: "UVIndex",
+                Value: 9,
+                Category: "Very High",
+                CategoryValue: 4,
+              },
+            ],
+            Day: {
+              Icon: 3,
+              IconPhrase: "Partly sunny",
+              HasPrecipitation: false,
+              ShortPhrase: "Partly sunny",
+              LongPhrase: "Partly sunny",
+              PrecipitationProbability: 2,
+              ThunderstormProbability: 0,
+              RainProbability: 2,
+              SnowProbability: 0,
+              IceProbability: 0,
+              Wind: {
+                Speed: {
+                  Value: 14.8,
+                  Unit: "km/h",
+                  UnitType: 7,
+                },
+                Direction: {
+                  Degrees: 259,
+                  Localized: "W",
+                  English: "W",
+                },
+              },
+              WindGust: {
+                Speed: {
+                  Value: 31.5,
+                  Unit: "km/h",
+                  UnitType: 7,
+                },
+                Direction: {
+                  Degrees: 276,
+                  Localized: "W",
+                  English: "W",
+                },
+              },
+              TotalLiquid: {
+                Value: 0.0,
+                Unit: "mm",
+                UnitType: 3,
+              },
+              Rain: {
+                Value: 0.0,
+                Unit: "mm",
+                UnitType: 3,
+              },
+              Snow: {
+                Value: 0.0,
+                Unit: "cm",
+                UnitType: 4,
+              },
+              Ice: {
+                Value: 0.0,
+                Unit: "mm",
+                UnitType: 3,
+              },
+              HoursOfPrecipitation: 0.0,
+              HoursOfRain: 0.0,
+              HoursOfSnow: 0.0,
+              HoursOfIce: 0.0,
+              CloudCover: 32,
+              Evapotranspiration: {
+                Value: 3.8,
+                Unit: "mm",
+                UnitType: 3,
+              },
+              SolarIrradiance: {
+                Value: 7687.6,
+                Unit: "W/m²",
+                UnitType: 33,
+              },
+              RelativeHumidity: {
+                Minimum: 61,
+                Maximum: 83,
+                Average: 68,
+              },
+              WetBulbTemperature: {
+                Minimum: {
+                  Value: 17.1,
+                  Unit: "C",
+                  UnitType: 17,
+                },
+                Maximum: {
+                  Value: 18.5,
+                  Unit: "C",
+                  UnitType: 17,
+                },
+                Average: {
+                  Value: 18.1,
+                  Unit: "C",
+                  UnitType: 17,
+                },
+              },
+              WetBulbGlobeTemperature: {
+                Minimum: {
+                  Value: 18.8,
+                  Unit: "C",
+                  UnitType: 17,
+                },
+                Maximum: {
+                  Value: 21.3,
+                  Unit: "C",
+                  UnitType: 17,
+                },
+                Average: {
+                  Value: 20.6,
+                  Unit: "C",
+                  UnitType: 17,
+                },
+              },
+            },
+            Night: {
+              Icon: 35,
+              IconPhrase: "Partly cloudy",
+              HasPrecipitation: false,
+              ShortPhrase: "Partly cloudy and mild",
+              LongPhrase: "Partly cloudy and mild",
+              PrecipitationProbability: 5,
+              ThunderstormProbability: 0,
+              RainProbability: 5,
+              SnowProbability: 0,
+              IceProbability: 0,
+              Wind: {
+                Speed: {
+                  Value: 9.3,
+                  Unit: "km/h",
+                  UnitType: 7,
+                },
+                Direction: {
+                  Degrees: 207,
+                  Localized: "SSW",
+                  English: "SSW",
+                },
+              },
+              WindGust: {
+                Speed: {
+                  Value: 18.5,
+                  Unit: "km/h",
+                  UnitType: 7,
+                },
+                Direction: {
+                  Degrees: 158,
+                  Localized: "SSE",
+                  English: "SSE",
+                },
+              },
+              TotalLiquid: {
+                Value: 0.0,
+                Unit: "mm",
+                UnitType: 3,
+              },
+              Rain: {
+                Value: 0.0,
+                Unit: "mm",
+                UnitType: 3,
+              },
+              Snow: {
+                Value: 0.0,
+                Unit: "cm",
+                UnitType: 4,
+              },
+              Ice: {
+                Value: 0.0,
+                Unit: "mm",
+                UnitType: 3,
+              },
+              HoursOfPrecipitation: 0.0,
+              HoursOfRain: 0.0,
+              HoursOfSnow: 0.0,
+              HoursOfIce: 0.0,
+              CloudCover: 47,
+              Evapotranspiration: {
+                Value: 0.0,
+                Unit: "mm",
+                UnitType: 3,
+              },
+              SolarIrradiance: {
+                Value: 79.4,
+                Unit: "W/m²",
+                UnitType: 33,
+              },
+              RelativeHumidity: {
+                Minimum: 77,
+                Maximum: 89,
+                Average: 84,
+              },
+              WetBulbTemperature: {
+                Minimum: {
+                  Value: 17.4,
+                  Unit: "C",
+                  UnitType: 17,
+                },
+                Maximum: {
+                  Value: 18.2,
+                  Unit: "C",
+                  UnitType: 17,
+                },
+                Average: {
+                  Value: 17.8,
+                  Unit: "C",
+                  UnitType: 17,
+                },
+              },
+              WetBulbGlobeTemperature: {
+                Minimum: {
+                  Value: 18.9,
+                  Unit: "C",
+                  UnitType: 17,
+                },
+                Maximum: {
+                  Value: 20.5,
+                  Unit: "C",
+                  UnitType: 17,
+                },
+                Average: {
+                  Value: 19.7,
+                  Unit: "C",
+                  UnitType: 17,
+                },
+              },
+            },
+            Sources: ["AccuWeather"],
+            MobileLink:
+              "http://www.accuweather.com/en/il/tel-aviv/215854/daily-weather-forecast/215854?day=3&unit=c&lang=en-us",
+            Link: "http://www.accuweather.com/en/il/tel-aviv/215854/daily-weather-forecast/215854?day=3&unit=c&lang=en-us",
+          },
+          {
+            Date: "2024-04-15T07:00:00+03:00",
+            EpochDate: 1713153600,
+            Sun: {
+              Rise: "2024-04-15T06:12:00+03:00",
+              EpochRise: 1713150720,
+              Set: "2024-04-15T19:11:00+03:00",
+              EpochSet: 1713197460,
+            },
+            Moon: {
+              Rise: "2024-04-15T11:24:00+03:00",
+              EpochRise: 1713169440,
+              Set: "2024-04-16T02:18:00+03:00",
+              EpochSet: 1713223080,
+              Phase: "First",
+              Age: 7,
+            },
+            Temperature: {
+              Minimum: {
+                Value: 17.4,
+                Unit: "C",
+                UnitType: 17,
+              },
+              Maximum: {
+                Value: 23.7,
+                Unit: "C",
+                UnitType: 17,
+              },
+            },
+            RealFeelTemperature: {
+              Minimum: {
+                Value: 17.4,
+                Unit: "C",
+                UnitType: 17,
+                Phrase: "Pleasant",
+              },
+              Maximum: {
+                Value: 26.3,
+                Unit: "C",
+                UnitType: 17,
+                Phrase: "Pleasant",
+              },
+            },
+            RealFeelTemperatureShade: {
+              Minimum: {
+                Value: 17.4,
+                Unit: "C",
+                UnitType: 17,
+                Phrase: "Pleasant",
+              },
+              Maximum: {
+                Value: 21.9,
+                Unit: "C",
+                UnitType: 17,
+                Phrase: "Pleasant",
+              },
+            },
+            HoursOfSun: 9.5,
+            DegreeDaySummary: {
+              Heating: {
+                Value: 0.0,
+                Unit: "C",
+                UnitType: 17,
+              },
+              Cooling: {
+                Value: 3.0,
+                Unit: "C",
+                UnitType: 17,
+              },
+            },
+            AirAndPollen: [
+              {
+                Name: "AirQuality",
+                Value: 0,
+                Category: "Good",
+                CategoryValue: 1,
+                Type: "Ozone",
+              },
+              {
+                Name: "Grass",
+                Value: 0,
+                Category: "Low",
+                CategoryValue: 1,
+              },
+              {
+                Name: "Mold",
+                Value: 0,
+                Category: "Low",
+                CategoryValue: 1,
+              },
+              {
+                Name: "Ragweed",
+                Value: 0,
+                Category: "Low",
+                CategoryValue: 1,
+              },
+              {
+                Name: "Tree",
+                Value: 0,
+                Category: "Low",
+                CategoryValue: 1,
+              },
+              {
+                Name: "UVIndex",
+                Value: 9,
+                Category: "Very High",
+                CategoryValue: 4,
+              },
+            ],
+            Day: {
+              Icon: 2,
+              IconPhrase: "Mostly sunny",
+              HasPrecipitation: false,
+              ShortPhrase: "Sunshine and a few clouds",
+              LongPhrase: "Sunshine and a few clouds",
+              PrecipitationProbability: 25,
+              ThunderstormProbability: 0,
+              RainProbability: 25,
+              SnowProbability: 0,
+              IceProbability: 0,
+              Wind: {
+                Speed: {
+                  Value: 14.8,
+                  Unit: "km/h",
+                  UnitType: 7,
+                },
+                Direction: {
+                  Degrees: 285,
+                  Localized: "WNW",
+                  English: "WNW",
+                },
+              },
+              WindGust: {
+                Speed: {
+                  Value: 31.5,
+                  Unit: "km/h",
+                  UnitType: 7,
+                },
+                Direction: {
+                  Degrees: 319,
+                  Localized: "NW",
+                  English: "NW",
+                },
+              },
+              TotalLiquid: {
+                Value: 0.0,
+                Unit: "mm",
+                UnitType: 3,
+              },
+              Rain: {
+                Value: 0.0,
+                Unit: "mm",
+                UnitType: 3,
+              },
+              Snow: {
+                Value: 0.0,
+                Unit: "cm",
+                UnitType: 4,
+              },
+              Ice: {
+                Value: 0.0,
+                Unit: "mm",
+                UnitType: 3,
+              },
+              HoursOfPrecipitation: 0.0,
+              HoursOfRain: 0.0,
+              HoursOfSnow: 0.0,
+              HoursOfIce: 0.0,
+              CloudCover: 24,
+              Evapotranspiration: {
+                Value: 3.8,
+                Unit: "mm",
+                UnitType: 3,
+              },
+              SolarIrradiance: {
+                Value: 7741.5,
+                Unit: "W/m²",
+                UnitType: 33,
+              },
+              RelativeHumidity: {
+                Minimum: 59,
+                Maximum: 86,
+                Average: 68,
+              },
+              WetBulbTemperature: {
+                Minimum: {
+                  Value: 17.7,
+                  Unit: "C",
+                  UnitType: 17,
+                },
+                Maximum: {
+                  Value: 18.6,
+                  Unit: "C",
+                  UnitType: 17,
+                },
+                Average: {
+                  Value: 18.3,
+                  Unit: "C",
+                  UnitType: 17,
+                },
+              },
+              WetBulbGlobeTemperature: {
+                Minimum: {
+                  Value: 19.6,
+                  Unit: "C",
+                  UnitType: 17,
+                },
+                Maximum: {
+                  Value: 21.5,
+                  Unit: "C",
+                  UnitType: 17,
+                },
+                Average: {
+                  Value: 20.8,
+                  Unit: "C",
+                  UnitType: 17,
+                },
+              },
+            },
+            Night: {
+              Icon: 36,
+              IconPhrase: "Intermittent clouds",
+              HasPrecipitation: false,
+              ShortPhrase: "Partly cloudy and mild",
+              LongPhrase: "Partly cloudy and mild",
+              PrecipitationProbability: 0,
+              ThunderstormProbability: 0,
+              RainProbability: 0,
+              SnowProbability: 0,
+              IceProbability: 0,
+              Wind: {
+                Speed: {
+                  Value: 9.3,
+                  Unit: "km/h",
+                  UnitType: 7,
+                },
+                Direction: {
+                  Degrees: 51,
+                  Localized: "NE",
+                  English: "NE",
+                },
+              },
+              WindGust: {
+                Speed: {
+                  Value: 20.4,
+                  Unit: "km/h",
+                  UnitType: 7,
+                },
+                Direction: {
+                  Degrees: 12,
+                  Localized: "NNE",
+                  English: "NNE",
+                },
+              },
+              TotalLiquid: {
+                Value: 0.0,
+                Unit: "mm",
+                UnitType: 3,
+              },
+              Rain: {
+                Value: 0.0,
+                Unit: "mm",
+                UnitType: 3,
+              },
+              Snow: {
+                Value: 0.0,
+                Unit: "cm",
+                UnitType: 4,
+              },
+              Ice: {
+                Value: 0.0,
+                Unit: "mm",
+                UnitType: 3,
+              },
+              HoursOfPrecipitation: 0.0,
+              HoursOfRain: 0.0,
+              HoursOfSnow: 0.0,
+              HoursOfIce: 0.0,
+              CloudCover: 54,
+              Evapotranspiration: {
+                Value: 0.3,
+                Unit: "mm",
+                UnitType: 3,
+              },
+              SolarIrradiance: {
+                Value: 84.3,
+                Unit: "W/m²",
+                UnitType: 33,
+              },
+              RelativeHumidity: {
+                Minimum: 72,
+                Maximum: 89,
+                Average: 82,
+              },
+              WetBulbTemperature: {
+                Minimum: {
+                  Value: 16.5,
+                  Unit: "C",
+                  UnitType: 17,
+                },
+                Maximum: {
+                  Value: 18.2,
+                  Unit: "C",
+                  UnitType: 17,
+                },
+                Average: {
+                  Value: 17.4,
+                  Unit: "C",
+                  UnitType: 17,
+                },
+              },
+              WetBulbGlobeTemperature: {
+                Minimum: {
+                  Value: 17.4,
+                  Unit: "C",
+                  UnitType: 17,
+                },
+                Maximum: {
+                  Value: 20.5,
+                  Unit: "C",
+                  UnitType: 17,
+                },
+                Average: {
+                  Value: 19.2,
+                  Unit: "C",
+                  UnitType: 17,
+                },
+              },
+            },
+            Sources: ["AccuWeather"],
+            MobileLink:
+              "http://www.accuweather.com/en/il/tel-aviv/215854/daily-weather-forecast/215854?day=4&unit=c&lang=en-us",
+            Link: "http://www.accuweather.com/en/il/tel-aviv/215854/daily-weather-forecast/215854?day=4&unit=c&lang=en-us",
+          },
+          {
+            Date: "2024-04-16T07:00:00+03:00",
+            EpochDate: 1713240000,
+            Sun: {
+              Rise: "2024-04-16T06:10:00+03:00",
+              EpochRise: 1713237000,
+              Set: "2024-04-16T19:11:00+03:00",
+              EpochSet: 1713283860,
+            },
+            Moon: {
+              Rise: "2024-04-16T12:24:00+03:00",
+              EpochRise: 1713259440,
+              Set: "2024-04-17T02:56:00+03:00",
+              EpochSet: 1713311760,
+              Phase: "WaxingGibbous",
+              Age: 8,
+            },
+            Temperature: {
+              Minimum: {
+                Value: 18.4,
+                Unit: "C",
+                UnitType: 17,
+              },
+              Maximum: {
+                Value: 27.0,
+                Unit: "C",
+                UnitType: 17,
+              },
+            },
+            RealFeelTemperature: {
+              Minimum: {
+                Value: 17.3,
+                Unit: "C",
+                UnitType: 17,
+                Phrase: "Pleasant",
+              },
+              Maximum: {
+                Value: 29.5,
+                Unit: "C",
+                UnitType: 17,
+                Phrase: "Very Warm",
+              },
+            },
+            RealFeelTemperatureShade: {
+              Minimum: {
+                Value: 17.3,
+                Unit: "C",
+                UnitType: 17,
+                Phrase: "Pleasant",
+              },
+              Maximum: {
+                Value: 25.2,
+                Unit: "C",
+                UnitType: 17,
+                Phrase: "Pleasant",
+              },
+            },
+            HoursOfSun: 6.4,
+            DegreeDaySummary: {
+              Heating: {
+                Value: 0.0,
+                Unit: "C",
+                UnitType: 17,
+              },
+              Cooling: {
+                Value: 5.0,
+                Unit: "C",
+                UnitType: 17,
+              },
+            },
+            AirAndPollen: [
+              {
+                Name: "AirQuality",
+                Value: 0,
+                Category: "Good",
+                CategoryValue: 1,
+                Type: "Ozone",
+              },
+              {
+                Name: "Grass",
+                Value: 0,
+                Category: "Low",
+                CategoryValue: 1,
+              },
+              {
+                Name: "Mold",
+                Value: 0,
+                Category: "Low",
+                CategoryValue: 1,
+              },
+              {
+                Name: "Ragweed",
+                Value: 0,
+                Category: "Low",
+                CategoryValue: 1,
+              },
+              {
+                Name: "Tree",
+                Value: 0,
+                Category: "Low",
+                CategoryValue: 1,
+              },
+              {
+                Name: "UVIndex",
+                Value: 10,
+                Category: "Very High",
+                CategoryValue: 4,
+              },
+            ],
+            Day: {
+              Icon: 6,
+              IconPhrase: "Mostly cloudy",
+              HasPrecipitation: false,
+              ShortPhrase: "Mostly cloudy",
+              LongPhrase: "Mostly cloudy",
+              PrecipitationProbability: 0,
+              ThunderstormProbability: 0,
+              RainProbability: 0,
+              SnowProbability: 0,
+              IceProbability: 0,
+              Wind: {
+                Speed: {
+                  Value: 13.0,
+                  Unit: "km/h",
+                  UnitType: 7,
+                },
+                Direction: {
+                  Degrees: 277,
+                  Localized: "W",
+                  English: "W",
+                },
+              },
+              WindGust: {
+                Speed: {
+                  Value: 31.5,
+                  Unit: "km/h",
+                  UnitType: 7,
+                },
+                Direction: {
+                  Degrees: 357,
+                  Localized: "N",
+                  English: "N",
+                },
+              },
+              TotalLiquid: {
+                Value: 0.0,
+                Unit: "mm",
+                UnitType: 3,
+              },
+              Rain: {
+                Value: 0.0,
+                Unit: "mm",
+                UnitType: 3,
+              },
+              Snow: {
+                Value: 0.0,
+                Unit: "cm",
+                UnitType: 4,
+              },
+              Ice: {
+                Value: 0.0,
+                Unit: "mm",
+                UnitType: 3,
+              },
+              HoursOfPrecipitation: 0.0,
+              HoursOfRain: 0.0,
+              HoursOfSnow: 0.0,
+              HoursOfIce: 0.0,
+              CloudCover: 60,
+              Evapotranspiration: {
+                Value: 3.8,
+                Unit: "mm",
+                UnitType: 3,
+              },
+              SolarIrradiance: {
+                Value: 5319.5,
+                Unit: "W/m²",
+                UnitType: 33,
+              },
+              RelativeHumidity: {
+                Minimum: 47,
+                Maximum: 82,
+                Average: 58,
+              },
+              WetBulbTemperature: {
+                Minimum: {
+                  Value: 17.2,
+                  Unit: "C",
+                  UnitType: 17,
+                },
+                Maximum: {
+                  Value: 19.2,
+                  Unit: "C",
+                  UnitType: 17,
+                },
+                Average: {
+                  Value: 18.6,
+                  Unit: "C",
+                  UnitType: 17,
+                },
+              },
+              WetBulbGlobeTemperature: {
+                Minimum: {
+                  Value: 19.5,
+                  Unit: "C",
+                  UnitType: 17,
+                },
+                Maximum: {
+                  Value: 23.3,
+                  Unit: "C",
+                  UnitType: 17,
+                },
+                Average: {
+                  Value: 21.8,
+                  Unit: "C",
+                  UnitType: 17,
+                },
+              },
+            },
+            Night: {
+              Icon: 35,
+              IconPhrase: "Partly cloudy",
+              HasPrecipitation: false,
+              ShortPhrase: "Partly cloudy and mild",
+              LongPhrase: "Partly cloudy and mild",
+              PrecipitationProbability: 0,
+              ThunderstormProbability: 0,
+              RainProbability: 0,
+              SnowProbability: 0,
+              IceProbability: 0,
+              Wind: {
+                Speed: {
+                  Value: 9.3,
+                  Unit: "km/h",
+                  UnitType: 7,
+                },
+                Direction: {
+                  Degrees: 62,
+                  Localized: "ENE",
+                  English: "ENE",
+                },
+              },
+              WindGust: {
+                Speed: {
+                  Value: 20.4,
+                  Unit: "km/h",
+                  UnitType: 7,
+                },
+                Direction: {
+                  Degrees: 10,
+                  Localized: "N",
+                  English: "N",
+                },
+              },
+              TotalLiquid: {
+                Value: 0.0,
+                Unit: "mm",
+                UnitType: 3,
+              },
+              Rain: {
+                Value: 0.0,
+                Unit: "mm",
+                UnitType: 3,
+              },
+              Snow: {
+                Value: 0.0,
+                Unit: "cm",
+                UnitType: 4,
+              },
+              Ice: {
+                Value: 0.0,
+                Unit: "mm",
+                UnitType: 3,
+              },
+              HoursOfPrecipitation: 0.0,
+              HoursOfRain: 0.0,
+              HoursOfSnow: 0.0,
+              HoursOfIce: 0.0,
+              CloudCover: 73,
+              Evapotranspiration: {
+                Value: 0.5,
+                Unit: "mm",
+                UnitType: 3,
+              },
+              SolarIrradiance: {
+                Value: 101.9,
+                Unit: "W/m²",
+                UnitType: 33,
+              },
+              RelativeHumidity: {
+                Minimum: 58,
+                Maximum: 68,
+                Average: 62,
+              },
+              WetBulbTemperature: {
+                Minimum: {
+                  Value: 15.1,
+                  Unit: "C",
+                  UnitType: 17,
+                },
+                Maximum: {
+                  Value: 18.5,
+                  Unit: "C",
+                  UnitType: 17,
+                },
+                Average: {
+                  Value: 16.6,
+                  Unit: "C",
+                  UnitType: 17,
+                },
+              },
+              WetBulbGlobeTemperature: {
+                Minimum: {
+                  Value: 17.9,
+                  Unit: "C",
+                  UnitType: 17,
+                },
+                Maximum: {
+                  Value: 21.4,
+                  Unit: "C",
+                  UnitType: 17,
+                },
+                Average: {
+                  Value: 19.2,
+                  Unit: "C",
+                  UnitType: 17,
+                },
+              },
+            },
+            Sources: ["AccuWeather"],
+            MobileLink:
+              "http://www.accuweather.com/en/il/tel-aviv/215854/daily-weather-forecast/215854?day=5&unit=c&lang=en-us",
+            Link: "http://www.accuweather.com/en/il/tel-aviv/215854/daily-weather-forecast/215854?day=5&unit=c&lang=en-us",
+          },
+        ],
+      };
+    else
+      return {
+        Headline: {
+          EffectiveDate: "2024-04-13T20:00:00+03:00",
+          EffectiveEpochDate: 1713027600,
+          Severity: 7,
+          Text: "Mild Saturday night",
+          Category: "heat",
+          EndDate: "2024-04-14T08:00:00+03:00",
+          EndEpochDate: 1713070800,
           MobileLink:
-            "http://www.accuweather.com/en/il/tel-aviv/215854/daily-weather-forecast/215854?day=2&lang=en-us",
-          Link: "http://www.accuweather.com/en/il/tel-aviv/215854/daily-weather-forecast/215854?day=2&lang=en-us",
+            "http://www.accuweather.com/en/il/tel-aviv/215854/daily-weather-forecast/215854?lang=en-us",
+          Link: "http://www.accuweather.com/en/il/tel-aviv/215854/daily-weather-forecast/215854?lang=en-us",
         },
-        {
-          Date: "2024-04-14T07:00:00+03:00",
-          EpochDate: 1713067200,
-          Sun: {
-            Rise: "2024-04-14T06:13:00+03:00",
-            EpochRise: 1713064380,
-            Set: "2024-04-14T19:10:00+03:00",
-            EpochSet: 1713111000,
-          },
-          Moon: {
-            Rise: "2024-04-14T10:24:00+03:00",
-            EpochRise: 1713079440,
-            Set: "2024-04-15T01:33:00+03:00",
-            EpochSet: 1713133980,
-            Phase: "WaxingCrescent",
-            Age: 6,
-          },
-          Temperature: {
-            Minimum: {
-              Value: 65.0,
-              Unit: "F",
-              UnitType: 18,
+        DailyForecasts: [
+          {
+            Date: "2024-04-12T07:00:00+03:00",
+            EpochDate: 1712894400,
+            Sun: {
+              Rise: "2024-04-12T06:15:00+03:00",
+              EpochRise: 1712891700,
+              Set: "2024-04-12T19:09:00+03:00",
+              EpochSet: 1712938140,
             },
-            Maximum: {
-              Value: 74.0,
-              Unit: "F",
-              UnitType: 18,
+            Moon: {
+              Rise: "2024-04-12T08:35:00+03:00",
+              EpochRise: 1712900100,
+              Set: "2024-04-12T23:38:00+03:00",
+              EpochSet: 1712954280,
+              Phase: "WaxingCrescent",
+              Age: 4,
             },
-          },
-          RealFeelTemperature: {
-            Minimum: {
-              Value: 64.0,
-              Unit: "F",
-              UnitType: 18,
-              Phrase: "Pleasant",
-            },
-            Maximum: {
-              Value: 79.0,
-              Unit: "F",
-              UnitType: 18,
-              Phrase: "Pleasant",
-            },
-          },
-          RealFeelTemperatureShade: {
-            Minimum: {
-              Value: 64.0,
-              Unit: "F",
-              UnitType: 18,
-              Phrase: "Pleasant",
-            },
-            Maximum: {
-              Value: 71.0,
-              Unit: "F",
-              UnitType: 18,
-              Phrase: "Pleasant",
-            },
-          },
-          HoursOfSun: 8.8,
-          DegreeDaySummary: {
-            Heating: {
-              Value: 0.0,
-              Unit: "F",
-              UnitType: 18,
-            },
-            Cooling: {
-              Value: 4.0,
-              Unit: "F",
-              UnitType: 18,
-            },
-          },
-          AirAndPollen: [
-            {
-              Name: "AirQuality",
-              Value: 0,
-              Category: "Good",
-              CategoryValue: 1,
-              Type: "Ozone",
-            },
-            {
-              Name: "Grass",
-              Value: 0,
-              Category: "Low",
-              CategoryValue: 1,
-            },
-            {
-              Name: "Mold",
-              Value: 0,
-              Category: "Low",
-              CategoryValue: 1,
-            },
-            {
-              Name: "Ragweed",
-              Value: 0,
-              Category: "Low",
-              CategoryValue: 1,
-            },
-            {
-              Name: "Tree",
-              Value: 0,
-              Category: "Low",
-              CategoryValue: 1,
-            },
-            {
-              Name: "UVIndex",
-              Value: 9,
-              Category: "Very High",
-              CategoryValue: 4,
-            },
-          ],
-          Day: {
-            Icon: 3,
-            IconPhrase: "Partly sunny",
-            HasPrecipitation: false,
-            ShortPhrase: "Partly sunny",
-            LongPhrase: "Partly sunny",
-            PrecipitationProbability: 2,
-            ThunderstormProbability: 0,
-            RainProbability: 2,
-            SnowProbability: 0,
-            IceProbability: 0,
-            Wind: {
-              Speed: {
-                Value: 9.2,
-                Unit: "mi/h",
-                UnitType: 9,
-              },
-              Direction: {
-                Degrees: 259,
-                Localized: "W",
-                English: "W",
-              },
-            },
-            WindGust: {
-              Speed: {
-                Value: 19.6,
-                Unit: "mi/h",
-                UnitType: 9,
-              },
-              Direction: {
-                Degrees: 276,
-                Localized: "W",
-                English: "W",
-              },
-            },
-            TotalLiquid: {
-              Value: 0.0,
-              Unit: "in",
-              UnitType: 1,
-            },
-            Rain: {
-              Value: 0.0,
-              Unit: "in",
-              UnitType: 1,
-            },
-            Snow: {
-              Value: 0.0,
-              Unit: "in",
-              UnitType: 1,
-            },
-            Ice: {
-              Value: 0.0,
-              Unit: "in",
-              UnitType: 1,
-            },
-            HoursOfPrecipitation: 0.0,
-            HoursOfRain: 0.0,
-            HoursOfSnow: 0.0,
-            HoursOfIce: 0.0,
-            CloudCover: 32,
-            Evapotranspiration: {
-              Value: 0.15,
-              Unit: "in",
-              UnitType: 1,
-            },
-            SolarIrradiance: {
-              Value: 7687.6,
-              Unit: "W/m²",
-              UnitType: 33,
-            },
-            RelativeHumidity: {
-              Minimum: 61,
-              Maximum: 83,
-              Average: 68,
-            },
-            WetBulbTemperature: {
+            Temperature: {
               Minimum: {
-                Value: 63.0,
-                Unit: "F",
-                UnitType: 18,
-              },
-              Maximum: {
-                Value: 65.0,
-                Unit: "F",
-                UnitType: 18,
-              },
-              Average: {
-                Value: 65.0,
-                Unit: "F",
-                UnitType: 18,
-              },
-            },
-            WetBulbGlobeTemperature: {
-              Minimum: {
-                Value: 66.0,
-                Unit: "F",
-                UnitType: 18,
-              },
-              Maximum: {
-                Value: 70.0,
-                Unit: "F",
-                UnitType: 18,
-              },
-              Average: {
-                Value: 69.0,
-                Unit: "F",
-                UnitType: 18,
-              },
-            },
-          },
-          Night: {
-            Icon: 35,
-            IconPhrase: "Partly cloudy",
-            HasPrecipitation: false,
-            ShortPhrase: "Partly cloudy and mild",
-            LongPhrase: "Partly cloudy and mild",
-            PrecipitationProbability: 5,
-            ThunderstormProbability: 0,
-            RainProbability: 5,
-            SnowProbability: 0,
-            IceProbability: 0,
-            Wind: {
-              Speed: {
-                Value: 5.8,
-                Unit: "mi/h",
-                UnitType: 9,
-              },
-              Direction: {
-                Degrees: 207,
-                Localized: "SSW",
-                English: "SSW",
-              },
-            },
-            WindGust: {
-              Speed: {
-                Value: 11.5,
-                Unit: "mi/h",
-                UnitType: 9,
-              },
-              Direction: {
-                Degrees: 158,
-                Localized: "SSE",
-                English: "SSE",
-              },
-            },
-            TotalLiquid: {
-              Value: 0.0,
-              Unit: "in",
-              UnitType: 1,
-            },
-            Rain: {
-              Value: 0.0,
-              Unit: "in",
-              UnitType: 1,
-            },
-            Snow: {
-              Value: 0.0,
-              Unit: "in",
-              UnitType: 1,
-            },
-            Ice: {
-              Value: 0.0,
-              Unit: "in",
-              UnitType: 1,
-            },
-            HoursOfPrecipitation: 0.0,
-            HoursOfRain: 0.0,
-            HoursOfSnow: 0.0,
-            HoursOfIce: 0.0,
-            CloudCover: 47,
-            Evapotranspiration: {
-              Value: 0.0,
-              Unit: "in",
-              UnitType: 1,
-            },
-            SolarIrradiance: {
-              Value: 79.4,
-              Unit: "W/m²",
-              UnitType: 33,
-            },
-            RelativeHumidity: {
-              Minimum: 77,
-              Maximum: 89,
-              Average: 84,
-            },
-            WetBulbTemperature: {
-              Minimum: {
-                Value: 63.0,
-                Unit: "F",
-                UnitType: 18,
-              },
-              Maximum: {
-                Value: 65.0,
-                Unit: "F",
-                UnitType: 18,
-              },
-              Average: {
-                Value: 64.0,
-                Unit: "F",
-                UnitType: 18,
-              },
-            },
-            WetBulbGlobeTemperature: {
-              Minimum: {
-                Value: 66.0,
-                Unit: "F",
-                UnitType: 18,
-              },
-              Maximum: {
-                Value: 69.0,
-                Unit: "F",
-                UnitType: 18,
-              },
-              Average: {
-                Value: 68.0,
-                Unit: "F",
-                UnitType: 18,
-              },
-            },
-          },
-          Sources: ["AccuWeather"],
-          MobileLink:
-            "http://www.accuweather.com/en/il/tel-aviv/215854/daily-weather-forecast/215854?day=3&lang=en-us",
-          Link: "http://www.accuweather.com/en/il/tel-aviv/215854/daily-weather-forecast/215854?day=3&lang=en-us",
-        },
-        {
-          Date: "2024-04-15T07:00:00+03:00",
-          EpochDate: 1713153600,
-          Sun: {
-            Rise: "2024-04-15T06:12:00+03:00",
-            EpochRise: 1713150720,
-            Set: "2024-04-15T19:11:00+03:00",
-            EpochSet: 1713197460,
-          },
-          Moon: {
-            Rise: "2024-04-15T11:24:00+03:00",
-            EpochRise: 1713169440,
-            Set: "2024-04-16T02:18:00+03:00",
-            EpochSet: 1713223080,
-            Phase: "First",
-            Age: 7,
-          },
-          Temperature: {
-            Minimum: {
-              Value: 63.0,
-              Unit: "F",
-              UnitType: 18,
-            },
-            Maximum: {
-              Value: 75.0,
-              Unit: "F",
-              UnitType: 18,
-            },
-          },
-          RealFeelTemperature: {
-            Minimum: {
-              Value: 63.0,
-              Unit: "F",
-              UnitType: 18,
-              Phrase: "Pleasant",
-            },
-            Maximum: {
-              Value: 79.0,
-              Unit: "F",
-              UnitType: 18,
-              Phrase: "Pleasant",
-            },
-          },
-          RealFeelTemperatureShade: {
-            Minimum: {
-              Value: 63.0,
-              Unit: "F",
-              UnitType: 18,
-              Phrase: "Pleasant",
-            },
-            Maximum: {
-              Value: 71.0,
-              Unit: "F",
-              UnitType: 18,
-              Phrase: "Pleasant",
-            },
-          },
-          HoursOfSun: 9.5,
-          DegreeDaySummary: {
-            Heating: {
-              Value: 0.0,
-              Unit: "F",
-              UnitType: 18,
-            },
-            Cooling: {
-              Value: 4.0,
-              Unit: "F",
-              UnitType: 18,
-            },
-          },
-          AirAndPollen: [
-            {
-              Name: "AirQuality",
-              Value: 0,
-              Category: "Good",
-              CategoryValue: 1,
-              Type: "Ozone",
-            },
-            {
-              Name: "Grass",
-              Value: 0,
-              Category: "Low",
-              CategoryValue: 1,
-            },
-            {
-              Name: "Mold",
-              Value: 0,
-              Category: "Low",
-              CategoryValue: 1,
-            },
-            {
-              Name: "Ragweed",
-              Value: 0,
-              Category: "Low",
-              CategoryValue: 1,
-            },
-            {
-              Name: "Tree",
-              Value: 0,
-              Category: "Low",
-              CategoryValue: 1,
-            },
-            {
-              Name: "UVIndex",
-              Value: 9,
-              Category: "Very High",
-              CategoryValue: 4,
-            },
-          ],
-          Day: {
-            Icon: 2,
-            IconPhrase: "Mostly sunny",
-            HasPrecipitation: false,
-            ShortPhrase: "Sunshine and a few clouds",
-            LongPhrase: "Sunshine and a few clouds",
-            PrecipitationProbability: 25,
-            ThunderstormProbability: 0,
-            RainProbability: 25,
-            SnowProbability: 0,
-            IceProbability: 0,
-            Wind: {
-              Speed: {
-                Value: 9.2,
-                Unit: "mi/h",
-                UnitType: 9,
-              },
-              Direction: {
-                Degrees: 285,
-                Localized: "WNW",
-                English: "WNW",
-              },
-            },
-            WindGust: {
-              Speed: {
-                Value: 19.6,
-                Unit: "mi/h",
-                UnitType: 9,
-              },
-              Direction: {
-                Degrees: 319,
-                Localized: "NW",
-                English: "NW",
-              },
-            },
-            TotalLiquid: {
-              Value: 0.0,
-              Unit: "in",
-              UnitType: 1,
-            },
-            Rain: {
-              Value: 0.0,
-              Unit: "in",
-              UnitType: 1,
-            },
-            Snow: {
-              Value: 0.0,
-              Unit: "in",
-              UnitType: 1,
-            },
-            Ice: {
-              Value: 0.0,
-              Unit: "in",
-              UnitType: 1,
-            },
-            HoursOfPrecipitation: 0.0,
-            HoursOfRain: 0.0,
-            HoursOfSnow: 0.0,
-            HoursOfIce: 0.0,
-            CloudCover: 24,
-            Evapotranspiration: {
-              Value: 0.15,
-              Unit: "in",
-              UnitType: 1,
-            },
-            SolarIrradiance: {
-              Value: 7741.5,
-              Unit: "W/m²",
-              UnitType: 33,
-            },
-            RelativeHumidity: {
-              Minimum: 59,
-              Maximum: 86,
-              Average: 68,
-            },
-            WetBulbTemperature: {
-              Minimum: {
-                Value: 64.0,
-                Unit: "F",
-                UnitType: 18,
-              },
-              Maximum: {
-                Value: 65.0,
-                Unit: "F",
-                UnitType: 18,
-              },
-              Average: {
-                Value: 65.0,
-                Unit: "F",
-                UnitType: 18,
-              },
-            },
-            WetBulbGlobeTemperature: {
-              Minimum: {
-                Value: 67.0,
-                Unit: "F",
-                UnitType: 18,
-              },
-              Maximum: {
-                Value: 71.0,
-                Unit: "F",
-                UnitType: 18,
-              },
-              Average: {
-                Value: 69.0,
-                Unit: "F",
-                UnitType: 18,
-              },
-            },
-          },
-          Night: {
-            Icon: 36,
-            IconPhrase: "Intermittent clouds",
-            HasPrecipitation: false,
-            ShortPhrase: "Partly cloudy and mild",
-            LongPhrase: "Partly cloudy and mild",
-            PrecipitationProbability: 0,
-            ThunderstormProbability: 0,
-            RainProbability: 0,
-            SnowProbability: 0,
-            IceProbability: 0,
-            Wind: {
-              Speed: {
-                Value: 5.8,
-                Unit: "mi/h",
-                UnitType: 9,
-              },
-              Direction: {
-                Degrees: 51,
-                Localized: "NE",
-                English: "NE",
-              },
-            },
-            WindGust: {
-              Speed: {
-                Value: 12.7,
-                Unit: "mi/h",
-                UnitType: 9,
-              },
-              Direction: {
-                Degrees: 12,
-                Localized: "NNE",
-                English: "NNE",
-              },
-            },
-            TotalLiquid: {
-              Value: 0.0,
-              Unit: "in",
-              UnitType: 1,
-            },
-            Rain: {
-              Value: 0.0,
-              Unit: "in",
-              UnitType: 1,
-            },
-            Snow: {
-              Value: 0.0,
-              Unit: "in",
-              UnitType: 1,
-            },
-            Ice: {
-              Value: 0.0,
-              Unit: "in",
-              UnitType: 1,
-            },
-            HoursOfPrecipitation: 0.0,
-            HoursOfRain: 0.0,
-            HoursOfSnow: 0.0,
-            HoursOfIce: 0.0,
-            CloudCover: 54,
-            Evapotranspiration: {
-              Value: 0.01,
-              Unit: "in",
-              UnitType: 1,
-            },
-            SolarIrradiance: {
-              Value: 84.3,
-              Unit: "W/m²",
-              UnitType: 33,
-            },
-            RelativeHumidity: {
-              Minimum: 72,
-              Maximum: 89,
-              Average: 82,
-            },
-            WetBulbTemperature: {
-              Minimum: {
-                Value: 62.0,
-                Unit: "F",
-                UnitType: 18,
-              },
-              Maximum: {
-                Value: 65.0,
-                Unit: "F",
-                UnitType: 18,
-              },
-              Average: {
-                Value: 63.0,
-                Unit: "F",
-                UnitType: 18,
-              },
-            },
-            WetBulbGlobeTemperature: {
-              Minimum: {
-                Value: 63.0,
-                Unit: "F",
-                UnitType: 18,
-              },
-              Maximum: {
-                Value: 69.0,
-                Unit: "F",
-                UnitType: 18,
-              },
-              Average: {
-                Value: 67.0,
-                Unit: "F",
-                UnitType: 18,
-              },
-            },
-          },
-          Sources: ["AccuWeather"],
-          MobileLink:
-            "http://www.accuweather.com/en/il/tel-aviv/215854/daily-weather-forecast/215854?day=4&lang=en-us",
-          Link: "http://www.accuweather.com/en/il/tel-aviv/215854/daily-weather-forecast/215854?day=4&lang=en-us",
-        },
-        {
-          Date: "2024-04-16T07:00:00+03:00",
-          EpochDate: 1713240000,
-          Sun: {
-            Rise: "2024-04-16T06:10:00+03:00",
-            EpochRise: 1713237000,
-            Set: "2024-04-16T19:11:00+03:00",
-            EpochSet: 1713283860,
-          },
-          Moon: {
-            Rise: "2024-04-16T12:24:00+03:00",
-            EpochRise: 1713259440,
-            Set: "2024-04-17T02:56:00+03:00",
-            EpochSet: 1713311760,
-            Phase: "WaxingGibbous",
-            Age: 8,
-          },
-          Temperature: {
-            Minimum: {
-              Value: 65.0,
-              Unit: "F",
-              UnitType: 18,
-            },
-            Maximum: {
-              Value: 81.0,
-              Unit: "F",
-              UnitType: 18,
-            },
-          },
-          RealFeelTemperature: {
-            Minimum: {
-              Value: 63.0,
-              Unit: "F",
-              UnitType: 18,
-              Phrase: "Pleasant",
-            },
-            Maximum: {
-              Value: 85.0,
-              Unit: "F",
-              UnitType: 18,
-              Phrase: "Very Warm",
-            },
-          },
-          RealFeelTemperatureShade: {
-            Minimum: {
-              Value: 63.0,
-              Unit: "F",
-              UnitType: 18,
-              Phrase: "Pleasant",
-            },
-            Maximum: {
-              Value: 77.0,
-              Unit: "F",
-              UnitType: 18,
-              Phrase: "Pleasant",
-            },
-          },
-          HoursOfSun: 6.4,
-          DegreeDaySummary: {
-            Heating: {
-              Value: 0.0,
-              Unit: "F",
-              UnitType: 18,
-            },
-            Cooling: {
-              Value: 8.0,
-              Unit: "F",
-              UnitType: 18,
-            },
-          },
-          AirAndPollen: [
-            {
-              Name: "AirQuality",
-              Value: 0,
-              Category: "Good",
-              CategoryValue: 1,
-              Type: "Ozone",
-            },
-            {
-              Name: "Grass",
-              Value: 0,
-              Category: "Low",
-              CategoryValue: 1,
-            },
-            {
-              Name: "Mold",
-              Value: 0,
-              Category: "Low",
-              CategoryValue: 1,
-            },
-            {
-              Name: "Ragweed",
-              Value: 0,
-              Category: "Low",
-              CategoryValue: 1,
-            },
-            {
-              Name: "Tree",
-              Value: 0,
-              Category: "Low",
-              CategoryValue: 1,
-            },
-            {
-              Name: "UVIndex",
-              Value: 10,
-              Category: "Very High",
-              CategoryValue: 4,
-            },
-          ],
-          Day: {
-            Icon: 6,
-            IconPhrase: "Mostly cloudy",
-            HasPrecipitation: false,
-            ShortPhrase: "Mostly cloudy",
-            LongPhrase: "Mostly cloudy",
-            PrecipitationProbability: 0,
-            ThunderstormProbability: 0,
-            RainProbability: 0,
-            SnowProbability: 0,
-            IceProbability: 0,
-            Wind: {
-              Speed: {
-                Value: 8.1,
-                Unit: "mi/h",
-                UnitType: 9,
-              },
-              Direction: {
-                Degrees: 277,
-                Localized: "W",
-                English: "W",
-              },
-            },
-            WindGust: {
-              Speed: {
-                Value: 19.6,
-                Unit: "mi/h",
-                UnitType: 9,
-              },
-              Direction: {
-                Degrees: 357,
-                Localized: "N",
-                English: "N",
-              },
-            },
-            TotalLiquid: {
-              Value: 0.0,
-              Unit: "in",
-              UnitType: 1,
-            },
-            Rain: {
-              Value: 0.0,
-              Unit: "in",
-              UnitType: 1,
-            },
-            Snow: {
-              Value: 0.0,
-              Unit: "in",
-              UnitType: 1,
-            },
-            Ice: {
-              Value: 0.0,
-              Unit: "in",
-              UnitType: 1,
-            },
-            HoursOfPrecipitation: 0.0,
-            HoursOfRain: 0.0,
-            HoursOfSnow: 0.0,
-            HoursOfIce: 0.0,
-            CloudCover: 60,
-            Evapotranspiration: {
-              Value: 0.15,
-              Unit: "in",
-              UnitType: 1,
-            },
-            SolarIrradiance: {
-              Value: 5319.5,
-              Unit: "W/m²",
-              UnitType: 33,
-            },
-            RelativeHumidity: {
-              Minimum: 47,
-              Maximum: 82,
-              Average: 58,
-            },
-            WetBulbTemperature: {
-              Minimum: {
-                Value: 63.0,
-                Unit: "F",
-                UnitType: 18,
-              },
-              Maximum: {
-                Value: 67.0,
-                Unit: "F",
-                UnitType: 18,
-              },
-              Average: {
-                Value: 66.0,
-                Unit: "F",
-                UnitType: 18,
-              },
-            },
-            WetBulbGlobeTemperature: {
-              Minimum: {
-                Value: 67.0,
+                Value: 60.0,
                 Unit: "F",
                 UnitType: 18,
               },
@@ -4302,297 +4475,1987 @@ export async function get5DayForecast(cityKeyStr, details = false) {
                 Unit: "F",
                 UnitType: 18,
               },
-              Average: {
-                Value: 71.0,
+            },
+            RealFeelTemperature: {
+              Minimum: {
+                Value: 61.0,
+                Unit: "F",
+                UnitType: 18,
+                Phrase: "Cool",
+              },
+              Maximum: {
+                Value: 79.0,
+                Unit: "F",
+                UnitType: 18,
+                Phrase: "Pleasant",
+              },
+            },
+            RealFeelTemperatureShade: {
+              Minimum: {
+                Value: 61.0,
+                Unit: "F",
+                UnitType: 18,
+                Phrase: "Cool",
+              },
+              Maximum: {
+                Value: 70.0,
+                Unit: "F",
+                UnitType: 18,
+                Phrase: "Pleasant",
+              },
+            },
+            HoursOfSun: 11.0,
+            DegreeDaySummary: {
+              Heating: {
+                Value: 0.0,
+                Unit: "F",
+                UnitType: 18,
+              },
+              Cooling: {
+                Value: 2.0,
                 Unit: "F",
                 UnitType: 18,
               },
             },
+            AirAndPollen: [
+              {
+                Name: "AirQuality",
+                Value: 0,
+                Category: "Good",
+                CategoryValue: 1,
+                Type: "Ozone",
+              },
+              {
+                Name: "Grass",
+                Value: 0,
+                Category: "Low",
+                CategoryValue: 1,
+              },
+              {
+                Name: "Mold",
+                Value: 0,
+                Category: "Low",
+                CategoryValue: 1,
+              },
+              {
+                Name: "Ragweed",
+                Value: 0,
+                Category: "Low",
+                CategoryValue: 1,
+              },
+              {
+                Name: "Tree",
+                Value: 0,
+                Category: "Low",
+                CategoryValue: 1,
+              },
+              {
+                Name: "UVIndex",
+                Value: 9,
+                Category: "Very High",
+                CategoryValue: 4,
+              },
+            ],
+            Day: {
+              Icon: 2,
+              IconPhrase: "Mostly sunny",
+              HasPrecipitation: false,
+              ShortPhrase: "Mostly sunny",
+              LongPhrase: "Mostly sunny",
+              PrecipitationProbability: 1,
+              ThunderstormProbability: 0,
+              RainProbability: 1,
+              SnowProbability: 0,
+              IceProbability: 0,
+              Wind: {
+                Speed: {
+                  Value: 8.1,
+                  Unit: "mi/h",
+                  UnitType: 9,
+                },
+                Direction: {
+                  Degrees: 318,
+                  Localized: "NW",
+                  English: "NW",
+                },
+              },
+              WindGust: {
+                Speed: {
+                  Value: 16.1,
+                  Unit: "mi/h",
+                  UnitType: 9,
+                },
+                Direction: {
+                  Degrees: 328,
+                  Localized: "NNW",
+                  English: "NNW",
+                },
+              },
+              TotalLiquid: {
+                Value: 0.0,
+                Unit: "in",
+                UnitType: 1,
+              },
+              Rain: {
+                Value: 0.0,
+                Unit: "in",
+                UnitType: 1,
+              },
+              Snow: {
+                Value: 0.0,
+                Unit: "in",
+                UnitType: 1,
+              },
+              Ice: {
+                Value: 0.0,
+                Unit: "in",
+                UnitType: 1,
+              },
+              HoursOfPrecipitation: 0.0,
+              HoursOfRain: 0.0,
+              HoursOfSnow: 0.0,
+              HoursOfIce: 0.0,
+              CloudCover: 10,
+              Evapotranspiration: {
+                Value: 0.17,
+                Unit: "in",
+                UnitType: 1,
+              },
+              SolarIrradiance: {
+                Value: 7945.7,
+                Unit: "W/m²",
+                UnitType: 33,
+              },
+              RelativeHumidity: {
+                Minimum: 55,
+                Maximum: 82,
+                Average: 64,
+              },
+              WetBulbTemperature: {
+                Minimum: {
+                  Value: 61.0,
+                  Unit: "F",
+                  UnitType: 18,
+                },
+                Maximum: {
+                  Value: 63.0,
+                  Unit: "F",
+                  UnitType: 18,
+                },
+                Average: {
+                  Value: 63.0,
+                  Unit: "F",
+                  UnitType: 18,
+                },
+              },
+              WetBulbGlobeTemperature: {
+                Minimum: {
+                  Value: 65.0,
+                  Unit: "F",
+                  UnitType: 18,
+                },
+                Maximum: {
+                  Value: 69.0,
+                  Unit: "F",
+                  UnitType: 18,
+                },
+                Average: {
+                  Value: 68.0,
+                  Unit: "F",
+                  UnitType: 18,
+                },
+              },
+            },
+            Night: {
+              Icon: 36,
+              IconPhrase: "Intermittent clouds",
+              HasPrecipitation: false,
+              ShortPhrase: "Partly cloudy",
+              LongPhrase:
+                "Mainly clear early, then areas of low clouds forming",
+              PrecipitationProbability: 1,
+              ThunderstormProbability: 0,
+              RainProbability: 1,
+              SnowProbability: 0,
+              IceProbability: 0,
+              Wind: {
+                Speed: {
+                  Value: 4.6,
+                  Unit: "mi/h",
+                  UnitType: 9,
+                },
+                Direction: {
+                  Degrees: 30,
+                  Localized: "NNE",
+                  English: "NNE",
+                },
+              },
+              WindGust: {
+                Speed: {
+                  Value: 11.5,
+                  Unit: "mi/h",
+                  UnitType: 9,
+                },
+                Direction: {
+                  Degrees: 359,
+                  Localized: "N",
+                  English: "N",
+                },
+              },
+              TotalLiquid: {
+                Value: 0.0,
+                Unit: "in",
+                UnitType: 1,
+              },
+              Rain: {
+                Value: 0.0,
+                Unit: "in",
+                UnitType: 1,
+              },
+              Snow: {
+                Value: 0.0,
+                Unit: "in",
+                UnitType: 1,
+              },
+              Ice: {
+                Value: 0.0,
+                Unit: "in",
+                UnitType: 1,
+              },
+              HoursOfPrecipitation: 0.0,
+              HoursOfRain: 0.0,
+              HoursOfSnow: 0.0,
+              HoursOfIce: 0.0,
+              CloudCover: 54,
+              Evapotranspiration: {
+                Value: 0.01,
+                Unit: "in",
+                UnitType: 1,
+              },
+              SolarIrradiance: {
+                Value: 75.0,
+                Unit: "W/m²",
+                UnitType: 33,
+              },
+              RelativeHumidity: {
+                Minimum: 69,
+                Maximum: 93,
+                Average: 80,
+              },
+              WetBulbTemperature: {
+                Minimum: {
+                  Value: 59.0,
+                  Unit: "F",
+                  UnitType: 18,
+                },
+                Maximum: {
+                  Value: 63.0,
+                  Unit: "F",
+                  UnitType: 18,
+                },
+                Average: {
+                  Value: 61.0,
+                  Unit: "F",
+                  UnitType: 18,
+                },
+              },
+              WetBulbGlobeTemperature: {
+                Minimum: {
+                  Value: 61.0,
+                  Unit: "F",
+                  UnitType: 18,
+                },
+                Maximum: {
+                  Value: 67.0,
+                  Unit: "F",
+                  UnitType: 18,
+                },
+                Average: {
+                  Value: 64.0,
+                  Unit: "F",
+                  UnitType: 18,
+                },
+              },
+            },
+            Sources: ["AccuWeather"],
+            MobileLink:
+              "http://www.accuweather.com/en/il/tel-aviv/215854/daily-weather-forecast/215854?day=1&lang=en-us",
+            Link: "http://www.accuweather.com/en/il/tel-aviv/215854/daily-weather-forecast/215854?day=1&lang=en-us",
           },
-          Night: {
-            Icon: 35,
-            IconPhrase: "Partly cloudy",
-            HasPrecipitation: false,
-            ShortPhrase: "Partly cloudy and mild",
-            LongPhrase: "Partly cloudy and mild",
-            PrecipitationProbability: 0,
-            ThunderstormProbability: 0,
-            RainProbability: 0,
-            SnowProbability: 0,
-            IceProbability: 0,
-            Wind: {
-              Speed: {
-                Value: 5.8,
-                Unit: "mi/h",
-                UnitType: 9,
-              },
-              Direction: {
-                Degrees: 62,
-                Localized: "ENE",
-                English: "ENE",
-              },
+          {
+            Date: "2024-04-13T07:00:00+03:00",
+            EpochDate: 1712980800,
+            Sun: {
+              Rise: "2024-04-13T06:14:00+03:00",
+              EpochRise: 1712978040,
+              Set: "2024-04-13T19:09:00+03:00",
+              EpochSet: 1713024540,
             },
-            WindGust: {
-              Speed: {
-                Value: 12.7,
-                Unit: "mi/h",
-                UnitType: 9,
+            Moon: {
+              Rise: "2024-04-13T09:27:00+03:00",
+              EpochRise: 1712989620,
+              Set: "2024-04-14T00:39:00+03:00",
+              EpochSet: 1713044340,
+              Phase: "WaxingCrescent",
+              Age: 5,
+            },
+            Temperature: {
+              Minimum: {
+                Value: 63.0,
+                Unit: "F",
+                UnitType: 18,
               },
-              Direction: {
-                Degrees: 10,
-                Localized: "N",
-                English: "N",
+              Maximum: {
+                Value: 74.0,
+                Unit: "F",
+                UnitType: 18,
               },
             },
-            TotalLiquid: {
-              Value: 0.0,
-              Unit: "in",
-              UnitType: 1,
+            RealFeelTemperature: {
+              Minimum: {
+                Value: 63.0,
+                Unit: "F",
+                UnitType: 18,
+                Phrase: "Pleasant",
+              },
+              Maximum: {
+                Value: 79.0,
+                Unit: "F",
+                UnitType: 18,
+                Phrase: "Pleasant",
+              },
             },
-            Rain: {
-              Value: 0.0,
-              Unit: "in",
-              UnitType: 1,
+            RealFeelTemperatureShade: {
+              Minimum: {
+                Value: 63.0,
+                Unit: "F",
+                UnitType: 18,
+                Phrase: "Pleasant",
+              },
+              Maximum: {
+                Value: 71.0,
+                Unit: "F",
+                UnitType: 18,
+                Phrase: "Pleasant",
+              },
             },
-            Snow: {
-              Value: 0.0,
-              Unit: "in",
-              UnitType: 1,
+            HoursOfSun: 9.9,
+            DegreeDaySummary: {
+              Heating: {
+                Value: 0.0,
+                Unit: "F",
+                UnitType: 18,
+              },
+              Cooling: {
+                Value: 4.0,
+                Unit: "F",
+                UnitType: 18,
+              },
             },
-            Ice: {
-              Value: 0.0,
-              Unit: "in",
-              UnitType: 1,
+            AirAndPollen: [
+              {
+                Name: "AirQuality",
+                Value: 0,
+                Category: "Good",
+                CategoryValue: 1,
+                Type: "Ozone",
+              },
+              {
+                Name: "Grass",
+                Value: 0,
+                Category: "Low",
+                CategoryValue: 1,
+              },
+              {
+                Name: "Mold",
+                Value: 0,
+                Category: "Low",
+                CategoryValue: 1,
+              },
+              {
+                Name: "Ragweed",
+                Value: 0,
+                Category: "Low",
+                CategoryValue: 1,
+              },
+              {
+                Name: "Tree",
+                Value: 0,
+                Category: "Low",
+                CategoryValue: 1,
+              },
+              {
+                Name: "UVIndex",
+                Value: 9,
+                Category: "Very High",
+                CategoryValue: 4,
+              },
+            ],
+            Day: {
+              Icon: 2,
+              IconPhrase: "Mostly sunny",
+              HasPrecipitation: false,
+              ShortPhrase: "Mostly sunny",
+              LongPhrase: "Mostly sunny",
+              PrecipitationProbability: 2,
+              ThunderstormProbability: 0,
+              RainProbability: 2,
+              SnowProbability: 0,
+              IceProbability: 0,
+              Wind: {
+                Speed: {
+                  Value: 8.1,
+                  Unit: "mi/h",
+                  UnitType: 9,
+                },
+                Direction: {
+                  Degrees: 267,
+                  Localized: "W",
+                  English: "W",
+                },
+              },
+              WindGust: {
+                Speed: {
+                  Value: 16.1,
+                  Unit: "mi/h",
+                  UnitType: 9,
+                },
+                Direction: {
+                  Degrees: 311,
+                  Localized: "NW",
+                  English: "NW",
+                },
+              },
+              TotalLiquid: {
+                Value: 0.0,
+                Unit: "in",
+                UnitType: 1,
+              },
+              Rain: {
+                Value: 0.0,
+                Unit: "in",
+                UnitType: 1,
+              },
+              Snow: {
+                Value: 0.0,
+                Unit: "in",
+                UnitType: 1,
+              },
+              Ice: {
+                Value: 0.0,
+                Unit: "in",
+                UnitType: 1,
+              },
+              HoursOfPrecipitation: 0.0,
+              HoursOfRain: 0.0,
+              HoursOfSnow: 0.0,
+              HoursOfIce: 0.0,
+              CloudCover: 19,
+              Evapotranspiration: {
+                Value: 0.16,
+                Unit: "in",
+                UnitType: 1,
+              },
+              SolarIrradiance: {
+                Value: 7978.5,
+                Unit: "W/m²",
+                UnitType: 33,
+              },
+              RelativeHumidity: {
+                Minimum: 55,
+                Maximum: 79,
+                Average: 64,
+              },
+              WetBulbTemperature: {
+                Minimum: {
+                  Value: 61.0,
+                  Unit: "F",
+                  UnitType: 18,
+                },
+                Maximum: {
+                  Value: 64.0,
+                  Unit: "F",
+                  UnitType: 18,
+                },
+                Average: {
+                  Value: 63.0,
+                  Unit: "F",
+                  UnitType: 18,
+                },
+              },
+              WetBulbGlobeTemperature: {
+                Minimum: {
+                  Value: 66.0,
+                  Unit: "F",
+                  UnitType: 18,
+                },
+                Maximum: {
+                  Value: 70.0,
+                  Unit: "F",
+                  UnitType: 18,
+                },
+                Average: {
+                  Value: 68.0,
+                  Unit: "F",
+                  UnitType: 18,
+                },
+              },
             },
-            HoursOfPrecipitation: 0.0,
-            HoursOfRain: 0.0,
-            HoursOfSnow: 0.0,
-            HoursOfIce: 0.0,
-            CloudCover: 73,
-            Evapotranspiration: {
-              Value: 0.02,
-              Unit: "in",
-              UnitType: 1,
+            Night: {
+              Icon: 38,
+              IconPhrase: "Mostly cloudy",
+              HasPrecipitation: false,
+              ShortPhrase: "Mostly cloudy and mild",
+              LongPhrase: "Mostly cloudy and mild",
+              PrecipitationProbability: 3,
+              ThunderstormProbability: 0,
+              RainProbability: 3,
+              SnowProbability: 0,
+              IceProbability: 0,
+              Wind: {
+                Speed: {
+                  Value: 4.6,
+                  Unit: "mi/h",
+                  UnitType: 9,
+                },
+                Direction: {
+                  Degrees: 279,
+                  Localized: "W",
+                  English: "W",
+                },
+              },
+              WindGust: {
+                Speed: {
+                  Value: 11.5,
+                  Unit: "mi/h",
+                  UnitType: 9,
+                },
+                Direction: {
+                  Degrees: 316,
+                  Localized: "NW",
+                  English: "NW",
+                },
+              },
+              TotalLiquid: {
+                Value: 0.0,
+                Unit: "in",
+                UnitType: 1,
+              },
+              Rain: {
+                Value: 0.0,
+                Unit: "in",
+                UnitType: 1,
+              },
+              Snow: {
+                Value: 0.0,
+                Unit: "in",
+                UnitType: 1,
+              },
+              Ice: {
+                Value: 0.0,
+                Unit: "in",
+                UnitType: 1,
+              },
+              HoursOfPrecipitation: 0.0,
+              HoursOfRain: 0.0,
+              HoursOfSnow: 0.0,
+              HoursOfIce: 0.0,
+              CloudCover: 53,
+              Evapotranspiration: {
+                Value: 0.0,
+                Unit: "in",
+                UnitType: 1,
+              },
+              SolarIrradiance: {
+                Value: 42.0,
+                Unit: "W/m²",
+                UnitType: 33,
+              },
+              RelativeHumidity: {
+                Minimum: 72,
+                Maximum: 91,
+                Average: 81,
+              },
+              WetBulbTemperature: {
+                Minimum: {
+                  Value: 62.0,
+                  Unit: "F",
+                  UnitType: 18,
+                },
+                Maximum: {
+                  Value: 64.0,
+                  Unit: "F",
+                  UnitType: 18,
+                },
+                Average: {
+                  Value: 63.0,
+                  Unit: "F",
+                  UnitType: 18,
+                },
+              },
+              WetBulbGlobeTemperature: {
+                Minimum: {
+                  Value: 64.0,
+                  Unit: "F",
+                  UnitType: 18,
+                },
+                Maximum: {
+                  Value: 69.0,
+                  Unit: "F",
+                  UnitType: 18,
+                },
+                Average: {
+                  Value: 66.0,
+                  Unit: "F",
+                  UnitType: 18,
+                },
+              },
             },
-            SolarIrradiance: {
-              Value: 101.9,
-              Unit: "W/m²",
-              UnitType: 33,
+            Sources: ["AccuWeather"],
+            MobileLink:
+              "http://www.accuweather.com/en/il/tel-aviv/215854/daily-weather-forecast/215854?day=2&lang=en-us",
+            Link: "http://www.accuweather.com/en/il/tel-aviv/215854/daily-weather-forecast/215854?day=2&lang=en-us",
+          },
+          {
+            Date: "2024-04-14T07:00:00+03:00",
+            EpochDate: 1713067200,
+            Sun: {
+              Rise: "2024-04-14T06:13:00+03:00",
+              EpochRise: 1713064380,
+              Set: "2024-04-14T19:10:00+03:00",
+              EpochSet: 1713111000,
             },
-            RelativeHumidity: {
-              Minimum: 58,
-              Maximum: 68,
-              Average: 62,
+            Moon: {
+              Rise: "2024-04-14T10:24:00+03:00",
+              EpochRise: 1713079440,
+              Set: "2024-04-15T01:33:00+03:00",
+              EpochSet: 1713133980,
+              Phase: "WaxingCrescent",
+              Age: 6,
             },
-            WetBulbTemperature: {
+            Temperature: {
+              Minimum: {
+                Value: 65.0,
+                Unit: "F",
+                UnitType: 18,
+              },
+              Maximum: {
+                Value: 74.0,
+                Unit: "F",
+                UnitType: 18,
+              },
+            },
+            RealFeelTemperature: {
+              Minimum: {
+                Value: 64.0,
+                Unit: "F",
+                UnitType: 18,
+                Phrase: "Pleasant",
+              },
+              Maximum: {
+                Value: 79.0,
+                Unit: "F",
+                UnitType: 18,
+                Phrase: "Pleasant",
+              },
+            },
+            RealFeelTemperatureShade: {
+              Minimum: {
+                Value: 64.0,
+                Unit: "F",
+                UnitType: 18,
+                Phrase: "Pleasant",
+              },
+              Maximum: {
+                Value: 71.0,
+                Unit: "F",
+                UnitType: 18,
+                Phrase: "Pleasant",
+              },
+            },
+            HoursOfSun: 8.8,
+            DegreeDaySummary: {
+              Heating: {
+                Value: 0.0,
+                Unit: "F",
+                UnitType: 18,
+              },
+              Cooling: {
+                Value: 4.0,
+                Unit: "F",
+                UnitType: 18,
+              },
+            },
+            AirAndPollen: [
+              {
+                Name: "AirQuality",
+                Value: 0,
+                Category: "Good",
+                CategoryValue: 1,
+                Type: "Ozone",
+              },
+              {
+                Name: "Grass",
+                Value: 0,
+                Category: "Low",
+                CategoryValue: 1,
+              },
+              {
+                Name: "Mold",
+                Value: 0,
+                Category: "Low",
+                CategoryValue: 1,
+              },
+              {
+                Name: "Ragweed",
+                Value: 0,
+                Category: "Low",
+                CategoryValue: 1,
+              },
+              {
+                Name: "Tree",
+                Value: 0,
+                Category: "Low",
+                CategoryValue: 1,
+              },
+              {
+                Name: "UVIndex",
+                Value: 9,
+                Category: "Very High",
+                CategoryValue: 4,
+              },
+            ],
+            Day: {
+              Icon: 3,
+              IconPhrase: "Partly sunny",
+              HasPrecipitation: false,
+              ShortPhrase: "Partly sunny",
+              LongPhrase: "Partly sunny",
+              PrecipitationProbability: 2,
+              ThunderstormProbability: 0,
+              RainProbability: 2,
+              SnowProbability: 0,
+              IceProbability: 0,
+              Wind: {
+                Speed: {
+                  Value: 9.2,
+                  Unit: "mi/h",
+                  UnitType: 9,
+                },
+                Direction: {
+                  Degrees: 259,
+                  Localized: "W",
+                  English: "W",
+                },
+              },
+              WindGust: {
+                Speed: {
+                  Value: 19.6,
+                  Unit: "mi/h",
+                  UnitType: 9,
+                },
+                Direction: {
+                  Degrees: 276,
+                  Localized: "W",
+                  English: "W",
+                },
+              },
+              TotalLiquid: {
+                Value: 0.0,
+                Unit: "in",
+                UnitType: 1,
+              },
+              Rain: {
+                Value: 0.0,
+                Unit: "in",
+                UnitType: 1,
+              },
+              Snow: {
+                Value: 0.0,
+                Unit: "in",
+                UnitType: 1,
+              },
+              Ice: {
+                Value: 0.0,
+                Unit: "in",
+                UnitType: 1,
+              },
+              HoursOfPrecipitation: 0.0,
+              HoursOfRain: 0.0,
+              HoursOfSnow: 0.0,
+              HoursOfIce: 0.0,
+              CloudCover: 32,
+              Evapotranspiration: {
+                Value: 0.15,
+                Unit: "in",
+                UnitType: 1,
+              },
+              SolarIrradiance: {
+                Value: 7687.6,
+                Unit: "W/m²",
+                UnitType: 33,
+              },
+              RelativeHumidity: {
+                Minimum: 61,
+                Maximum: 83,
+                Average: 68,
+              },
+              WetBulbTemperature: {
+                Minimum: {
+                  Value: 63.0,
+                  Unit: "F",
+                  UnitType: 18,
+                },
+                Maximum: {
+                  Value: 65.0,
+                  Unit: "F",
+                  UnitType: 18,
+                },
+                Average: {
+                  Value: 65.0,
+                  Unit: "F",
+                  UnitType: 18,
+                },
+              },
+              WetBulbGlobeTemperature: {
+                Minimum: {
+                  Value: 66.0,
+                  Unit: "F",
+                  UnitType: 18,
+                },
+                Maximum: {
+                  Value: 70.0,
+                  Unit: "F",
+                  UnitType: 18,
+                },
+                Average: {
+                  Value: 69.0,
+                  Unit: "F",
+                  UnitType: 18,
+                },
+              },
+            },
+            Night: {
+              Icon: 35,
+              IconPhrase: "Partly cloudy",
+              HasPrecipitation: false,
+              ShortPhrase: "Partly cloudy and mild",
+              LongPhrase: "Partly cloudy and mild",
+              PrecipitationProbability: 5,
+              ThunderstormProbability: 0,
+              RainProbability: 5,
+              SnowProbability: 0,
+              IceProbability: 0,
+              Wind: {
+                Speed: {
+                  Value: 5.8,
+                  Unit: "mi/h",
+                  UnitType: 9,
+                },
+                Direction: {
+                  Degrees: 207,
+                  Localized: "SSW",
+                  English: "SSW",
+                },
+              },
+              WindGust: {
+                Speed: {
+                  Value: 11.5,
+                  Unit: "mi/h",
+                  UnitType: 9,
+                },
+                Direction: {
+                  Degrees: 158,
+                  Localized: "SSE",
+                  English: "SSE",
+                },
+              },
+              TotalLiquid: {
+                Value: 0.0,
+                Unit: "in",
+                UnitType: 1,
+              },
+              Rain: {
+                Value: 0.0,
+                Unit: "in",
+                UnitType: 1,
+              },
+              Snow: {
+                Value: 0.0,
+                Unit: "in",
+                UnitType: 1,
+              },
+              Ice: {
+                Value: 0.0,
+                Unit: "in",
+                UnitType: 1,
+              },
+              HoursOfPrecipitation: 0.0,
+              HoursOfRain: 0.0,
+              HoursOfSnow: 0.0,
+              HoursOfIce: 0.0,
+              CloudCover: 47,
+              Evapotranspiration: {
+                Value: 0.0,
+                Unit: "in",
+                UnitType: 1,
+              },
+              SolarIrradiance: {
+                Value: 79.4,
+                Unit: "W/m²",
+                UnitType: 33,
+              },
+              RelativeHumidity: {
+                Minimum: 77,
+                Maximum: 89,
+                Average: 84,
+              },
+              WetBulbTemperature: {
+                Minimum: {
+                  Value: 63.0,
+                  Unit: "F",
+                  UnitType: 18,
+                },
+                Maximum: {
+                  Value: 65.0,
+                  Unit: "F",
+                  UnitType: 18,
+                },
+                Average: {
+                  Value: 64.0,
+                  Unit: "F",
+                  UnitType: 18,
+                },
+              },
+              WetBulbGlobeTemperature: {
+                Minimum: {
+                  Value: 66.0,
+                  Unit: "F",
+                  UnitType: 18,
+                },
+                Maximum: {
+                  Value: 69.0,
+                  Unit: "F",
+                  UnitType: 18,
+                },
+                Average: {
+                  Value: 68.0,
+                  Unit: "F",
+                  UnitType: 18,
+                },
+              },
+            },
+            Sources: ["AccuWeather"],
+            MobileLink:
+              "http://www.accuweather.com/en/il/tel-aviv/215854/daily-weather-forecast/215854?day=3&lang=en-us",
+            Link: "http://www.accuweather.com/en/il/tel-aviv/215854/daily-weather-forecast/215854?day=3&lang=en-us",
+          },
+          {
+            Date: "2024-04-15T07:00:00+03:00",
+            EpochDate: 1713153600,
+            Sun: {
+              Rise: "2024-04-15T06:12:00+03:00",
+              EpochRise: 1713150720,
+              Set: "2024-04-15T19:11:00+03:00",
+              EpochSet: 1713197460,
+            },
+            Moon: {
+              Rise: "2024-04-15T11:24:00+03:00",
+              EpochRise: 1713169440,
+              Set: "2024-04-16T02:18:00+03:00",
+              EpochSet: 1713223080,
+              Phase: "First",
+              Age: 7,
+            },
+            Temperature: {
+              Minimum: {
+                Value: 63.0,
+                Unit: "F",
+                UnitType: 18,
+              },
+              Maximum: {
+                Value: 75.0,
+                Unit: "F",
+                UnitType: 18,
+              },
+            },
+            RealFeelTemperature: {
+              Minimum: {
+                Value: 63.0,
+                Unit: "F",
+                UnitType: 18,
+                Phrase: "Pleasant",
+              },
+              Maximum: {
+                Value: 79.0,
+                Unit: "F",
+                UnitType: 18,
+                Phrase: "Pleasant",
+              },
+            },
+            RealFeelTemperatureShade: {
+              Minimum: {
+                Value: 63.0,
+                Unit: "F",
+                UnitType: 18,
+                Phrase: "Pleasant",
+              },
+              Maximum: {
+                Value: 71.0,
+                Unit: "F",
+                UnitType: 18,
+                Phrase: "Pleasant",
+              },
+            },
+            HoursOfSun: 9.5,
+            DegreeDaySummary: {
+              Heating: {
+                Value: 0.0,
+                Unit: "F",
+                UnitType: 18,
+              },
+              Cooling: {
+                Value: 4.0,
+                Unit: "F",
+                UnitType: 18,
+              },
+            },
+            AirAndPollen: [
+              {
+                Name: "AirQuality",
+                Value: 0,
+                Category: "Good",
+                CategoryValue: 1,
+                Type: "Ozone",
+              },
+              {
+                Name: "Grass",
+                Value: 0,
+                Category: "Low",
+                CategoryValue: 1,
+              },
+              {
+                Name: "Mold",
+                Value: 0,
+                Category: "Low",
+                CategoryValue: 1,
+              },
+              {
+                Name: "Ragweed",
+                Value: 0,
+                Category: "Low",
+                CategoryValue: 1,
+              },
+              {
+                Name: "Tree",
+                Value: 0,
+                Category: "Low",
+                CategoryValue: 1,
+              },
+              {
+                Name: "UVIndex",
+                Value: 9,
+                Category: "Very High",
+                CategoryValue: 4,
+              },
+            ],
+            Day: {
+              Icon: 2,
+              IconPhrase: "Mostly sunny",
+              HasPrecipitation: false,
+              ShortPhrase: "Sunshine and a few clouds",
+              LongPhrase: "Sunshine and a few clouds",
+              PrecipitationProbability: 25,
+              ThunderstormProbability: 0,
+              RainProbability: 25,
+              SnowProbability: 0,
+              IceProbability: 0,
+              Wind: {
+                Speed: {
+                  Value: 9.2,
+                  Unit: "mi/h",
+                  UnitType: 9,
+                },
+                Direction: {
+                  Degrees: 285,
+                  Localized: "WNW",
+                  English: "WNW",
+                },
+              },
+              WindGust: {
+                Speed: {
+                  Value: 19.6,
+                  Unit: "mi/h",
+                  UnitType: 9,
+                },
+                Direction: {
+                  Degrees: 319,
+                  Localized: "NW",
+                  English: "NW",
+                },
+              },
+              TotalLiquid: {
+                Value: 0.0,
+                Unit: "in",
+                UnitType: 1,
+              },
+              Rain: {
+                Value: 0.0,
+                Unit: "in",
+                UnitType: 1,
+              },
+              Snow: {
+                Value: 0.0,
+                Unit: "in",
+                UnitType: 1,
+              },
+              Ice: {
+                Value: 0.0,
+                Unit: "in",
+                UnitType: 1,
+              },
+              HoursOfPrecipitation: 0.0,
+              HoursOfRain: 0.0,
+              HoursOfSnow: 0.0,
+              HoursOfIce: 0.0,
+              CloudCover: 24,
+              Evapotranspiration: {
+                Value: 0.15,
+                Unit: "in",
+                UnitType: 1,
+              },
+              SolarIrradiance: {
+                Value: 7741.5,
+                Unit: "W/m²",
+                UnitType: 33,
+              },
+              RelativeHumidity: {
+                Minimum: 59,
+                Maximum: 86,
+                Average: 68,
+              },
+              WetBulbTemperature: {
+                Minimum: {
+                  Value: 64.0,
+                  Unit: "F",
+                  UnitType: 18,
+                },
+                Maximum: {
+                  Value: 65.0,
+                  Unit: "F",
+                  UnitType: 18,
+                },
+                Average: {
+                  Value: 65.0,
+                  Unit: "F",
+                  UnitType: 18,
+                },
+              },
+              WetBulbGlobeTemperature: {
+                Minimum: {
+                  Value: 67.0,
+                  Unit: "F",
+                  UnitType: 18,
+                },
+                Maximum: {
+                  Value: 71.0,
+                  Unit: "F",
+                  UnitType: 18,
+                },
+                Average: {
+                  Value: 69.0,
+                  Unit: "F",
+                  UnitType: 18,
+                },
+              },
+            },
+            Night: {
+              Icon: 36,
+              IconPhrase: "Intermittent clouds",
+              HasPrecipitation: false,
+              ShortPhrase: "Partly cloudy and mild",
+              LongPhrase: "Partly cloudy and mild",
+              PrecipitationProbability: 0,
+              ThunderstormProbability: 0,
+              RainProbability: 0,
+              SnowProbability: 0,
+              IceProbability: 0,
+              Wind: {
+                Speed: {
+                  Value: 5.8,
+                  Unit: "mi/h",
+                  UnitType: 9,
+                },
+                Direction: {
+                  Degrees: 51,
+                  Localized: "NE",
+                  English: "NE",
+                },
+              },
+              WindGust: {
+                Speed: {
+                  Value: 12.7,
+                  Unit: "mi/h",
+                  UnitType: 9,
+                },
+                Direction: {
+                  Degrees: 12,
+                  Localized: "NNE",
+                  English: "NNE",
+                },
+              },
+              TotalLiquid: {
+                Value: 0.0,
+                Unit: "in",
+                UnitType: 1,
+              },
+              Rain: {
+                Value: 0.0,
+                Unit: "in",
+                UnitType: 1,
+              },
+              Snow: {
+                Value: 0.0,
+                Unit: "in",
+                UnitType: 1,
+              },
+              Ice: {
+                Value: 0.0,
+                Unit: "in",
+                UnitType: 1,
+              },
+              HoursOfPrecipitation: 0.0,
+              HoursOfRain: 0.0,
+              HoursOfSnow: 0.0,
+              HoursOfIce: 0.0,
+              CloudCover: 54,
+              Evapotranspiration: {
+                Value: 0.01,
+                Unit: "in",
+                UnitType: 1,
+              },
+              SolarIrradiance: {
+                Value: 84.3,
+                Unit: "W/m²",
+                UnitType: 33,
+              },
+              RelativeHumidity: {
+                Minimum: 72,
+                Maximum: 89,
+                Average: 82,
+              },
+              WetBulbTemperature: {
+                Minimum: {
+                  Value: 62.0,
+                  Unit: "F",
+                  UnitType: 18,
+                },
+                Maximum: {
+                  Value: 65.0,
+                  Unit: "F",
+                  UnitType: 18,
+                },
+                Average: {
+                  Value: 63.0,
+                  Unit: "F",
+                  UnitType: 18,
+                },
+              },
+              WetBulbGlobeTemperature: {
+                Minimum: {
+                  Value: 63.0,
+                  Unit: "F",
+                  UnitType: 18,
+                },
+                Maximum: {
+                  Value: 69.0,
+                  Unit: "F",
+                  UnitType: 18,
+                },
+                Average: {
+                  Value: 67.0,
+                  Unit: "F",
+                  UnitType: 18,
+                },
+              },
+            },
+            Sources: ["AccuWeather"],
+            MobileLink:
+              "http://www.accuweather.com/en/il/tel-aviv/215854/daily-weather-forecast/215854?day=4&lang=en-us",
+            Link: "http://www.accuweather.com/en/il/tel-aviv/215854/daily-weather-forecast/215854?day=4&lang=en-us",
+          },
+          {
+            Date: "2024-04-16T07:00:00+03:00",
+            EpochDate: 1713240000,
+            Sun: {
+              Rise: "2024-04-16T06:10:00+03:00",
+              EpochRise: 1713237000,
+              Set: "2024-04-16T19:11:00+03:00",
+              EpochSet: 1713283860,
+            },
+            Moon: {
+              Rise: "2024-04-16T12:24:00+03:00",
+              EpochRise: 1713259440,
+              Set: "2024-04-17T02:56:00+03:00",
+              EpochSet: 1713311760,
+              Phase: "WaxingGibbous",
+              Age: 8,
+            },
+            Temperature: {
+              Minimum: {
+                Value: 65.0,
+                Unit: "F",
+                UnitType: 18,
+              },
+              Maximum: {
+                Value: 81.0,
+                Unit: "F",
+                UnitType: 18,
+              },
+            },
+            RealFeelTemperature: {
+              Minimum: {
+                Value: 63.0,
+                Unit: "F",
+                UnitType: 18,
+                Phrase: "Pleasant",
+              },
+              Maximum: {
+                Value: 85.0,
+                Unit: "F",
+                UnitType: 18,
+                Phrase: "Very Warm",
+              },
+            },
+            RealFeelTemperatureShade: {
+              Minimum: {
+                Value: 63.0,
+                Unit: "F",
+                UnitType: 18,
+                Phrase: "Pleasant",
+              },
+              Maximum: {
+                Value: 77.0,
+                Unit: "F",
+                UnitType: 18,
+                Phrase: "Pleasant",
+              },
+            },
+            HoursOfSun: 6.4,
+            DegreeDaySummary: {
+              Heating: {
+                Value: 0.0,
+                Unit: "F",
+                UnitType: 18,
+              },
+              Cooling: {
+                Value: 8.0,
+                Unit: "F",
+                UnitType: 18,
+              },
+            },
+            AirAndPollen: [
+              {
+                Name: "AirQuality",
+                Value: 0,
+                Category: "Good",
+                CategoryValue: 1,
+                Type: "Ozone",
+              },
+              {
+                Name: "Grass",
+                Value: 0,
+                Category: "Low",
+                CategoryValue: 1,
+              },
+              {
+                Name: "Mold",
+                Value: 0,
+                Category: "Low",
+                CategoryValue: 1,
+              },
+              {
+                Name: "Ragweed",
+                Value: 0,
+                Category: "Low",
+                CategoryValue: 1,
+              },
+              {
+                Name: "Tree",
+                Value: 0,
+                Category: "Low",
+                CategoryValue: 1,
+              },
+              {
+                Name: "UVIndex",
+                Value: 10,
+                Category: "Very High",
+                CategoryValue: 4,
+              },
+            ],
+            Day: {
+              Icon: 6,
+              IconPhrase: "Mostly cloudy",
+              HasPrecipitation: false,
+              ShortPhrase: "Mostly cloudy",
+              LongPhrase: "Mostly cloudy",
+              PrecipitationProbability: 0,
+              ThunderstormProbability: 0,
+              RainProbability: 0,
+              SnowProbability: 0,
+              IceProbability: 0,
+              Wind: {
+                Speed: {
+                  Value: 8.1,
+                  Unit: "mi/h",
+                  UnitType: 9,
+                },
+                Direction: {
+                  Degrees: 277,
+                  Localized: "W",
+                  English: "W",
+                },
+              },
+              WindGust: {
+                Speed: {
+                  Value: 19.6,
+                  Unit: "mi/h",
+                  UnitType: 9,
+                },
+                Direction: {
+                  Degrees: 357,
+                  Localized: "N",
+                  English: "N",
+                },
+              },
+              TotalLiquid: {
+                Value: 0.0,
+                Unit: "in",
+                UnitType: 1,
+              },
+              Rain: {
+                Value: 0.0,
+                Unit: "in",
+                UnitType: 1,
+              },
+              Snow: {
+                Value: 0.0,
+                Unit: "in",
+                UnitType: 1,
+              },
+              Ice: {
+                Value: 0.0,
+                Unit: "in",
+                UnitType: 1,
+              },
+              HoursOfPrecipitation: 0.0,
+              HoursOfRain: 0.0,
+              HoursOfSnow: 0.0,
+              HoursOfIce: 0.0,
+              CloudCover: 60,
+              Evapotranspiration: {
+                Value: 0.15,
+                Unit: "in",
+                UnitType: 1,
+              },
+              SolarIrradiance: {
+                Value: 5319.5,
+                Unit: "W/m²",
+                UnitType: 33,
+              },
+              RelativeHumidity: {
+                Minimum: 47,
+                Maximum: 82,
+                Average: 58,
+              },
+              WetBulbTemperature: {
+                Minimum: {
+                  Value: 63.0,
+                  Unit: "F",
+                  UnitType: 18,
+                },
+                Maximum: {
+                  Value: 67.0,
+                  Unit: "F",
+                  UnitType: 18,
+                },
+                Average: {
+                  Value: 66.0,
+                  Unit: "F",
+                  UnitType: 18,
+                },
+              },
+              WetBulbGlobeTemperature: {
+                Minimum: {
+                  Value: 67.0,
+                  Unit: "F",
+                  UnitType: 18,
+                },
+                Maximum: {
+                  Value: 74.0,
+                  Unit: "F",
+                  UnitType: 18,
+                },
+                Average: {
+                  Value: 71.0,
+                  Unit: "F",
+                  UnitType: 18,
+                },
+              },
+            },
+            Night: {
+              Icon: 35,
+              IconPhrase: "Partly cloudy",
+              HasPrecipitation: false,
+              ShortPhrase: "Partly cloudy and mild",
+              LongPhrase: "Partly cloudy and mild",
+              PrecipitationProbability: 0,
+              ThunderstormProbability: 0,
+              RainProbability: 0,
+              SnowProbability: 0,
+              IceProbability: 0,
+              Wind: {
+                Speed: {
+                  Value: 5.8,
+                  Unit: "mi/h",
+                  UnitType: 9,
+                },
+                Direction: {
+                  Degrees: 62,
+                  Localized: "ENE",
+                  English: "ENE",
+                },
+              },
+              WindGust: {
+                Speed: {
+                  Value: 12.7,
+                  Unit: "mi/h",
+                  UnitType: 9,
+                },
+                Direction: {
+                  Degrees: 10,
+                  Localized: "N",
+                  English: "N",
+                },
+              },
+              TotalLiquid: {
+                Value: 0.0,
+                Unit: "in",
+                UnitType: 1,
+              },
+              Rain: {
+                Value: 0.0,
+                Unit: "in",
+                UnitType: 1,
+              },
+              Snow: {
+                Value: 0.0,
+                Unit: "in",
+                UnitType: 1,
+              },
+              Ice: {
+                Value: 0.0,
+                Unit: "in",
+                UnitType: 1,
+              },
+              HoursOfPrecipitation: 0.0,
+              HoursOfRain: 0.0,
+              HoursOfSnow: 0.0,
+              HoursOfIce: 0.0,
+              CloudCover: 73,
+              Evapotranspiration: {
+                Value: 0.02,
+                Unit: "in",
+                UnitType: 1,
+              },
+              SolarIrradiance: {
+                Value: 101.9,
+                Unit: "W/m²",
+                UnitType: 33,
+              },
+              RelativeHumidity: {
+                Minimum: 58,
+                Maximum: 68,
+                Average: 62,
+              },
+              WetBulbTemperature: {
+                Minimum: {
+                  Value: 59.0,
+                  Unit: "F",
+                  UnitType: 18,
+                },
+                Maximum: {
+                  Value: 65.0,
+                  Unit: "F",
+                  UnitType: 18,
+                },
+                Average: {
+                  Value: 62.0,
+                  Unit: "F",
+                  UnitType: 18,
+                },
+              },
+              WetBulbGlobeTemperature: {
+                Minimum: {
+                  Value: 64.0,
+                  Unit: "F",
+                  UnitType: 18,
+                },
+                Maximum: {
+                  Value: 70.0,
+                  Unit: "F",
+                  UnitType: 18,
+                },
+                Average: {
+                  Value: 66.0,
+                  Unit: "F",
+                  UnitType: 18,
+                },
+              },
+            },
+            Sources: ["AccuWeather"],
+            MobileLink:
+              "http://www.accuweather.com/en/il/tel-aviv/215854/daily-weather-forecast/215854?day=5&lang=en-us",
+            Link: "http://www.accuweather.com/en/il/tel-aviv/215854/daily-weather-forecast/215854?day=5&lang=en-us",
+          },
+        ],
+      };
+  } else {
+    if (metric)
+      return {
+        Headline: {
+          EffectiveDate: "2024-04-13T20:00:00+03:00",
+          EffectiveEpochDate: 1713027600,
+          Severity: 7,
+          Text: "Mild Saturday night",
+          Category: "heat",
+          EndDate: "2024-04-14T08:00:00+03:00",
+          EndEpochDate: 1713070800,
+          MobileLink:
+            "http://www.accuweather.com/en/il/tel-aviv/215854/daily-weather-forecast/215854?unit=c&lang=en-us",
+          Link: "http://www.accuweather.com/en/il/tel-aviv/215854/daily-weather-forecast/215854?unit=c&lang=en-us",
+        },
+        DailyForecasts: [
+          {
+            Date: "2024-04-12T07:00:00+03:00",
+            EpochDate: 1712894400,
+            Temperature: {
+              Minimum: {
+                Value: 15.5,
+                Unit: "C",
+                UnitType: 17,
+              },
+              Maximum: {
+                Value: 23.2,
+                Unit: "C",
+                UnitType: 17,
+              },
+            },
+            Day: {
+              Icon: 2,
+              IconPhrase: "Mostly sunny",
+              HasPrecipitation: false,
+            },
+            Night: {
+              Icon: 36,
+              IconPhrase: "Intermittent clouds",
+              HasPrecipitation: false,
+            },
+            Sources: ["AccuWeather"],
+            MobileLink:
+              "http://www.accuweather.com/en/il/tel-aviv/215854/daily-weather-forecast/215854?day=1&unit=c&lang=en-us",
+            Link: "http://www.accuweather.com/en/il/tel-aviv/215854/daily-weather-forecast/215854?day=1&unit=c&lang=en-us",
+          },
+          {
+            Date: "2024-04-13T07:00:00+03:00",
+            EpochDate: 1712980800,
+            Temperature: {
+              Minimum: {
+                Value: 17.2,
+                Unit: "C",
+                UnitType: 17,
+              },
+              Maximum: {
+                Value: 23.3,
+                Unit: "C",
+                UnitType: 17,
+              },
+            },
+            Day: {
+              Icon: 2,
+              IconPhrase: "Mostly sunny",
+              HasPrecipitation: false,
+            },
+            Night: {
+              Icon: 38,
+              IconPhrase: "Mostly cloudy",
+              HasPrecipitation: false,
+            },
+            Sources: ["AccuWeather"],
+            MobileLink:
+              "http://www.accuweather.com/en/il/tel-aviv/215854/daily-weather-forecast/215854?day=2&unit=c&lang=en-us",
+            Link: "http://www.accuweather.com/en/il/tel-aviv/215854/daily-weather-forecast/215854?day=2&unit=c&lang=en-us",
+          },
+          {
+            Date: "2024-04-14T07:00:00+03:00",
+            EpochDate: 1713067200,
+            Temperature: {
+              Minimum: {
+                Value: 18.3,
+                Unit: "C",
+                UnitType: 17,
+              },
+              Maximum: {
+                Value: 23.3,
+                Unit: "C",
+                UnitType: 17,
+              },
+            },
+            Day: {
+              Icon: 3,
+              IconPhrase: "Partly sunny",
+              HasPrecipitation: false,
+            },
+            Night: {
+              Icon: 35,
+              IconPhrase: "Partly cloudy",
+              HasPrecipitation: false,
+            },
+            Sources: ["AccuWeather"],
+            MobileLink:
+              "http://www.accuweather.com/en/il/tel-aviv/215854/daily-weather-forecast/215854?day=3&unit=c&lang=en-us",
+            Link: "http://www.accuweather.com/en/il/tel-aviv/215854/daily-weather-forecast/215854?day=3&unit=c&lang=en-us",
+          },
+          {
+            Date: "2024-04-15T07:00:00+03:00",
+            EpochDate: 1713153600,
+            Temperature: {
+              Minimum: {
+                Value: 17.4,
+                Unit: "C",
+                UnitType: 17,
+              },
+              Maximum: {
+                Value: 23.7,
+                Unit: "C",
+                UnitType: 17,
+              },
+            },
+            Day: {
+              Icon: 2,
+              IconPhrase: "Mostly sunny",
+              HasPrecipitation: false,
+            },
+            Night: {
+              Icon: 36,
+              IconPhrase: "Intermittent clouds",
+              HasPrecipitation: false,
+            },
+            Sources: ["AccuWeather"],
+            MobileLink:
+              "http://www.accuweather.com/en/il/tel-aviv/215854/daily-weather-forecast/215854?day=4&unit=c&lang=en-us",
+            Link: "http://www.accuweather.com/en/il/tel-aviv/215854/daily-weather-forecast/215854?day=4&unit=c&lang=en-us",
+          },
+          {
+            Date: "2024-04-16T07:00:00+03:00",
+            EpochDate: 1713240000,
+            Temperature: {
+              Minimum: {
+                Value: 18.4,
+                Unit: "C",
+                UnitType: 17,
+              },
+              Maximum: {
+                Value: 27.0,
+                Unit: "C",
+                UnitType: 17,
+              },
+            },
+            Day: {
+              Icon: 6,
+              IconPhrase: "Mostly cloudy",
+              HasPrecipitation: false,
+            },
+            Night: {
+              Icon: 35,
+              IconPhrase: "Partly cloudy",
+              HasPrecipitation: false,
+            },
+            Sources: ["AccuWeather"],
+            MobileLink:
+              "http://www.accuweather.com/en/il/tel-aviv/215854/daily-weather-forecast/215854?day=5&unit=c&lang=en-us",
+            Link: "http://www.accuweather.com/en/il/tel-aviv/215854/daily-weather-forecast/215854?day=5&unit=c&lang=en-us",
+          },
+        ],
+      };
+    else
+      return {
+        Headline: {
+          EffectiveDate: "2024-04-13T20:00:00+03:00",
+          EffectiveEpochDate: 1713027600,
+          Severity: 7,
+          Text: "Mild Saturday night",
+          Category: "heat",
+          EndDate: "2024-04-14T08:00:00+03:00",
+          EndEpochDate: 1713070800,
+          MobileLink:
+            "http://www.accuweather.com/en/il/tel-aviv/215854/daily-weather-forecast/215854?lang=en-us",
+          Link: "http://www.accuweather.com/en/il/tel-aviv/215854/daily-weather-forecast/215854?lang=en-us",
+        },
+        DailyForecasts: [
+          {
+            Date: "2024-04-11T07:00:00+03:00",
+            EpochDate: 1712808000,
+            Temperature: {
+              Minimum: {
+                Value: 58.0,
+                Unit: "F",
+                UnitType: 18,
+              },
+              Maximum: {
+                Value: 74.0,
+                Unit: "F",
+                UnitType: 18,
+              },
+            },
+            Day: {
+              Icon: 3,
+              IconPhrase: "Partly sunny",
+              HasPrecipitation: false,
+            },
+            Night: {
+              Icon: 35,
+              IconPhrase: "Partly cloudy",
+              HasPrecipitation: false,
+            },
+            Sources: ["AccuWeather"],
+            MobileLink:
+              "http://www.accuweather.com/en/il/tel-aviv/215854/daily-weather-forecast/215854?day=1&lang=en-us",
+            Link: "http://www.accuweather.com/en/il/tel-aviv/215854/daily-weather-forecast/215854?day=1&lang=en-us",
+          },
+          {
+            Date: "2024-04-12T07:00:00+03:00",
+            EpochDate: 1712894400,
+            Temperature: {
               Minimum: {
                 Value: 59.0,
                 Unit: "F",
                 UnitType: 18,
               },
               Maximum: {
-                Value: 65.0,
-                Unit: "F",
-                UnitType: 18,
-              },
-              Average: {
-                Value: 62.0,
+                Value: 74.0,
                 Unit: "F",
                 UnitType: 18,
               },
             },
-            WetBulbGlobeTemperature: {
+            Day: {
+              Icon: 2,
+              IconPhrase: "Mostly sunny",
+              HasPrecipitation: false,
+            },
+            Night: {
+              Icon: 36,
+              IconPhrase: "Intermittent clouds",
+              HasPrecipitation: false,
+            },
+            Sources: ["AccuWeather"],
+            MobileLink:
+              "http://www.accuweather.com/en/il/tel-aviv/215854/daily-weather-forecast/215854?day=2&lang=en-us",
+            Link: "http://www.accuweather.com/en/il/tel-aviv/215854/daily-weather-forecast/215854?day=2&lang=en-us",
+          },
+          {
+            Date: "2024-04-13T07:00:00+03:00",
+            EpochDate: 1712980800,
+            Temperature: {
               Minimum: {
-                Value: 64.0,
+                Value: 61.0,
                 Unit: "F",
                 UnitType: 18,
               },
               Maximum: {
-                Value: 70.0,
-                Unit: "F",
-                UnitType: 18,
-              },
-              Average: {
-                Value: 66.0,
+                Value: 74.0,
                 Unit: "F",
                 UnitType: 18,
               },
             },
-          },
-          Sources: ["AccuWeather"],
-          MobileLink:
-            "http://www.accuweather.com/en/il/tel-aviv/215854/daily-weather-forecast/215854?day=5&lang=en-us",
-          Link: "http://www.accuweather.com/en/il/tel-aviv/215854/daily-weather-forecast/215854?day=5&lang=en-us",
-        },
-      ],
-    };
-  else
-    return {
-      Headline: {
-        EffectiveDate: "2024-04-13T20:00:00+03:00",
-        EffectiveEpochDate: 1713027600,
-        Severity: 7,
-        Text: "Mild Saturday night",
-        Category: "heat",
-        EndDate: "2024-04-14T08:00:00+03:00",
-        EndEpochDate: 1713070800,
-        MobileLink:
-          "http://www.accuweather.com/en/il/tel-aviv/215854/daily-weather-forecast/215854?lang=en-us",
-        Link: "http://www.accuweather.com/en/il/tel-aviv/215854/daily-weather-forecast/215854?lang=en-us",
-      },
-      DailyForecasts: [
-        {
-          Date: "2024-04-11T07:00:00+03:00",
-          EpochDate: 1712808000,
-          Temperature: {
-            Minimum: {
-              Value: 58.0,
-              Unit: "F",
-              UnitType: 18,
+            Day: {
+              Icon: 2,
+              IconPhrase: "Mostly sunny",
+              HasPrecipitation: false,
             },
-            Maximum: {
-              Value: 74.0,
-              Unit: "F",
-              UnitType: 18,
+            Night: {
+              Icon: 38,
+              IconPhrase: "Mostly cloudy",
+              HasPrecipitation: false,
             },
+            Sources: ["AccuWeather"],
+            MobileLink:
+              "http://www.accuweather.com/en/il/tel-aviv/215854/daily-weather-forecast/215854?day=3&lang=en-us",
+            Link: "http://www.accuweather.com/en/il/tel-aviv/215854/daily-weather-forecast/215854?day=3&lang=en-us",
           },
-          Day: {
-            Icon: 3,
-            IconPhrase: "Partly sunny",
-            HasPrecipitation: false,
-          },
-          Night: {
-            Icon: 35,
-            IconPhrase: "Partly cloudy",
-            HasPrecipitation: false,
-          },
-          Sources: ["AccuWeather"],
-          MobileLink:
-            "http://www.accuweather.com/en/il/tel-aviv/215854/daily-weather-forecast/215854?day=1&lang=en-us",
-          Link: "http://www.accuweather.com/en/il/tel-aviv/215854/daily-weather-forecast/215854?day=1&lang=en-us",
-        },
-        {
-          Date: "2024-04-12T07:00:00+03:00",
-          EpochDate: 1712894400,
-          Temperature: {
-            Minimum: {
-              Value: 59.0,
-              Unit: "F",
-              UnitType: 18,
+          {
+            Date: "2024-04-14T07:00:00+03:00",
+            EpochDate: 1713067200,
+            Temperature: {
+              Minimum: {
+                Value: 63.0,
+                Unit: "F",
+                UnitType: 18,
+              },
+              Maximum: {
+                Value: 74.0,
+                Unit: "F",
+                UnitType: 18,
+              },
             },
-            Maximum: {
-              Value: 74.0,
-              Unit: "F",
-              UnitType: 18,
+            Day: {
+              Icon: 3,
+              IconPhrase: "Partly sunny",
+              HasPrecipitation: false,
             },
-          },
-          Day: {
-            Icon: 2,
-            IconPhrase: "Mostly sunny",
-            HasPrecipitation: false,
-          },
-          Night: {
-            Icon: 36,
-            IconPhrase: "Intermittent clouds",
-            HasPrecipitation: false,
-          },
-          Sources: ["AccuWeather"],
-          MobileLink:
-            "http://www.accuweather.com/en/il/tel-aviv/215854/daily-weather-forecast/215854?day=2&lang=en-us",
-          Link: "http://www.accuweather.com/en/il/tel-aviv/215854/daily-weather-forecast/215854?day=2&lang=en-us",
-        },
-        {
-          Date: "2024-04-13T07:00:00+03:00",
-          EpochDate: 1712980800,
-          Temperature: {
-            Minimum: {
-              Value: 61.0,
-              Unit: "F",
-              UnitType: 18,
+            Night: {
+              Icon: 35,
+              IconPhrase: "Partly cloudy",
+              HasPrecipitation: false,
             },
-            Maximum: {
-              Value: 74.0,
-              Unit: "F",
-              UnitType: 18,
+            Sources: ["AccuWeather"],
+            MobileLink:
+              "http://www.accuweather.com/en/il/tel-aviv/215854/daily-weather-forecast/215854?day=4&lang=en-us",
+            Link: "http://www.accuweather.com/en/il/tel-aviv/215854/daily-weather-forecast/215854?day=4&lang=en-us",
+          },
+          {
+            Date: "2024-04-15T07:00:00+03:00",
+            EpochDate: 1713153600,
+            Temperature: {
+              Minimum: {
+                Value: 61.0,
+                Unit: "F",
+                UnitType: 18,
+              },
+              Maximum: {
+                Value: 76.0,
+                Unit: "F",
+                UnitType: 18,
+              },
             },
-          },
-          Day: {
-            Icon: 2,
-            IconPhrase: "Mostly sunny",
-            HasPrecipitation: false,
-          },
-          Night: {
-            Icon: 38,
-            IconPhrase: "Mostly cloudy",
-            HasPrecipitation: false,
-          },
-          Sources: ["AccuWeather"],
-          MobileLink:
-            "http://www.accuweather.com/en/il/tel-aviv/215854/daily-weather-forecast/215854?day=3&lang=en-us",
-          Link: "http://www.accuweather.com/en/il/tel-aviv/215854/daily-weather-forecast/215854?day=3&lang=en-us",
-        },
-        {
-          Date: "2024-04-14T07:00:00+03:00",
-          EpochDate: 1713067200,
-          Temperature: {
-            Minimum: {
-              Value: 63.0,
-              Unit: "F",
-              UnitType: 18,
+            Day: {
+              Icon: 2,
+              IconPhrase: "Mostly sunny",
+              HasPrecipitation: false,
             },
-            Maximum: {
-              Value: 74.0,
-              Unit: "F",
-              UnitType: 18,
+            Night: {
+              Icon: 36,
+              IconPhrase: "Intermittent clouds",
+              HasPrecipitation: false,
             },
+            Sources: ["AccuWeather"],
+            MobileLink:
+              "http://www.accuweather.com/en/il/tel-aviv/215854/daily-weather-forecast/215854?day=5&lang=en-us",
+            Link: "http://www.accuweather.com/en/il/tel-aviv/215854/daily-weather-forecast/215854?day=5&lang=en-us",
           },
-          Day: {
-            Icon: 3,
-            IconPhrase: "Partly sunny",
-            HasPrecipitation: false,
-          },
-          Night: {
-            Icon: 35,
-            IconPhrase: "Partly cloudy",
-            HasPrecipitation: false,
-          },
-          Sources: ["AccuWeather"],
-          MobileLink:
-            "http://www.accuweather.com/en/il/tel-aviv/215854/daily-weather-forecast/215854?day=4&lang=en-us",
-          Link: "http://www.accuweather.com/en/il/tel-aviv/215854/daily-weather-forecast/215854?day=4&lang=en-us",
-        },
-        {
-          Date: "2024-04-15T07:00:00+03:00",
-          EpochDate: 1713153600,
-          Temperature: {
-            Minimum: {
-              Value: 61.0,
-              Unit: "F",
-              UnitType: 18,
-            },
-            Maximum: {
-              Value: 76.0,
-              Unit: "F",
-              UnitType: 18,
-            },
-          },
-          Day: {
-            Icon: 2,
-            IconPhrase: "Mostly sunny",
-            HasPrecipitation: false,
-          },
-          Night: {
-            Icon: 36,
-            IconPhrase: "Intermittent clouds",
-            HasPrecipitation: false,
-          },
-          Sources: ["AccuWeather"],
-          MobileLink:
-            "http://www.accuweather.com/en/il/tel-aviv/215854/daily-weather-forecast/215854?day=5&lang=en-us",
-          Link: "http://www.accuweather.com/en/il/tel-aviv/215854/daily-weather-forecast/215854?day=5&lang=en-us",
-        },
-      ],
-    };
+        ],
+      };
+  }
 }
 
 var globalLocationCity;
