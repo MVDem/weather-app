@@ -1,15 +1,11 @@
 import { getPhoto } from './http/unsplash';
 
-const days = [
-  'Sunday',
-  'Monday',
-  'Tuesday',
-  'Wednesday',
-  'Thursday',
-  'Friday',
-  'Saturday',
-  'Sunday',
-];
+export const STATE_OPERATION = {
+  add: 'add',
+  remove: 'remove',
+};
+
+const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
 const months = [
   'January',
   'February',
@@ -29,8 +25,7 @@ const renderCityName = (cityName, isFavorite) => {
   const cityNameEl = document.querySelector('#sity-name');
   const htmlStr = /*html*/ `
           <h1 id="bookmark-city-name">${cityName}</h1>
-          <button id="bookmark" class="header__starBtn">
-            <img src="./star${isFavorite ? '-fill' : ''}.svg" />
+          <button id="bookmark" class="header__starBtn ${isFavorite ? 'favorite' : ''}">
           </button>`;
   cityNameEl.innerHTML = htmlStr;
 };
@@ -39,6 +34,7 @@ export { renderCityName };
 
 async function renderCityPhoto(name) {
   const photoUrl = await getPhoto(name);
+  console.log('photoUrl: ', photoUrl);
   const headerEl = document.querySelector('header');
   headerEl.style.backgroundImage = `url(${photoUrl})`;
 }
@@ -48,26 +44,16 @@ export { renderCityPhoto };
 const renderWeather = (data) => {
   const forecastTodayListEl = document.querySelector('#forecast-today');
   const date = new Date(data.LocalObservationDateTime);
-  const logo =
-    data.WeatherIcon < 10 ? '0' + data.WeatherIcon : data.WeatherIcon;
+  const logo = data.WeatherIcon < 10 ? '0' + data.WeatherIcon : data.WeatherIcon;
   const temp = data.Temperature.Metric.Value + data.Temperature.Metric.Unit;
-  const feelTemperature =
-    data.RealFeelTemperature?.Metric.Value +
-    data.RealFeelTemperature?.Metric.Unit;
-  const wind =
-    data.Wind.Speed.Metric.Value +
-    data.Wind.Speed.Metric.Unit +
-    ' ' +
-    data.Wind.Direction.English;
-  const windGust =
-    data.WindGust.Speed.Metric.Value + data.WindGust.Speed.Metric.Unit;
+  const feelTemperature = data.RealFeelTemperature?.Metric.Value + data.RealFeelTemperature?.Metric.Unit;
+  const wind = data.Wind.Speed.Metric.Value + data.Wind.Speed.Metric.Unit + ' ' + data.Wind.Direction.English;
+  const windGust = data.WindGust.Speed.Metric.Value + data.WindGust.Speed.Metric.Unit;
   const UVIndex = data.UVIndexText + ' - ' + data.UVIndex;
-  const visibility = data.Visibility.Value + data.Visibility.Unit;
+  const visibility = data.Visibility.Metric.Value + data.Visibility.Metric.Unit;
   const pressure = data.Pressure.Metric.Value + data.Pressure.Metric.Unit;
   const htmlStr = /*html*/ `
-            <h3 class='forecastToday__date'>${
-              days[date.getDay()]
-            }, ${date.getDate()}<sup>th</sup></h3>
+            <h3 class='forecastToday__date'>${days[date.getDay()]}, ${date.getDate()}<sup>th</sup></h3>
             <div class='forecastToday__logo'>
               <img src='https://developer.accuweather.com/sites/default/files/${logo}-s.png'/>
             </div>
@@ -95,22 +81,11 @@ const renderDaysForecast = (data) => {
   const date = new Date(data.Date);
   console.log(date);
   const logo = data.Day.Icon < 10 ? '0' + data.Day.Icon : data.Day.Icon;
-  const logoNight =
-    data.Night.Icon < 10 ? '0' + data.Night.Icon : data.Night.Icon;
-  const temperatureMax =
-    data.Temperature.Maximum.Value + data.Temperature.Maximum.Unit;
-  const temperatureMin =
-    data.Temperature.Maximum.Value + data.Temperature.Maximum.Unit;
-  const windDay =
-    data.Day.Wind.Speed.Value +
-    data.Day.Wind.Speed.Unit +
-    ' ' +
-    data.Day.Wind.Direction.English;
-  const windNight =
-    data.Night.Wind.Speed.Value +
-    data.Night.Wind.Speed.Unit +
-    ' ' +
-    data.Night.Wind.Direction.English;
+  const logoNight = data.Night.Icon < 10 ? '0' + data.Night.Icon : data.Night.Icon;
+  const temperatureMax = data.Temperature.Maximum.Value + data.Temperature.Maximum.Unit;
+  const temperatureMin = data.Temperature.Maximum.Value + data.Temperature.Maximum.Unit;
+  const windDay = data.Day.Wind.Speed.Value + data.Day.Wind.Speed.Unit + ' ' + data.Day.Wind.Direction.English;
+  const windNight = data.Night.Wind.Speed.Value + data.Night.Wind.Speed.Unit + ' ' + data.Night.Wind.Direction.English;
   const htmlStr = /*html*/ `
             <div class='forecastItem__date'>
               <h3>${days[date.getDay()]}</h3>
@@ -139,3 +114,24 @@ const renderDaysForecast = (data) => {
 };
 
 export { renderWeather, render5DaysWeather };
+
+const manageFavorite = (favoriteArr, city, operation) => {
+  if (operation === STATE_OPERATION.add) favoriteArr.push(city);
+  if (operation === STATE_OPERATION.remove) {
+    return favoriteArr.filter((cityEl) => cityEl !== city);
+  }
+};
+
+export { manageFavorite };
+
+const renderFavorites = (favoriteArr) => {
+  const favoritesListEl = document.querySelector('.header__dropdown > ul');
+  favoritesListEl.innerHTML = '';
+  let favoritesHTML = '';
+  favoriteArr.forEach((cityStr) => {
+    favoritesHTML += `<li class='dropdown__list-item'>${cityStr}</li>`;
+  });
+  favoritesHTML ? favoritesListEl.insertAdjacentHTML('beforeend', favoritesHTML) : '';
+};
+
+export { renderFavorites };
