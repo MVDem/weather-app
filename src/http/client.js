@@ -13,6 +13,7 @@ export async function searchCity(searchStr) {
   } catch (error) {
     console.error("Error while searching for a city:", error);
   }
+  return null;
 }
 
 export async function getCityKey(cityNameStr) {
@@ -26,6 +27,7 @@ export async function getCityKey(cityNameStr) {
   } catch (error) {
     console.error("Error while getting City Key:", error);
   }
+  return null;
 }
 
 export async function getCurrentWeather(cityKeyStr, details = false) {
@@ -40,6 +42,7 @@ export async function getCurrentWeather(cityKeyStr, details = false) {
   } catch (error) {
     console.error("Error while getting Current Weather conditions:", error);
   }
+  return null;
 }
 
 export async function get5DayForecast(cityKeyStr, details = false, metric=true) {
@@ -54,13 +57,14 @@ export async function get5DayForecast(cityKeyStr, details = false, metric=true) 
   } catch (error) {
     console.error("Error while getting 5 Day Forecast:", error);
   }
+  return null;
 }
 
 var globalLocationCity;
 const defaultLocationCity = {
-  name: "Tel Aviv",
-  key: "215854",
-  country: "Israel",
+  LocalizedName: "Tel Aviv",
+  Key: "215854",
+  Country: "Israel",
 };
 
 export async function getLocationCity() {
@@ -73,9 +77,9 @@ export async function getLocationCity() {
         )
       ).data;
       globalLocationCity = {
-        name: result.EnglishName,
-        key: result.Key,
-        country: result.Country.EnglishName,
+        LocalizedName: result.LocalizedName,
+        Key: result.Key,
+        Country: result.Country.LocalizedName,
       };
       return globalLocationCity;
     } catch (error) {
