@@ -34,6 +34,7 @@ export { renderCityName };
 
 async function renderCityPhoto(name) {
   const photoUrl = await getPhoto(name);
+  console.log('photoUrl: ', photoUrl);
   const headerEl = document.querySelector('header');
   headerEl.style.backgroundImage = `url(${photoUrl})`;
 }

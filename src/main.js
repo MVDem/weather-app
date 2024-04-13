@@ -70,7 +70,7 @@ unitsRadioBtn.addEventListener('change', (event) => {});
 function renderCity(city) {
   const isFavorite = state.favorite.includes(city);
   try {
-    renderCityPhoto(city.EnglishName);
+    renderCityPhoto(city.LocalizedName);
 
     renderCityName(city.LocalizedName, isFavorite);
 
