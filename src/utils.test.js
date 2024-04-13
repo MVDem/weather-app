@@ -1,4 +1,4 @@
-import { screen, getByText } from "@testing-library/dom";
+import { screen, getByText, within } from "@testing-library/dom";
 import {
   renderCityName,
   renderCityPhoto,
@@ -26,12 +26,12 @@ describe("Render Tests", () => {
       <div class="forecast">
         <ul id="forecast-list" class="forecast__list"></ul>
       </div>
-    </main>`;
+    </main>`; 
 
     renderCityName(TEXTS.CITY_NAME);
     renderCityPhoto(TEXTS.CITY_NAME);
     getLocationCity().then((city) => {
-      get5DayForecast(city.key).then((data) => render5DaysWeather(data));
+      get5DayForecast(city.key,true).then((data) => render5DaysWeather(data.DailyForecasts));
       getCurrentWeather(city.key, true).then((resolve) =>
         renderWeather(resolve[0])
       );
@@ -61,13 +61,12 @@ describe("Render Tests", () => {
 
     test("should render 5 day forecast", () => {
       const forecastListEl = document.querySelector("#forecast-list");
-      const forecastItems =
-        forecastListEl.getElementsByClassName("forecastItem");
-      for (const item of forecastItems) {
+      expect(forecastListEl.childNodes.length).toBe(4)
+      for (const item of forecastListEl.childNodes) {
         expect(item).toBeInTheDocument();
-        expect(getByText(item, /Temperature:\s*\d+/)).toBeInTheDocument();
-      }
-      expect(forecastListEl.childNodes.length).toBe(5)
+        const tempEls = within(item).getAllByText(/Temperature:\s*\d+/);
+        expect(tempEls.length).toBe(2);
+      }      
     });
   });
 });
