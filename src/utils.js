@@ -1,5 +1,10 @@
 import { getPhoto } from './http/unsplash';
 
+export const STATE_OPERATION = {
+  add: 'add',
+  remove: 'remove',
+};
+
 const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
 const months = [
   'January',
@@ -20,8 +25,7 @@ const renderCityName = (cityName, isFavorite) => {
   const cityNameEl = document.querySelector('#sity-name');
   const htmlStr = /*html*/ `
           <h1 id="bookmark-city-name">${cityName}</h1>
-          <button id="bookmark" class="header__starBtn">
-            <img src="./star${isFavorite ? '-fill' : ''}.svg" />
+          <button id="bookmark" class="header__starBtn ${isFavorite ? 'favorite' : ''}">
           </button>`;
   cityNameEl.innerHTML = htmlStr;
 };
@@ -109,3 +113,24 @@ const renderDaysForecast = (data) => {
 };
 
 export { renderWeather, render5DaysWeather };
+
+const manageFavorite = (favoriteArr, city, operation) => {
+  if (operation === STATE_OPERATION.add) favoriteArr.push(city);
+  if (operation === STATE_OPERATION.remove) {
+    return favoriteArr.filter((cityEl) => cityEl !== city);
+  }
+};
+
+export { manageFavorite };
+
+const renderFavorites = (favoriteArr) => {
+  const favoritesListEl = document.querySelector('.header__dropdown > ul');
+  favoritesListEl.innerHTML = '';
+  let favoritesHTML = '';
+  favoriteArr.forEach((cityStr) => {
+    favoritesHTML += `<li class='dropdown__list-item'>${cityStr}</li>`;
+  });
+  favoritesHTML ? favoritesListEl.insertAdjacentHTML('beforeend', favoritesHTML) : '';
+};
+
+export { renderFavorites };
