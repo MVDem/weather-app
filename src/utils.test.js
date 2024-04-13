@@ -67,6 +67,7 @@ describe("Render Tests", () => {
         expect(item).toBeInTheDocument();
         expect(getByText(item, /Temperature:\s*\d+/)).toBeInTheDocument();
       }
+      expect(forecastListEl.childNodes.length).toBe(5)
     });
   });
 });
