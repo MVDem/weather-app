@@ -2,7 +2,7 @@ import { defineConfig } from 'vite';
 // import { resolve } from 'path'
 
 export default defineConfig({
-  // base: 'weather-app',
+  base: 'weather-app',
   // build: {
   //   rollupOptions: {
   //     input: {
