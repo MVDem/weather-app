@@ -22,7 +22,7 @@ const months = [
 ];
 
 const renderCityName = (cityName, isFavorite) => {
-  const cityNameEl = document.querySelector('#sity-name');
+  const cityNameEl = document.querySelector('#city-name');
   const htmlStr = /*html*/ `
           <h1 id="bookmark-city-name">${cityName}</h1>
           <button id="bookmark" class="header__starBtn ${isFavorite ? 'favorite' : ''}">
@@ -32,9 +32,8 @@ const renderCityName = (cityName, isFavorite) => {
 
 export { renderCityName };
 
-async function renderCityPhoto(name) {
-  const photoUrl = await getPhoto(name);
-  console.log('photoUrl: ', photoUrl);
+async function renderCityPhoto(name, theme) {
+  const photoUrl = await getPhoto(name, theme);
   const headerEl = document.querySelector('header');
   headerEl.style.backgroundImage = `url(${photoUrl})`;
 }
@@ -69,6 +68,8 @@ const renderWeather = (data) => {
 };
 
 const render5DaysWeather = (data) => {
+  const forecastListEl = document.querySelector('#forecast-list');
+  forecastListEl.innerHTML = '';
   for (let i = 1; i < data.length; i++) {
     renderDaysForecast(data[i]);
   }
@@ -79,7 +80,6 @@ const renderDaysForecast = (data) => {
   const forecastItemEl = document.createElement('li');
   forecastItemEl.classList.add('forecastItem');
   const date = new Date(data.Date);
-  console.log(date);
   const logo = data.Day.Icon < 10 ? '0' + data.Day.Icon : data.Day.Icon;
   const logoNight = data.Night.Icon < 10 ? '0' + data.Night.Icon : data.Night.Icon;
   const temperatureMax = data.Temperature.Maximum.Value + data.Temperature.Maximum.Unit;
