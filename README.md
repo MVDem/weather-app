@@ -1,3 +1,5 @@
+# **_weather-app_**
+
 The attached document is an interview assignment from one of the larger tech firms in Israel.
 It is slightly different the the objective I said but still a very good practice on FE.
 
