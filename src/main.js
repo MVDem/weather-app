@@ -12,13 +12,7 @@ import {
 } from './utils.js';
 
 const state = {
-  favorite: [
-    'Tel Aviv',
-    'Nes Ziyyona',
-    // { LocalizedName: 'Tel Aviv', Key: '215854' },
-    // { LocalizedName: 'Jerusalem', Key: '213225' },
-    // { LocalizedName: 'Nes Ziyyona', Key: '212560' },
-  ],
+  favorite: ['Tel Aviv', 'Nes Ziyyona', 'Moscow', 'Samara', 'Tokyo', 'London'],
   currentCityIndex: 0,
   theme: 'dark',
   units: 'C',
@@ -31,7 +25,7 @@ export async function init() {
   const currCity = await getLocationCity();
   displayCity(currCity);
   renderFavorites(state.favorite);
-  // navigateFavorites();
+  navigateFavorites();
   chooseFavorite();
 }
 
@@ -51,16 +45,7 @@ searchFormEl.addEventListener('submit', async (event) => {
   event.preventDefault();
   const data = new FormData(event.target);
   const cityName = data.get('city');
-  try {
-    const cityData = await searchCity(cityName);
-
-    if (cityData === null || !cityData.length) throw new Error('City was not found');
-    state.currCity = cityData[0].LocalizedName;
-
-    displayCity(cityData[0]);
-  } catch (error) {
-    showFailMessage(error.message);
-  }
+  await searchTargetCity(cityName);
 });
 
 const unitsRadioBtn = document.querySelector('#header-units-radioBtn');
@@ -68,22 +53,24 @@ unitsRadioBtn.addEventListener('change', (event) => {});
 
 function displayCity(cityObj) {
   const isFavorite = state.favorite.includes(cityObj.LocalizedName);
-  try {
-    renderCityPhoto(cityObj.LocalizedName, state.theme);
+  renderCityPhoto(cityObj.LocalizedName, state.theme);
 
-    renderCityName(cityObj.LocalizedName, isFavorite);
+  renderCityName(cityObj.LocalizedName, isFavorite);
 
-    getCurrentWeather(cityObj.Key, true).then((resolve) => {
+  getCurrentWeather(cityObj.Key, true)
+    .then((resolve) => {
+      if (!resolve) throw new Error('Cannot show current weather 🌪️');
       renderWeather(resolve[0]);
-    });
+    })
+    .catch((error) => showFailMessage(error.message || 'Something went wrong'));
 
-    get5DayForecast(cityObj.Key, true).then((data) => {
+  get5DayForecast(cityObj.Key, true)
+    .then((data) => {
+      if (data === null) throw new Error('Cannot show forecast weather 🌪️');
       render5DaysWeather(data.DailyForecasts);
-    });
-    toogleFavoriteCity();
-  } catch (error) {
-    showFailMessage(error.message || 'Something went wrong');
-  }
+    })
+    .catch((error) => showFailMessage(error.message || 'Something went wrong'));
+  toogleFavoriteCity();
 }
 
 function toogleFavoriteCity() {
@@ -110,9 +97,7 @@ function chooseFavorite() {
 
   favorites.forEach((el) => {
     el.addEventListener('click', async (e) => {
-      console.log(e);
       const cityData = await searchCity(el.textContent);
-      console.log('cityData: ', cityData);
 
       if (cityData === null || !cityData.length) throw new Error('City was not found');
       state.currCity = cityData[0].LocalizedName;
@@ -122,32 +107,44 @@ function chooseFavorite() {
   });
 }
 
-// function navigateFavorites() {
-//   if (state.favorite.length < 1) {
-//     nextBtnEl.classList.add('disabled');
-//     prevBtnEl.classList.add('disabled');
-//     return;
-//   }
+function navigateFavorites() {
+  const prevBtnEl = document.querySelector('#prev-page');
+  const nextBtnEl = document.querySelector('#next-page');
+  if (state.favorite.length < 2) {
+    nextBtnEl.classList.add('disabled');
+    prevBtnEl.classList.add('disabled');
+    return;
+  }
 
-//   const indexCurrentCity = state.favorite.indexOf(state.currCity);
+  const cityName = document.querySelector('#bookmark-city-name').textContent;
+  state.currentCityIndex = state.favorite.indexOf(cityName);
 
-//   state.currentCityIndex = indexCurrentCity >= 0 ? indexCurrentObj : 0;
+  prevBtnEl.classList.remove('disabled');
+  prevBtnEl.addEventListener('click', async () => {
+    if (state.currentCityIndex <= 0) state.currentCityIndex = state.favorite.length - 1;
+    else state.currentCityIndex -= 1;
+    console.log('currentCityIndex: prev ', state.currentCityIndex);
+    await searchTargetCity(state.favorite[state.currentCityIndex]);
+  });
 
-//   const prevBtnEl = document.querySelector('#prev-page');
-//   prevBtnEl.classList.remove('disabled');
-//   prevBtnEl.addEventListener('click', () => {
-//     if (state.currentCityIndex === 0) state.currentCityIndex = state.favorite.length - 1;
-//     else state.currentCityIndex -= 1;
-//     console.log('currentCityIndex: prev ', state.currentCityIndex);
-//     displayCity(state.favorite[state.currentCityIndex]);
-//   });
+  nextBtnEl.classList.remove('disabled');
+  nextBtnEl.addEventListener('click', async () => {
+    if (state.currentCityIndex === state.favorite.length - 1) state.currentCityIndex = 0;
+    else state.currentCityIndex += 1;
+    console.log('currentCityIndex: next', state.favorite[state.currentCityIndex]);
+    await searchTargetCity(state.favorite[state.currentCityIndex]);
+  });
+}
 
-//   const nextBtnEl = document.querySelector('#next-page');
-//   nextBtnEl.classList.remove('disabled');
-//   nextBtnEl.addEventListener('click', () => {
-//     if (state.currentCityIndex === state.favorite.length - 1) state.currentCityIndex = 0;
-//     else state.currentCityIndex += 1;
-//     console.log('currentCityIndex: next', state.currentCityIndex);
-//     displayCity(state.favorite[state.currentCityIndex]);
-//   });
-// }
+async function searchTargetCity(cityStr) {
+  try {
+    const cityData = await searchCity(cityStr);
+
+    if (cityData === null || !cityData.length) throw new Error('City was not found');
+    state.currCity = cityData[0].LocalizedName;
+
+    displayCity(cityData[0]);
+  } catch (error) {
+    showFailMessage(error.message);
+  }
+}

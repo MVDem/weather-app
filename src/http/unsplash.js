@@ -15,6 +15,6 @@ export async function getPhoto(name, theme) {
     ).data.urls.regular;
   } catch (error) {
     console.error('Error while fetching city photo', error);
-    return '../public/default-background.jpg';
+    return './default-background.jpg';
   }
 }
