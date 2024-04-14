@@ -71,7 +71,7 @@ body {
     height: 100%;
     top: 0;
     left: 0;
-    padding: 3rem 2rem;
+    padding: 3rem 2rem 0;
     box-sizing: border-box;
     background-color: $dark-background-filter-light;
     display: flex;
@@ -80,8 +80,11 @@ body {
     transition: transform 1s;
 
     & ul {
+      margin: 0;
       list-style: none;
       padding: 0;
+      overflow: auto;
+      height: 100%;
     }
     & li {
       padding: 0 0.6rem;
@@ -212,7 +215,7 @@ form[data-show-city] {
 .forecastToday {
   width: 100%;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 2rem auto;
   display: flex;
   justify-content: center;
   position: relative;
@@ -222,7 +225,7 @@ form[data-show-city] {
     align-items: center;
   }
   & p {
-    margin: 0.3rem;
+    margin: 0;
   }
   &__date {
     position: absolute;
@@ -232,9 +235,19 @@ form[data-show-city] {
   }
   &__logo {
     width: 50%;
+    @include mobile {
+      margin: 1rem;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      min-height: 4rem;
+    }
     & img {
       height: 100%;
       width: auto;
+      @include mobile {
+        height: 4rem;
+      }
     }
   }
   &__info {
