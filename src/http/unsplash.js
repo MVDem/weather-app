@@ -6,7 +6,7 @@ const axiosInstance = axios.create({
 });
 
 export async function getPhoto(name) {
-  try 
+  try {
     return (await axiosInstance.get(`random?orientation=landscape&query=${name}&client_id=${UNSPLASH_API_KEY}`)).data
       .urls.regular;
   } catch (error) {

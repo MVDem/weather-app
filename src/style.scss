@@ -107,7 +107,7 @@ body {
       display: inline-block;
       background-size: contain;
       background-repeat: no-repeat;
-      background-image: url(./star-fill.svg);
+      background-image: url(../star-fill.svg);
       width: 1rem;
       height: 1rem;
     }
@@ -170,13 +170,13 @@ body {
     cursor: pointer;
     background-size: contain;
     background-repeat: no-repeat;
-    background-image: url(./star.svg);
+    background-image: url(../star.svg);
     width: 2.5rem;
     height: 2.5rem;
     transition: all 0.3s;
 
     &.favorite {
-      background-image: url(./star-fill.svg);
+      background-image: url(../star-fill.svg);
     }
   }
 
