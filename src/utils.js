@@ -32,8 +32,8 @@ const renderCityName = (cityName, isFavorite) => {
 
 export { renderCityName };
 
-async function renderCityPhoto(name, theme) {
-  const photoUrl = await getPhoto(name, theme);
+async function renderCityPhoto(name) {
+  const photoUrl = await getPhoto(name);
   const headerEl = document.querySelector('header');
   headerEl.style.backgroundImage = `url(${photoUrl})`;
 }

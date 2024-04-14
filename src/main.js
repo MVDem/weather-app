@@ -52,12 +52,27 @@ searchFormEl.addEventListener('submit', async (event) => {
 const unitsRadioBtn = document.querySelector('#header-units-radioBtn');
 unitsRadioBtn.addEventListener('change', (event) => {
   state.units = event.target.value;
-  init();
+  searchTargetCity(state.currCity);
 });
 
+const unitsRadioBtnLight = document.querySelector('#header-units-radioBtnLight');
+unitsRadioBtnLight.addEventListener('change', switchStylesheet);
+
+function switchStylesheet() {
+  const body = document.body;
+  const isLight = body.classList.contains('light');
+
+  if (isLight) {
+    state.theme = 'dark';
+    body.classList.remove('light');
+  } else {
+    state.theme = 'light';
+    body.classList.add('light');
+  }
+}
 function displayCity(cityObj) {
   const isFavorite = state.favorite.includes(cityObj.LocalizedName);
-  renderCityPhoto(cityObj.LocalizedName, state.theme);
+  renderCityPhoto(cityObj.LocalizedName);
 
   renderCityName(cityObj.LocalizedName, isFavorite);
 
@@ -121,8 +136,6 @@ function navigateFavorites() {
   prevBtnEl.addEventListener('click', async () => {
     if (state.currentCityIndex <= 0) state.currentCityIndex = state.favorite.length - 1;
     else state.currentCityIndex -= 1;
-    console.log('state.currentCityIndex : ', state.currentCityIndex);
-    console.log('currentCityIndex: prev ', state.currentCityIndex);
     await searchTargetCity(state.favorite[state.currentCityIndex]);
   });
 
@@ -130,7 +143,6 @@ function navigateFavorites() {
   nextBtnEl.addEventListener('click', async () => {
     if (state.currentCityIndex === state.favorite.length - 1) state.currentCityIndex = 0;
     else state.currentCityIndex += 1;
-    console.log('currentCityIndex: next', state.favorite[state.currentCityIndex]);
     await searchTargetCity(state.favorite[state.currentCityIndex]);
   });
 }

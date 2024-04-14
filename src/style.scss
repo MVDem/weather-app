@@ -3,6 +3,9 @@ $dark-main-color: white;
 $dark-border-color: #d7dae0;
 $dark-background-filter: rgba(0, 0, 0, 0.7);
 $dark-background-filter-light: rgba(0, 0, 0, 0.5);
+$header-test: white;
+$light-background: white;
+$light-main-color: black;
 
 $max-tablet-width: 1279px;
 $max-mobile-width: 780px;
@@ -24,14 +27,18 @@ $max-mobile-width: 780px;
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: $dark-background;
+  color-scheme: dark;
+  color: $dark-main-color;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+.light {
+  color-scheme: light;
+  color: $light-main-color;
+  background-color: $light-background;
 }
 
 body {
@@ -80,6 +87,7 @@ body {
     transition: transform 1s;
 
     & ul {
+      color: $header-test;
       margin: 0;
       list-style: none;
       padding: 0;
@@ -174,6 +182,7 @@ body {
 
   & h1 {
     margin: 0;
+    color: $header-test;
     font-size: 3rem;
     @include mobile {
       font-size: 2rem;
