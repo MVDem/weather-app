@@ -122,7 +122,7 @@ body {
   &__prevBtn:hover {
     background-color: inherit;
     background-color: $dark-background-filter-light;
-    color: white;
+    color: #2a7fff;
     cursor: pointer;
   }
   &__nextBtn {
@@ -329,4 +329,13 @@ form[data-show-city] {
 
 .disabled {
   visibility: hidden;
+}
+
+.toastify {
+  &.on {
+    @include mobile {
+      font-size: 0.9rem;
+      padding: 5px;
+    }
+  }
 }
