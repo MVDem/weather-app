@@ -1,6 +1,18 @@
-import { screen } from '@testing-library/dom';
-import {  } from './main';
+import { screen } from "@testing-library/dom";
 
-describe('Render Tests', () => {
-  
+describe("base test placeholder", () => {
+  test("test", () => {
+    document.body.innerHTML = `
+        <div class="wrapper">
+            <span>test</span>
+        </div>
+    `;
+    expect(document.body.innerHTML.toString()).toMatchInlineSnapshot(`
+      "
+              <div class=\"wrapper\">
+                  <span>test</span>
+              </div>
+          "
+    `);
+  });
 });
