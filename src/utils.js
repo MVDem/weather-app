@@ -22,7 +22,7 @@ const months = [
 ];
 
 const renderCityName = (cityName, isFavorite) => {
-  const cityNameEl = document.querySelector('#sity-name');
+  const cityNameEl = document.querySelector('#city-name');
   const htmlStr = /*html*/ `
           <h1 id="bookmark-city-name">${cityName}</h1>
           <button id="bookmark" class="header__starBtn ${isFavorite ? 'favorite' : ''}">
@@ -34,24 +34,23 @@ export { renderCityName };
 
 async function renderCityPhoto(name) {
   const photoUrl = await getPhoto(name);
-  console.log('photoUrl: ', photoUrl);
   const headerEl = document.querySelector('header');
   headerEl.style.backgroundImage = `url(${photoUrl})`;
 }
 
 export { renderCityPhoto };
 
-const renderWeather = (data) => {
+const renderWeather = (data, units) => {
   const forecastTodayListEl = document.querySelector('#forecast-today');
   const date = new Date(data.LocalObservationDateTime);
   const logo = data.WeatherIcon < 10 ? '0' + data.WeatherIcon : data.WeatherIcon;
-  const temp = data.Temperature.Metric.Value + data.Temperature.Metric.Unit;
-  const feelTemperature = data.RealFeelTemperature?.Metric.Value + data.RealFeelTemperature?.Metric.Unit;
-  const wind = data.Wind.Speed.Metric.Value + data.Wind.Speed.Metric.Unit + ' ' + data.Wind.Direction.English;
-  const windGust = data.WindGust.Speed.Metric.Value + data.WindGust.Speed.Metric.Unit;
+  const temp = data.Temperature[units].Value + data.Temperature[units].Unit;
+  const feelTemperature = data.RealFeelTemperature[units].Value + data.RealFeelTemperature[units].Unit;
+  const wind = data.Wind.Speed[units].Value + data.Wind.Speed[units].Unit + ' ' + data.Wind.Direction.English;
+  const windGust = data.WindGust.Speed[units].Value + data.WindGust.Speed[units].Unit;
   const UVIndex = data.UVIndexText + ' - ' + data.UVIndex;
-  const visibility = data.Visibility.Metric.Value + data.Visibility.Metric.Unit;
-  const pressure = data.Pressure.Metric.Value + data.Pressure.Metric.Unit;
+  const visibility = data.Visibility[units].Value + data.Visibility[units].Unit;
+  const pressure = data.Pressure[units].Value + data.Pressure[units].Unit;
   const htmlStr = /*html*/ `
             <h3 class='forecastToday__date'>${days[date.getDay()]}, ${date.getDate()}<sup>th</sup></h3>
             <div class='forecastToday__logo'>
@@ -69,6 +68,8 @@ const renderWeather = (data) => {
 };
 
 const render5DaysWeather = (data) => {
+  const forecastListEl = document.querySelector('#forecast-list');
+  forecastListEl.innerHTML = '';
   for (let i = 1; i < data.length; i++) {
     renderDaysForecast(data[i]);
   }
@@ -79,7 +80,6 @@ const renderDaysForecast = (data) => {
   const forecastItemEl = document.createElement('li');
   forecastItemEl.classList.add('forecastItem');
   const date = new Date(data.Date);
-  console.log(date);
   const logo = data.Day.Icon < 10 ? '0' + data.Day.Icon : data.Day.Icon;
   const logoNight = data.Night.Icon < 10 ? '0' + data.Night.Icon : data.Night.Icon;
   const temperatureMax = data.Temperature.Maximum.Value + data.Temperature.Maximum.Unit;

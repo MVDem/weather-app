@@ -28,10 +28,21 @@
             <div class="radioGroup__text">°C</div>
           </label>
         </div>
+        <div id="header-units-radioBtnLight" class="radioGroup">
+          <label class="styles.radioGroup__item">
+            <input name="theme" type="radio" value="Dark" />
+            <div class="radioGroup__text">Light</div>
+          </label>
+          <label class="radioGroup__item">
+            <input name="theme" type="radio" value="Light" checked />
+            <div class="radioGroup__text">Dark</div>
+          </label>
+        </div>
+
         <ul></ul>
       </div>
       <div class="header__wrapper">
-        <div id="sity-name"></div>
+        <div id="city-name"></div>
         <form data-show-city>
           <input id="from" data-options-city name="city" placeholder="Enter a city" />
           <button type="submit">
