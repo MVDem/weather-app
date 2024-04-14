@@ -10,7 +10,6 @@ import {
 document.addEventListener("DOMContentLoaded", init);
 
 export async function init() {
-  // testClient()
 
 }
 
@@ -18,9 +17,9 @@ export async function init() {
 function testClient() {
   getLocationCity().then((city) => {
     console.log(city);
-    getCurrentWeather(city.key).then((resolve) => {
+    getCurrentWeather(city.Key).then((resolve) => {
       console.log(
-        `Current weather in ${city.name} is: ${resolve[0].WeatherText}`
+        `Current weather in ${city.LocalizedName} is: ${resolve[0].WeatherText}`
       );
     });
   });

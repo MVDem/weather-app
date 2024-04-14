@@ -1,5 +1,4 @@
 import axiosInstance from ".";
-import { API_KEY } from "../config/index";
 
 export async function searchCity(searchStr) {
   // We don't search with less them 3 letters
@@ -7,7 +6,7 @@ export async function searchCity(searchStr) {
 
   try {
     const result = await axiosInstance.get(
-      `locations/v1/cities/autocomplete?q=${searchStr}&apikey=${API_KEY}`
+      `locations/v1/cities/autocomplete?q=${searchStr}`
     );
     return result.data;
   } catch (error) {
@@ -21,7 +20,7 @@ export async function getCityKey(cityNameStr) {
 
   try {
     const result = await axiosInstance.get(
-      `locations/v1/search?q=${cityNameStr}&apikey=${API_KEY}`
+      `locations/v1/search?q=${cityNameStr}`
     );
     return result.data;
   } catch (error) {
@@ -34,9 +33,7 @@ export async function getCurrentWeather(cityKeyStr, details = false) {
   if (cityKeyStr.length == 0 || isNaN(cityKeyStr)) return null;
 
   try {
-    const urlStr = `currentconditions/v1/${Number(
-      cityKeyStr
-    )}?apikey=${API_KEY}&details=${details}`;
+    const urlStr = `currentconditions/v1/${cityKeyStr}?details=${details}`;
     const result = await axiosInstance.get(urlStr);
     return result.data;
   } catch (error) {
@@ -49,9 +46,7 @@ export async function get5DayForecast(cityKeyStr, details = false, metric=true) 
   if (cityKeyStr.length == 0 || isNaN(cityKeyStr)) return null;
 
   try {
-    const urlStr = `forecasts/v1/daily/5day/${Number(
-      cityKeyStr
-    )}.json?apikey=${API_KEY}&details=${details}&metric=${metric}`;
+    const urlStr = `forecasts/v1/daily/5day/${cityKeyStr}.json?details=${details}&metric=${metric}`;
     const result = await axiosInstance.get(urlStr);
     return result.data;
   } catch (error) {
@@ -73,7 +68,7 @@ export async function getLocationCity() {
       const { latitude, longitude } = await getLocationCoordinates();
       const result = (
         await axiosInstance.get(
-          `locations/v1/cities/geoposition/search?apikey=${API_KEY}&q=${latitude},${longitude}&toplevel=true`
+          `locations/v1/cities/geoposition/search?q=${latitude},${longitude}&toplevel=true`
         )
       ).data;
       globalLocationCity = {
