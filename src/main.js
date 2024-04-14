@@ -15,7 +15,7 @@ const state = {
   favorite: ['Tel Aviv', 'Nes Ziyyona', 'Moscow', 'Samara', 'Tokyo', 'London'],
   currentCityIndex: 0,
   theme: 'dark',
-  units: 'C',
+  units: 'Metric',
   currCity: '',
 };
 
@@ -23,6 +23,7 @@ document.addEventListener('DOMContentLoaded', init);
 
 export async function init() {
   const currCity = await getLocationCity();
+  state.currCity = currCity.LocalizedName;
   displayCity(currCity);
   renderFavorites(state.favorite);
   navigateFavorites();
@@ -49,22 +50,40 @@ searchFormEl.addEventListener('submit', async (event) => {
 });
 
 const unitsRadioBtn = document.querySelector('#header-units-radioBtn');
-unitsRadioBtn.addEventListener('change', (event) => {});
+unitsRadioBtn.addEventListener('change', (event) => {
+  state.units = event.target.value;
+  searchTargetCity(state.currCity);
+});
 
+const unitsRadioBtnLight = document.querySelector('#header-units-radioBtnLight');
+unitsRadioBtnLight.addEventListener('change', switchStylesheet);
+
+function switchStylesheet() {
+  const body = document.body;
+  const isLight = body.classList.contains('light');
+
+  if (isLight) {
+    state.theme = 'dark';
+    body.classList.remove('light');
+  } else {
+    state.theme = 'light';
+    body.classList.add('light');
+  }
+}
 function displayCity(cityObj) {
   const isFavorite = state.favorite.includes(cityObj.LocalizedName);
-  renderCityPhoto(cityObj.LocalizedName, state.theme);
+  renderCityPhoto(cityObj.LocalizedName);
 
   renderCityName(cityObj.LocalizedName, isFavorite);
 
   getCurrentWeather(cityObj.Key, true)
     .then((resolve) => {
       if (!resolve) throw new Error('Cannot show current weather 🌪️');
-      renderWeather(resolve[0]);
+      renderWeather(resolve[0], state.units);
     })
     .catch((error) => showFailMessage(error.message || 'Something went wrong'));
 
-  get5DayForecast(cityObj.Key, true)
+  get5DayForecast(cityObj.Key, true, state.units === 'Metric')
     .then((data) => {
       if (data === null) throw new Error('Cannot show forecast weather 🌪️');
       render5DaysWeather(data.DailyForecasts);
@@ -88,13 +107,12 @@ function toogleFavoriteCity() {
     }
     renderFavorites(state.favorite);
     chooseFavorite();
-    // navigateFavorites();
+    checkFavoriteLength();
   });
 }
 
 function chooseFavorite() {
   const favorites = document.querySelectorAll('.header__dropdown > ul > li');
-
   favorites.forEach((el) => {
     el.addEventListener('click', async (e) => {
       const cityData = await searchCity(el.textContent);
@@ -110,20 +128,14 @@ function chooseFavorite() {
 function navigateFavorites() {
   const prevBtnEl = document.querySelector('#prev-page');
   const nextBtnEl = document.querySelector('#next-page');
-  if (state.favorite.length < 2) {
-    nextBtnEl.classList.add('disabled');
-    prevBtnEl.classList.add('disabled');
-    return;
-  }
+  if (state.favorite.length < 2) return;
 
-  const cityName = document.querySelector('#bookmark-city-name').textContent;
-  state.currentCityIndex = state.favorite.indexOf(cityName);
+  state.currentCityIndex = state.favorite.indexOf(state.currCity);
 
   prevBtnEl.classList.remove('disabled');
   prevBtnEl.addEventListener('click', async () => {
     if (state.currentCityIndex <= 0) state.currentCityIndex = state.favorite.length - 1;
     else state.currentCityIndex -= 1;
-    console.log('currentCityIndex: prev ', state.currentCityIndex);
     await searchTargetCity(state.favorite[state.currentCityIndex]);
   });
 
@@ -131,12 +143,12 @@ function navigateFavorites() {
   nextBtnEl.addEventListener('click', async () => {
     if (state.currentCityIndex === state.favorite.length - 1) state.currentCityIndex = 0;
     else state.currentCityIndex += 1;
-    console.log('currentCityIndex: next', state.favorite[state.currentCityIndex]);
     await searchTargetCity(state.favorite[state.currentCityIndex]);
   });
 }
 
 async function searchTargetCity(cityStr) {
+  state.currCity = cityStr;
   try {
     const cityData = await searchCity(cityStr);
 
@@ -146,5 +158,14 @@ async function searchTargetCity(cityStr) {
     displayCity(cityData[0]);
   } catch (error) {
     showFailMessage(error.message);
+  }
+}
+
+function checkFavoriteLength() {
+  const prevBtnEl = document.querySelector('#prev-page');
+  const nextBtnEl = document.querySelector('#next-page');
+  if (state.favorite.length < 2) {
+    nextBtnEl.classList.add('disabled');
+    prevBtnEl.classList.add('disabled');
   }
 }

@@ -32,25 +32,25 @@ const renderCityName = (cityName, isFavorite) => {
 
 export { renderCityName };
 
-async function renderCityPhoto(name, theme) {
-  const photoUrl = await getPhoto(name, theme);
+async function renderCityPhoto(name) {
+  const photoUrl = await getPhoto(name);
   const headerEl = document.querySelector('header');
   headerEl.style.backgroundImage = `url(${photoUrl})`;
 }
 
 export { renderCityPhoto };
 
-const renderWeather = (data) => {
+const renderWeather = (data, units) => {
   const forecastTodayListEl = document.querySelector('#forecast-today');
   const date = new Date(data.LocalObservationDateTime);
   const logo = data.WeatherIcon < 10 ? '0' + data.WeatherIcon : data.WeatherIcon;
-  const temp = data.Temperature.Metric.Value + data.Temperature.Metric.Unit;
-  const feelTemperature = data.RealFeelTemperature?.Metric.Value + data.RealFeelTemperature?.Metric.Unit;
-  const wind = data.Wind.Speed.Metric.Value + data.Wind.Speed.Metric.Unit + ' ' + data.Wind.Direction.English;
-  const windGust = data.WindGust.Speed.Metric.Value + data.WindGust.Speed.Metric.Unit;
+  const temp = data.Temperature[units].Value + data.Temperature[units].Unit;
+  const feelTemperature = data.RealFeelTemperature[units].Value + data.RealFeelTemperature[units].Unit;
+  const wind = data.Wind.Speed[units].Value + data.Wind.Speed[units].Unit + ' ' + data.Wind.Direction.English;
+  const windGust = data.WindGust.Speed[units].Value + data.WindGust.Speed[units].Unit;
   const UVIndex = data.UVIndexText + ' - ' + data.UVIndex;
-  const visibility = data.Visibility.Metric.Value + data.Visibility.Metric.Unit;
-  const pressure = data.Pressure.Metric.Value + data.Pressure.Metric.Unit;
+  const visibility = data.Visibility[units].Value + data.Visibility[units].Unit;
+  const pressure = data.Pressure[units].Value + data.Pressure[units].Unit;
   const htmlStr = /*html*/ `
             <h3 class='forecastToday__date'>${days[date.getDay()]}, ${date.getDate()}<sup>th</sup></h3>
             <div class='forecastToday__logo'>
