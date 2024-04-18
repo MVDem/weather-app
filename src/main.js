@@ -169,3 +169,5 @@ function checkFavoriteLength() {
     prevBtnEl.classList.add('disabled');
   }
 }
+
+// trigger diff commit for pr creation to add reviews
