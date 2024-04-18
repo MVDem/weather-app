@@ -1,5 +1,7 @@
 import { screen } from "@testing-library/dom";
 
+// refactor with useful tests
+
 describe("base test placeholder", () => {
   test("test", () => {
     document.body.innerHTML = `

@@ -5,7 +5,17 @@ export const STATE_OPERATION = {
   remove: 'remove',
 };
 
-const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+const days = [
+  'Sunday',
+  'Monday',
+  'Tuesday',
+  'Wednesday',
+  'Thursday',
+  'Friday',
+  'Saturday',
+  'Sunday',
+];
+
 const months = [
   'January',
   'February',
@@ -40,19 +50,23 @@ async function renderCityPhoto(name) {
 
 export { renderCityPhoto };
 
-const renderWeather = (data, units) => {
+const renderWeather = (data, units = 'Metric') => {
   const forecastTodayListEl = document.querySelector('#forecast-today');
   const date = new Date(data.LocalObservationDateTime);
   const logo = data.WeatherIcon < 10 ? '0' + data.WeatherIcon : data.WeatherIcon;
   const temp = data.Temperature[units].Value + data.Temperature[units].Unit;
-  const feelTemperature = data.RealFeelTemperature[units].Value + data.RealFeelTemperature[units].Unit;
-  const wind = data.Wind.Speed[units].Value + data.Wind.Speed[units].Unit + ' ' + data.Wind.Direction.English;
+  const feelTemperature =
+    data.RealFeelTemperature[units].Value + data.RealFeelTemperature[units].Unit;
+  const wind =
+    data.Wind.Speed[units].Value + data.Wind.Speed[units].Unit + ' ' + data.Wind.Direction.English;
   const windGust = data.WindGust.Speed[units].Value + data.WindGust.Speed[units].Unit;
   const UVIndex = data.UVIndexText + ' - ' + data.UVIndex;
   const visibility = data.Visibility[units].Value + data.Visibility[units].Unit;
   const pressure = data.Pressure[units].Value + data.Pressure[units].Unit;
   const htmlStr = /*html*/ `
-            <h3 class='forecastToday__date'>${days[date.getDay()]}, ${date.getDate()}<sup>th</sup></h3>
+            <h3 class='forecastToday__date'>${
+              days[date.getDay()]
+            }, ${date.getDate()}<sup>th</sup></h3>
             <div class='forecastToday__logo'>
               <img src='https://developer.accuweather.com/sites/default/files/${logo}-s.png'/>
             </div>
@@ -84,8 +98,13 @@ const renderDaysForecast = (data) => {
   const logoNight = data.Night.Icon < 10 ? '0' + data.Night.Icon : data.Night.Icon;
   const temperatureMax = data.Temperature.Maximum.Value + data.Temperature.Maximum.Unit;
   const temperatureMin = data.Temperature.Maximum.Value + data.Temperature.Maximum.Unit;
-  const windDay = data.Day.Wind.Speed.Value + data.Day.Wind.Speed.Unit + ' ' + data.Day.Wind.Direction.English;
-  const windNight = data.Night.Wind.Speed.Value + data.Night.Wind.Speed.Unit + ' ' + data.Night.Wind.Direction.English;
+  const windDay =
+    data.Day.Wind.Speed.Value + data.Day.Wind.Speed.Unit + ' ' + data.Day.Wind.Direction.English;
+  const windNight =
+    data.Night.Wind.Speed.Value +
+    data.Night.Wind.Speed.Unit +
+    ' ' +
+    data.Night.Wind.Direction.English;
   const htmlStr = /*html*/ `
             <div class='forecastItem__date'>
               <h3>${days[date.getDay()]}</h3>

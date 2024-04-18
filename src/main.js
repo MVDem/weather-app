@@ -1,5 +1,11 @@
 import './style.scss';
-import { get5DayForecast, getCityKey, getCurrentWeather, getLocationCity, searchCity } from './http/client.js';
+import {
+  get5DayForecast,
+  getCityKey,
+  getCurrentWeather,
+  getLocationCity,
+  searchCity,
+} from './http/client.js';
 import { showFailMessage } from './toastify-utils.js';
 import {
   renderWeather,

@@ -1,154 +1,154 @@
 export const mockSearchCity = [
   {
     Version: 1,
-    Key: "213225",
-    Type: "City",
+    Key: '213225',
+    Type: 'City',
     Rank: 30,
-    LocalizedName: "Jerusalem",
+    LocalizedName: 'Jerusalem',
     Country: {
-      ID: "IL",
-      LocalizedName: "Israel"
+      ID: 'IL',
+      LocalizedName: 'Israel',
     },
     AdministrativeArea: {
-      ID: "JM",
-      LocalizedName: "Jerusalem"
-    }
+      ID: 'JM',
+      LocalizedName: 'Jerusalem',
+    },
   },
   {
     Version: 1,
-    Key: "128752",
-    Type: "City",
+    Key: '128752',
+    Type: 'City',
     Rank: 65,
-    LocalizedName: "Jerusalen",
+    LocalizedName: 'Jerusalen',
     Country: {
-      ID: "SV",
-      LocalizedName: "El Salvador"
+      ID: 'SV',
+      LocalizedName: 'El Salvador',
     },
     AdministrativeArea: {
-      ID: "PA",
-      LocalizedName: "La Paz"
-    }
+      ID: 'PA',
+      LocalizedName: 'La Paz',
+    },
   },
   {
     Version: 1,
-    Key: "32864",
-    Type: "City",
+    Key: '32864',
+    Type: 'City',
     Rank: 75,
-    LocalizedName: "Jerusalen",
+    LocalizedName: 'Jerusalen',
     Country: {
-      ID: "BO",
-      LocalizedName: "Bolivia"
+      ID: 'BO',
+      LocalizedName: 'Bolivia',
     },
     AdministrativeArea: {
-      ID: "B",
-      LocalizedName: "El Beni"
-    }
+      ID: 'B',
+      LocalizedName: 'El Beni',
+    },
   },
   {
     Version: 1,
-    Key: "221483",
-    Type: "City",
+    Key: '221483',
+    Type: 'City',
     Rank: 75,
-    LocalizedName: "Jerusalem",
+    LocalizedName: 'Jerusalem',
     Country: {
-      ID: "JM",
-      LocalizedName: "Jamaica"
+      ID: 'JM',
+      LocalizedName: 'Jamaica',
     },
     AdministrativeArea: {
-      ID: "10",
-      LocalizedName: "Westmoreland"
-    }
+      ID: '10',
+      LocalizedName: 'Westmoreland',
+    },
   },
   {
     Version: 1,
-    Key: "2305887",
-    Type: "City",
+    Key: '2305887',
+    Type: 'City',
     Rank: 85,
-    LocalizedName: "Jerusalém",
+    LocalizedName: 'Jerusalém',
     Country: {
-      ID: "BR",
-      LocalizedName: "Brazil"
+      ID: 'BR',
+      LocalizedName: 'Brazil',
     },
     AdministrativeArea: {
-      ID: "MG",
-      LocalizedName: "Minas Gerais"
-    }
+      ID: 'MG',
+      LocalizedName: 'Minas Gerais',
+    },
   },
   {
     Version: 1,
-    Key: "2310187",
-    Type: "City",
+    Key: '2310187',
+    Type: 'City',
     Rank: 85,
-    LocalizedName: "Jerusalém",
+    LocalizedName: 'Jerusalém',
     Country: {
-      ID: "BR",
-      LocalizedName: "Brazil"
+      ID: 'BR',
+      LocalizedName: 'Brazil',
     },
     AdministrativeArea: {
-      ID: "MT",
-      LocalizedName: "Mato Grosso"
-    }
+      ID: 'MT',
+      LocalizedName: 'Mato Grosso',
+    },
   },
   {
     Version: 1,
-    Key: "1376675",
-    Type: "City",
+    Key: '1376675',
+    Type: 'City',
     Rank: 85,
-    LocalizedName: "Jerusalem",
+    LocalizedName: 'Jerusalem',
     Country: {
-      ID: "CZ",
-      LocalizedName: "Czechia"
+      ID: 'CZ',
+      LocalizedName: 'Czechia',
     },
     AdministrativeArea: {
-      ID: "20",
-      LocalizedName: "Central Bohemian"
-    }
+      ID: '20',
+      LocalizedName: 'Central Bohemian',
+    },
   },
   {
     Version: 1,
-    Key: "3537004",
-    Type: "City",
+    Key: '3537004',
+    Type: 'City',
     Rank: 85,
-    LocalizedName: "Jerusalem",
+    LocalizedName: 'Jerusalem',
     Country: {
-      ID: "IE",
-      LocalizedName: "Ireland"
+      ID: 'IE',
+      LocalizedName: 'Ireland',
     },
     AdministrativeArea: {
-      ID: "KE",
-      LocalizedName: "County Kildare"
-    }
+      ID: 'KE',
+      LocalizedName: 'County Kildare',
+    },
   },
   {
     Version: 1,
-    Key: "1062987",
-    Type: "City",
+    Key: '1062987',
+    Type: 'City',
     Rank: 85,
-    LocalizedName: "Jerusalem",
+    LocalizedName: 'Jerusalem',
     Country: {
-      ID: "MX",
-      LocalizedName: "Mexico"
+      ID: 'MX',
+      LocalizedName: 'Mexico',
     },
     AdministrativeArea: {
-      ID: "DUR",
-      LocalizedName: "Durango"
-    }
+      ID: 'DUR',
+      LocalizedName: 'Durango',
+    },
   },
   {
     Version: 1,
-    Key: "2115414",
-    Type: "City",
+    Key: '2115414',
+    Type: 'City',
     Rank: 85,
-    LocalizedName: "Jerusalem",
+    LocalizedName: 'Jerusalem',
     Country: {
-      ID: "US",
-      LocalizedName: "United States"
+      ID: 'US',
+      LocalizedName: 'United States',
     },
     AdministrativeArea: {
-      ID: "OH",
-      LocalizedName: "Ohio"
-    }
-  }
+      ID: 'OH',
+      LocalizedName: 'Ohio',
+    },
+  },
 ];
 
 export const getCityKey =
@@ -156,37 +156,37 @@ export const getCityKey =
   [
     {
       Version: 1,
-      Key: "213225",
-      Type: "City",
+      Key: '213225',
+      Type: 'City',
       Rank: 30,
-      LocalizedName: "Jerusalem",
-      EnglishName: "Jerusalem",
-      PrimaryPostalCode: "",
+      LocalizedName: 'Jerusalem',
+      EnglishName: 'Jerusalem',
+      PrimaryPostalCode: '',
       Region: {
-        ID: "MEA",
-        LocalizedName: "Middle East",
-        EnglishName: "Middle East"
+        ID: 'MEA',
+        LocalizedName: 'Middle East',
+        EnglishName: 'Middle East',
       },
       Country: {
-        ID: "IL",
-        LocalizedName: "Israel",
-        EnglishName: "Israel"
+        ID: 'IL',
+        LocalizedName: 'Israel',
+        EnglishName: 'Israel',
       },
       AdministrativeArea: {
-        ID: "JM",
-        LocalizedName: "Jerusalem",
-        EnglishName: "Jerusalem",
+        ID: 'JM',
+        LocalizedName: 'Jerusalem',
+        EnglishName: 'Jerusalem',
         Level: 1,
-        LocalizedType: "District",
-        EnglishType: "District",
-        CountryID: "IL"
+        LocalizedType: 'District',
+        EnglishType: 'District',
+        CountryID: 'IL',
       },
       TimeZone: {
-        Code: "IDT",
-        Name: "Asia/Jerusalem",
+        Code: 'IDT',
+        Name: 'Asia/Jerusalem',
         GmtOffset: 3.0,
         IsDaylightSaving: true,
-        NextOffsetChange: "2024-10-26T23:00:00Z"
+        NextOffsetChange: '2024-10-26T23:00:00Z',
       },
       GeoPosition: {
         Latitude: 31.774,
@@ -194,61 +194,61 @@ export const getCityKey =
         Elevation: {
           Metric: {
             Value: 804.0,
-            Unit: "m",
-            UnitType: 5
+            Unit: 'm',
+            UnitType: 5,
           },
           Imperial: {
             Value: 2637.0,
-            Unit: "ft",
-            UnitType: 0
-          }
-        }
+            Unit: 'ft',
+            UnitType: 0,
+          },
+        },
       },
       IsAlias: false,
       SupplementalAdminAreas: [],
       DataSets: [
-        "AirQualityCurrentConditions",
-        "AirQualityForecasts",
-        "Alerts",
-        "DailyPollenForecast",
-        "ForecastConfidence",
-        "FutureRadar",
-        "MinuteCast"
-      ]
+        'AirQualityCurrentConditions',
+        'AirQualityForecasts',
+        'Alerts',
+        'DailyPollenForecast',
+        'ForecastConfidence',
+        'FutureRadar',
+        'MinuteCast',
+      ],
     },
     {
       Version: 1,
-      Key: "221483",
-      Type: "City",
+      Key: '221483',
+      Type: 'City',
       Rank: 75,
-      LocalizedName: "Jerusalem",
-      EnglishName: "Jerusalem",
-      PrimaryPostalCode: "",
+      LocalizedName: 'Jerusalem',
+      EnglishName: 'Jerusalem',
+      PrimaryPostalCode: '',
       Region: {
-        ID: "CAC",
-        LocalizedName: "Central America",
-        EnglishName: "Central America"
+        ID: 'CAC',
+        LocalizedName: 'Central America',
+        EnglishName: 'Central America',
       },
       Country: {
-        ID: "JM",
-        LocalizedName: "Jamaica",
-        EnglishName: "Jamaica"
+        ID: 'JM',
+        LocalizedName: 'Jamaica',
+        EnglishName: 'Jamaica',
       },
       AdministrativeArea: {
-        ID: "10",
-        LocalizedName: "Westmoreland",
-        EnglishName: "Westmoreland",
+        ID: '10',
+        LocalizedName: 'Westmoreland',
+        EnglishName: 'Westmoreland',
         Level: 1,
-        LocalizedType: "Parish",
-        EnglishType: "Parish",
-        CountryID: "JM"
+        LocalizedType: 'Parish',
+        EnglishType: 'Parish',
+        CountryID: 'JM',
       },
       TimeZone: {
-        Code: "EST",
-        Name: "America/Jamaica",
+        Code: 'EST',
+        Name: 'America/Jamaica',
         GmtOffset: -5.0,
         IsDaylightSaving: false,
-        NextOffsetChange: null
+        NextOffsetChange: null,
       },
       GeoPosition: {
         Latitude: 18.317,
@@ -256,59 +256,59 @@ export const getCityKey =
         Elevation: {
           Metric: {
             Value: 188.0,
-            Unit: "m",
-            UnitType: 5
+            Unit: 'm',
+            UnitType: 5,
           },
           Imperial: {
             Value: 616.0,
-            Unit: "ft",
-            UnitType: 0
-          }
-        }
+            Unit: 'ft',
+            UnitType: 0,
+          },
+        },
       },
       IsAlias: false,
       SupplementalAdminAreas: [],
       DataSets: [
-        "AirQualityCurrentConditions",
-        "AirQualityForecasts",
-        "FutureRadar",
-        "MinuteCast",
-        "Radar"
-      ]
+        'AirQualityCurrentConditions',
+        'AirQualityForecasts',
+        'FutureRadar',
+        'MinuteCast',
+        'Radar',
+      ],
     },
     {
       Version: 1,
-      Key: "3496636",
-      Type: "City",
+      Key: '3496636',
+      Type: 'City',
       Rank: 85,
-      LocalizedName: "Jerusalem",
-      EnglishName: "Jerusalem",
-      PrimaryPostalCode: "",
+      LocalizedName: 'Jerusalem',
+      EnglishName: 'Jerusalem',
+      PrimaryPostalCode: '',
       Region: {
-        ID: "OCN",
-        LocalizedName: "Oceania",
-        EnglishName: "Oceania"
+        ID: 'OCN',
+        LocalizedName: 'Oceania',
+        EnglishName: 'Oceania',
       },
       Country: {
-        ID: "AU",
-        LocalizedName: "Australia",
-        EnglishName: "Australia"
+        ID: 'AU',
+        LocalizedName: 'Australia',
+        EnglishName: 'Australia',
       },
       AdministrativeArea: {
-        ID: "SA",
-        LocalizedName: "South Australia",
-        EnglishName: "South Australia",
+        ID: 'SA',
+        LocalizedName: 'South Australia',
+        EnglishName: 'South Australia',
         Level: 1,
-        LocalizedType: "State",
-        EnglishType: "State",
-        CountryID: "AU"
+        LocalizedType: 'State',
+        EnglishType: 'State',
+        CountryID: 'AU',
       },
       TimeZone: {
-        Code: "ACST",
-        Name: "Australia/Adelaide",
+        Code: 'ACST',
+        Name: 'Australia/Adelaide',
         GmtOffset: 9.5,
         IsDaylightSaving: false,
-        NextOffsetChange: "2024-10-05T16:30:00Z"
+        NextOffsetChange: '2024-10-05T16:30:00Z',
       },
       GeoPosition: {
         Latitude: -33.976,
@@ -316,66 +316,66 @@ export const getCityKey =
         Elevation: {
           Metric: {
             Value: 55.0,
-            Unit: "m",
-            UnitType: 5
+            Unit: 'm',
+            UnitType: 5,
           },
           Imperial: {
             Value: 180.0,
-            Unit: "ft",
-            UnitType: 0
-          }
-        }
+            Unit: 'ft',
+            UnitType: 0,
+          },
+        },
       },
       IsAlias: false,
       SupplementalAdminAreas: [
         {
           Level: 2,
-          LocalizedName: "Copper Coast",
-          EnglishName: "Copper Coast"
-        }
+          LocalizedName: 'Copper Coast',
+          EnglishName: 'Copper Coast',
+        },
       ],
       DataSets: [
-        "AirQualityCurrentConditions",
-        "AirQualityForecasts",
-        "Alerts",
-        "FutureRadar",
-        "MinuteCast",
-        "Radar"
-      ]
+        'AirQualityCurrentConditions',
+        'AirQualityForecasts',
+        'Alerts',
+        'FutureRadar',
+        'MinuteCast',
+        'Radar',
+      ],
     },
     {
       Version: 1,
-      Key: "1376675",
-      Type: "City",
+      Key: '1376675',
+      Type: 'City',
       Rank: 85,
-      LocalizedName: "Jerusalem",
-      EnglishName: "Jerusalem",
-      PrimaryPostalCode: "",
+      LocalizedName: 'Jerusalem',
+      EnglishName: 'Jerusalem',
+      PrimaryPostalCode: '',
       Region: {
-        ID: "EUR",
-        LocalizedName: "Europe",
-        EnglishName: "Europe"
+        ID: 'EUR',
+        LocalizedName: 'Europe',
+        EnglishName: 'Europe',
       },
       Country: {
-        ID: "CZ",
-        LocalizedName: "Czechia",
-        EnglishName: "Czechia"
+        ID: 'CZ',
+        LocalizedName: 'Czechia',
+        EnglishName: 'Czechia',
       },
       AdministrativeArea: {
-        ID: "20",
-        LocalizedName: "Central Bohemian",
-        EnglishName: "Central Bohemian",
+        ID: '20',
+        LocalizedName: 'Central Bohemian',
+        EnglishName: 'Central Bohemian',
         Level: 1,
-        LocalizedType: "Region",
-        EnglishType: "Region",
-        CountryID: "CZ"
+        LocalizedType: 'Region',
+        EnglishType: 'Region',
+        CountryID: 'CZ',
       },
       TimeZone: {
-        Code: "CEST",
-        Name: "Europe/Prague",
+        Code: 'CEST',
+        Name: 'Europe/Prague',
         GmtOffset: 2.0,
         IsDaylightSaving: true,
-        NextOffsetChange: "2024-10-27T01:00:00Z"
+        NextOffsetChange: '2024-10-27T01:00:00Z',
       },
       GeoPosition: {
         Latitude: 49.662,
@@ -383,73 +383,73 @@ export const getCityKey =
         Elevation: {
           Metric: {
             Value: 558.0,
-            Unit: "m",
-            UnitType: 5
+            Unit: 'm',
+            UnitType: 5,
           },
           Imperial: {
             Value: 1831.0,
-            Unit: "ft",
-            UnitType: 0
-          }
-        }
+            Unit: 'ft',
+            UnitType: 0,
+          },
+        },
       },
       IsAlias: false,
       SupplementalAdminAreas: [
         {
           Level: 2,
-          LocalizedName: "Příbram",
-          EnglishName: "Příbram"
+          LocalizedName: 'Příbram',
+          EnglishName: 'Příbram',
         },
         {
           Level: 3,
-          LocalizedName: "Háje",
-          EnglishName: "Háje"
-        }
+          LocalizedName: 'Háje',
+          EnglishName: 'Háje',
+        },
       ],
       DataSets: [
-        "AirQualityCurrentConditions",
-        "AirQualityForecasts",
-        "Alerts",
-        "DailyPollenForecast",
-        "ForecastConfidence",
-        "FutureRadar",
-        "MinuteCast",
-        "Radar"
-      ]
+        'AirQualityCurrentConditions',
+        'AirQualityForecasts',
+        'Alerts',
+        'DailyPollenForecast',
+        'ForecastConfidence',
+        'FutureRadar',
+        'MinuteCast',
+        'Radar',
+      ],
     },
     {
       Version: 1,
-      Key: "3537004",
-      Type: "City",
+      Key: '3537004',
+      Type: 'City',
       Rank: 85,
-      LocalizedName: "Jerusalem",
-      EnglishName: "Jerusalem",
-      PrimaryPostalCode: "",
+      LocalizedName: 'Jerusalem',
+      EnglishName: 'Jerusalem',
+      PrimaryPostalCode: '',
       Region: {
-        ID: "EUR",
-        LocalizedName: "Europe",
-        EnglishName: "Europe"
+        ID: 'EUR',
+        LocalizedName: 'Europe',
+        EnglishName: 'Europe',
       },
       Country: {
-        ID: "IE",
-        LocalizedName: "Ireland",
-        EnglishName: "Ireland"
+        ID: 'IE',
+        LocalizedName: 'Ireland',
+        EnglishName: 'Ireland',
       },
       AdministrativeArea: {
-        ID: "KE",
-        LocalizedName: "County Kildare",
-        EnglishName: "County Kildare",
+        ID: 'KE',
+        LocalizedName: 'County Kildare',
+        EnglishName: 'County Kildare',
         Level: 1,
-        LocalizedType: "County",
-        EnglishType: "County",
-        CountryID: "IE"
+        LocalizedType: 'County',
+        EnglishType: 'County',
+        CountryID: 'IE',
       },
       TimeZone: {
-        Code: "IST",
-        Name: "Europe/Dublin",
+        Code: 'IST',
+        Name: 'Europe/Dublin',
         GmtOffset: 1.0,
         IsDaylightSaving: true,
-        NextOffsetChange: "2024-10-27T01:00:00Z"
+        NextOffsetChange: '2024-10-27T01:00:00Z',
       },
       GeoPosition: {
         Latitude: 52.891,
@@ -457,62 +457,62 @@ export const getCityKey =
         Elevation: {
           Metric: {
             Value: 50.0,
-            Unit: "m",
-            UnitType: 5
+            Unit: 'm',
+            UnitType: 5,
           },
           Imperial: {
             Value: 164.0,
-            Unit: "ft",
-            UnitType: 0
-          }
-        }
+            Unit: 'ft',
+            UnitType: 0,
+          },
+        },
       },
       IsAlias: false,
       SupplementalAdminAreas: [],
       DataSets: [
-        "AirQualityCurrentConditions",
-        "AirQualityForecasts",
-        "Alerts",
-        "DailyPollenForecast",
-        "ForecastConfidence",
-        "FutureRadar",
-        "MinuteCast",
-        "Radar"
-      ]
+        'AirQualityCurrentConditions',
+        'AirQualityForecasts',
+        'Alerts',
+        'DailyPollenForecast',
+        'ForecastConfidence',
+        'FutureRadar',
+        'MinuteCast',
+        'Radar',
+      ],
     },
     {
       Version: 1,
-      Key: "1062987",
-      Type: "City",
+      Key: '1062987',
+      Type: 'City',
       Rank: 85,
-      LocalizedName: "Jerusalem",
-      EnglishName: "Jerusalem",
-      PrimaryPostalCode: "",
+      LocalizedName: 'Jerusalem',
+      EnglishName: 'Jerusalem',
+      PrimaryPostalCode: '',
       Region: {
-        ID: "NAM",
-        LocalizedName: "North America",
-        EnglishName: "North America"
+        ID: 'NAM',
+        LocalizedName: 'North America',
+        EnglishName: 'North America',
       },
       Country: {
-        ID: "MX",
-        LocalizedName: "Mexico",
-        EnglishName: "Mexico"
+        ID: 'MX',
+        LocalizedName: 'Mexico',
+        EnglishName: 'Mexico',
       },
       AdministrativeArea: {
-        ID: "DUR",
-        LocalizedName: "Durango",
-        EnglishName: "Durango",
+        ID: 'DUR',
+        LocalizedName: 'Durango',
+        EnglishName: 'Durango',
         Level: 1,
-        LocalizedType: "State",
-        EnglishType: "State",
-        CountryID: "MX"
+        LocalizedType: 'State',
+        EnglishType: 'State',
+        CountryID: 'MX',
       },
       TimeZone: {
-        Code: "CST",
-        Name: "America/Monterrey",
+        Code: 'CST',
+        Name: 'America/Monterrey',
         GmtOffset: -6.0,
         IsDaylightSaving: false,
-        NextOffsetChange: null
+        NextOffsetChange: null,
       },
       GeoPosition: {
         Latitude: 25.809,
@@ -520,65 +520,65 @@ export const getCityKey =
         Elevation: {
           Metric: {
             Value: 1091.0,
-            Unit: "m",
-            UnitType: 5
+            Unit: 'm',
+            UnitType: 5,
           },
           Imperial: {
             Value: 3578.0,
-            Unit: "ft",
-            UnitType: 0
-          }
-        }
+            Unit: 'ft',
+            UnitType: 0,
+          },
+        },
       },
       IsAlias: false,
       SupplementalAdminAreas: [
         {
           Level: 2,
-          LocalizedName: "Gómez Palacio",
-          EnglishName: "Gómez Palacio"
-        }
+          LocalizedName: 'Gómez Palacio',
+          EnglishName: 'Gómez Palacio',
+        },
       ],
       DataSets: [
-        "AirQualityCurrentConditions",
-        "AirQualityForecasts",
-        "FutureRadar",
-        "MinuteCast",
-        "Radar"
-      ]
+        'AirQualityCurrentConditions',
+        'AirQualityForecasts',
+        'FutureRadar',
+        'MinuteCast',
+        'Radar',
+      ],
     },
     {
       Version: 1,
-      Key: "3429142",
-      Type: "City",
+      Key: '3429142',
+      Type: 'City',
       Rank: 85,
-      LocalizedName: "Jerusalem",
-      EnglishName: "Jerusalem",
-      PrimaryPostalCode: "",
+      LocalizedName: 'Jerusalem',
+      EnglishName: 'Jerusalem',
+      PrimaryPostalCode: '',
       Region: {
-        ID: "ASI",
-        LocalizedName: "Asia",
-        EnglishName: "Asia"
+        ID: 'ASI',
+        LocalizedName: 'Asia',
+        EnglishName: 'Asia',
       },
       Country: {
-        ID: "PH",
-        LocalizedName: "Philippines",
-        EnglishName: "Philippines"
+        ID: 'PH',
+        LocalizedName: 'Philippines',
+        EnglishName: 'Philippines',
       },
       AdministrativeArea: {
-        ID: "NEC",
-        LocalizedName: "Negros Occidental",
-        EnglishName: "Negros Occidental",
+        ID: 'NEC',
+        LocalizedName: 'Negros Occidental',
+        EnglishName: 'Negros Occidental',
         Level: 1,
-        LocalizedType: "Province",
-        EnglishType: "Province",
-        CountryID: "PH"
+        LocalizedType: 'Province',
+        EnglishType: 'Province',
+        CountryID: 'PH',
       },
       TimeZone: {
-        Code: "PHT",
-        Name: "Asia/Manila",
+        Code: 'PHT',
+        Name: 'Asia/Manila',
         GmtOffset: 8.0,
         IsDaylightSaving: false,
-        NextOffsetChange: null
+        NextOffsetChange: null,
       },
       GeoPosition: {
         Latitude: 10.888,
@@ -586,70 +586,70 @@ export const getCityKey =
         Elevation: {
           Metric: {
             Value: 94.0,
-            Unit: "m",
-            UnitType: 5
+            Unit: 'm',
+            UnitType: 5,
           },
           Imperial: {
             Value: 310.0,
-            Unit: "ft",
-            UnitType: 0
-          }
-        }
+            Unit: 'ft',
+            UnitType: 0,
+          },
+        },
       },
       IsAlias: false,
       ParentCity: {
-        Key: "264982",
-        LocalizedName: "Cadiz City",
-        EnglishName: "Cadiz City"
+        Key: '264982',
+        LocalizedName: 'Cadiz City',
+        EnglishName: 'Cadiz City',
       },
       SupplementalAdminAreas: [
         {
           Level: 2,
-          LocalizedName: "Cadiz City",
-          EnglishName: "Cadiz City"
-        }
+          LocalizedName: 'Cadiz City',
+          EnglishName: 'Cadiz City',
+        },
       ],
       DataSets: [
-        "AirQualityCurrentConditions",
-        "AirQualityForecasts",
-        "Alerts",
-        "FutureRadar",
-        "MinuteCast"
-      ]
+        'AirQualityCurrentConditions',
+        'AirQualityForecasts',
+        'Alerts',
+        'FutureRadar',
+        'MinuteCast',
+      ],
     },
     {
       Version: 1,
-      Key: "2115414",
-      Type: "City",
+      Key: '2115414',
+      Type: 'City',
       Rank: 85,
-      LocalizedName: "Jerusalem",
-      EnglishName: "Jerusalem",
-      PrimaryPostalCode: "43747",
+      LocalizedName: 'Jerusalem',
+      EnglishName: 'Jerusalem',
+      PrimaryPostalCode: '43747',
       Region: {
-        ID: "NAM",
-        LocalizedName: "North America",
-        EnglishName: "North America"
+        ID: 'NAM',
+        LocalizedName: 'North America',
+        EnglishName: 'North America',
       },
       Country: {
-        ID: "US",
-        LocalizedName: "United States",
-        EnglishName: "United States"
+        ID: 'US',
+        LocalizedName: 'United States',
+        EnglishName: 'United States',
       },
       AdministrativeArea: {
-        ID: "OH",
-        LocalizedName: "Ohio",
-        EnglishName: "Ohio",
+        ID: 'OH',
+        LocalizedName: 'Ohio',
+        EnglishName: 'Ohio',
         Level: 1,
-        LocalizedType: "State",
-        EnglishType: "State",
-        CountryID: "US"
+        LocalizedType: 'State',
+        EnglishType: 'State',
+        CountryID: 'US',
       },
       TimeZone: {
-        Code: "EDT",
-        Name: "America/New_York",
+        Code: 'EDT',
+        Name: 'America/New_York',
         GmtOffset: -4.0,
         IsDaylightSaving: true,
-        NextOffsetChange: "2024-11-03T06:00:00Z"
+        NextOffsetChange: '2024-11-03T06:00:00Z',
       },
       GeoPosition: {
         Latitude: 39.852,
@@ -657,69 +657,69 @@ export const getCityKey =
         Elevation: {
           Metric: {
             Value: 365.0,
-            Unit: "m",
-            UnitType: 5
+            Unit: 'm',
+            UnitType: 5,
           },
           Imperial: {
             Value: 1197.0,
-            Unit: "ft",
-            UnitType: 0
-          }
-        }
+            Unit: 'ft',
+            UnitType: 0,
+          },
+        },
       },
       IsAlias: false,
       SupplementalAdminAreas: [
         {
           Level: 2,
-          LocalizedName: "Monroe",
-          EnglishName: "Monroe"
-        }
+          LocalizedName: 'Monroe',
+          EnglishName: 'Monroe',
+        },
       ],
       DataSets: [
-        "AirQualityCurrentConditions",
-        "AirQualityForecasts",
-        "Alerts",
-        "DailyAirQualityForecast",
-        "DailyPollenForecast",
-        "ForecastConfidence",
-        "FutureRadar",
-        "MinuteCast",
-        "Radar"
-      ]
+        'AirQualityCurrentConditions',
+        'AirQualityForecasts',
+        'Alerts',
+        'DailyAirQualityForecast',
+        'DailyPollenForecast',
+        'ForecastConfidence',
+        'FutureRadar',
+        'MinuteCast',
+        'Radar',
+      ],
     },
     {
       Version: 1,
-      Key: "2622706",
-      Type: "City",
+      Key: '2622706',
+      Type: 'City',
       Rank: 285,
-      LocalizedName: "Jerusalem",
-      EnglishName: "Jerusalem",
-      PrimaryPostalCode: "14418",
+      LocalizedName: 'Jerusalem',
+      EnglishName: 'Jerusalem',
+      PrimaryPostalCode: '14418',
       Region: {
-        ID: "NAM",
-        LocalizedName: "North America",
-        EnglishName: "North America"
+        ID: 'NAM',
+        LocalizedName: 'North America',
+        EnglishName: 'North America',
       },
       Country: {
-        ID: "US",
-        LocalizedName: "United States",
-        EnglishName: "United States"
+        ID: 'US',
+        LocalizedName: 'United States',
+        EnglishName: 'United States',
       },
       AdministrativeArea: {
-        ID: "NY",
-        LocalizedName: "New York",
-        EnglishName: "New York",
+        ID: 'NY',
+        LocalizedName: 'New York',
+        EnglishName: 'New York',
         Level: 1,
-        LocalizedType: "State",
-        EnglishType: "State",
-        CountryID: "US"
+        LocalizedType: 'State',
+        EnglishType: 'State',
+        CountryID: 'US',
       },
       TimeZone: {
-        Code: "EDT",
-        Name: "America/New_York",
+        Code: 'EDT',
+        Name: 'America/New_York',
         GmtOffset: -4.0,
         IsDaylightSaving: true,
-        NextOffsetChange: "2024-11-03T06:00:00Z"
+        NextOffsetChange: '2024-11-03T06:00:00Z',
       },
       GeoPosition: {
         Latitude: 42.609,
@@ -727,69 +727,69 @@ export const getCityKey =
         Elevation: {
           Metric: {
             Value: 225.0,
-            Unit: "m",
-            UnitType: 5
+            Unit: 'm',
+            UnitType: 5,
           },
           Imperial: {
             Value: 738.0,
-            Unit: "ft",
-            UnitType: 0
-          }
-        }
+            Unit: 'ft',
+            UnitType: 0,
+          },
+        },
       },
       IsAlias: false,
       SupplementalAdminAreas: [
         {
           Level: 2,
-          LocalizedName: "Yates",
-          EnglishName: "Yates"
-        }
+          LocalizedName: 'Yates',
+          EnglishName: 'Yates',
+        },
       ],
       DataSets: [
-        "AirQualityCurrentConditions",
-        "AirQualityForecasts",
-        "Alerts",
-        "DailyAirQualityForecast",
-        "DailyPollenForecast",
-        "ForecastConfidence",
-        "FutureRadar",
-        "MinuteCast",
-        "Radar"
-      ]
+        'AirQualityCurrentConditions',
+        'AirQualityForecasts',
+        'Alerts',
+        'DailyAirQualityForecast',
+        'DailyPollenForecast',
+        'ForecastConfidence',
+        'FutureRadar',
+        'MinuteCast',
+        'Radar',
+      ],
     },
     {
       Version: 1,
-      Key: "2186669",
-      Type: "City",
+      Key: '2186669',
+      Type: 'City',
       Rank: 385,
-      LocalizedName: "Jerusalem",
-      EnglishName: "Jerusalem",
-      PrimaryPostalCode: "05443",
+      LocalizedName: 'Jerusalem',
+      EnglishName: 'Jerusalem',
+      PrimaryPostalCode: '05443',
       Region: {
-        ID: "NAM",
-        LocalizedName: "North America",
-        EnglishName: "North America"
+        ID: 'NAM',
+        LocalizedName: 'North America',
+        EnglishName: 'North America',
       },
       Country: {
-        ID: "US",
-        LocalizedName: "United States",
-        EnglishName: "United States"
+        ID: 'US',
+        LocalizedName: 'United States',
+        EnglishName: 'United States',
       },
       AdministrativeArea: {
-        ID: "VT",
-        LocalizedName: "Vermont",
-        EnglishName: "Vermont",
+        ID: 'VT',
+        LocalizedName: 'Vermont',
+        EnglishName: 'Vermont',
         Level: 1,
-        LocalizedType: "State",
-        EnglishType: "State",
-        CountryID: "US"
+        LocalizedType: 'State',
+        EnglishType: 'State',
+        CountryID: 'US',
       },
       TimeZone: {
-        Code: "EDT",
-        Name: "America/New_York",
+        Code: 'EDT',
+        Name: 'America/New_York',
         GmtOffset: -4.0,
         IsDaylightSaving: true,
-        NextOffsetChange: "2024-11-03T06:00:00Z"
+        NextOffsetChange: '2024-11-03T06:00:00Z',
       },
       GeoPosition: {
         Latitude: 44.17,
@@ -797,69 +797,69 @@ export const getCityKey =
         Elevation: {
           Metric: {
             Value: 462.0,
-            Unit: "m",
-            UnitType: 5
+            Unit: 'm',
+            UnitType: 5,
           },
           Imperial: {
             Value: 1515.0,
-            Unit: "ft",
-            UnitType: 0
-          }
-        }
+            Unit: 'ft',
+            UnitType: 0,
+          },
+        },
       },
       IsAlias: false,
       SupplementalAdminAreas: [
         {
           Level: 2,
-          LocalizedName: "Addison",
-          EnglishName: "Addison"
-        }
+          LocalizedName: 'Addison',
+          EnglishName: 'Addison',
+        },
       ],
       DataSets: [
-        "AirQualityCurrentConditions",
-        "AirQualityForecasts",
-        "Alerts",
-        "DailyAirQualityForecast",
-        "DailyPollenForecast",
-        "ForecastConfidence",
-        "FutureRadar",
-        "MinuteCast",
-        "Radar"
-      ]
+        'AirQualityCurrentConditions',
+        'AirQualityForecasts',
+        'Alerts',
+        'DailyAirQualityForecast',
+        'DailyPollenForecast',
+        'ForecastConfidence',
+        'FutureRadar',
+        'MinuteCast',
+        'Radar',
+      ],
     },
     {
       Version: 1,
-      Key: "2186668",
-      Type: "City",
+      Key: '2186668',
+      Type: 'City',
       Rank: 385,
-      LocalizedName: "Jerusalem",
-      EnglishName: "Jerusalem",
-      PrimaryPostalCode: "05767",
+      LocalizedName: 'Jerusalem',
+      EnglishName: 'Jerusalem',
+      PrimaryPostalCode: '05767',
       Region: {
-        ID: "NAM",
-        LocalizedName: "North America",
-        EnglishName: "North America"
+        ID: 'NAM',
+        LocalizedName: 'North America',
+        EnglishName: 'North America',
       },
       Country: {
-        ID: "US",
-        LocalizedName: "United States",
-        EnglishName: "United States"
+        ID: 'US',
+        LocalizedName: 'United States',
+        EnglishName: 'United States',
       },
       AdministrativeArea: {
-        ID: "VT",
-        LocalizedName: "Vermont",
-        EnglishName: "Vermont",
+        ID: 'VT',
+        LocalizedName: 'Vermont',
+        EnglishName: 'Vermont',
         Level: 1,
-        LocalizedType: "State",
-        EnglishType: "State",
-        CountryID: "US"
+        LocalizedType: 'State',
+        EnglishType: 'State',
+        CountryID: 'US',
       },
       TimeZone: {
-        Code: "EDT",
-        Name: "America/New_York",
+        Code: 'EDT',
+        Name: 'America/New_York',
         GmtOffset: -4.0,
         IsDaylightSaving: true,
-        NextOffsetChange: "2024-11-03T06:00:00Z"
+        NextOffsetChange: '2024-11-03T06:00:00Z',
       },
       GeoPosition: {
         Latitude: 43.838,
@@ -867,69 +867,69 @@ export const getCityKey =
         Elevation: {
           Metric: {
             Value: 548.0,
-            Unit: "m",
-            UnitType: 5
+            Unit: 'm',
+            UnitType: 5,
           },
           Imperial: {
             Value: 1797.0,
-            Unit: "ft",
-            UnitType: 0
-          }
-        }
+            Unit: 'ft',
+            UnitType: 0,
+          },
+        },
       },
       IsAlias: false,
       SupplementalAdminAreas: [
         {
           Level: 2,
-          LocalizedName: "Windsor",
-          EnglishName: "Windsor"
-        }
+          LocalizedName: 'Windsor',
+          EnglishName: 'Windsor',
+        },
       ],
       DataSets: [
-        "AirQualityCurrentConditions",
-        "AirQualityForecasts",
-        "Alerts",
-        "DailyAirQualityForecast",
-        "DailyPollenForecast",
-        "ForecastConfidence",
-        "FutureRadar",
-        "MinuteCast",
-        "Radar"
-      ]
+        'AirQualityCurrentConditions',
+        'AirQualityForecasts',
+        'Alerts',
+        'DailyAirQualityForecast',
+        'DailyPollenForecast',
+        'ForecastConfidence',
+        'FutureRadar',
+        'MinuteCast',
+        'Radar',
+      ],
     },
     {
       Version: 1,
-      Key: "2197645",
-      Type: "City",
+      Key: '2197645',
+      Type: 'City',
       Rank: 385,
-      LocalizedName: "Jerusalem",
-      EnglishName: "Jerusalem",
-      PrimaryPostalCode: "84646",
+      LocalizedName: 'Jerusalem',
+      EnglishName: 'Jerusalem',
+      PrimaryPostalCode: '84646',
       Region: {
-        ID: "NAM",
-        LocalizedName: "North America",
-        EnglishName: "North America"
+        ID: 'NAM',
+        LocalizedName: 'North America',
+        EnglishName: 'North America',
       },
       Country: {
-        ID: "US",
-        LocalizedName: "United States",
-        EnglishName: "United States"
+        ID: 'US',
+        LocalizedName: 'United States',
+        EnglishName: 'United States',
       },
       AdministrativeArea: {
-        ID: "UT",
-        LocalizedName: "Utah",
-        EnglishName: "Utah",
+        ID: 'UT',
+        LocalizedName: 'Utah',
+        EnglishName: 'Utah',
         Level: 1,
-        LocalizedType: "State",
-        EnglishType: "State",
-        CountryID: "US"
+        LocalizedType: 'State',
+        EnglishType: 'State',
+        CountryID: 'US',
       },
       TimeZone: {
-        Code: "MDT",
-        Name: "America/Denver",
+        Code: 'MDT',
+        Name: 'America/Denver',
         GmtOffset: -6.0,
         IsDaylightSaving: true,
-        NextOffsetChange: "2024-11-03T08:00:00Z"
+        NextOffsetChange: '2024-11-03T08:00:00Z',
       },
       GeoPosition: {
         Latitude: 39.564,
@@ -937,69 +937,69 @@ export const getCityKey =
         Elevation: {
           Metric: {
             Value: 1830.0,
-            Unit: "m",
-            UnitType: 5
+            Unit: 'm',
+            UnitType: 5,
           },
           Imperial: {
             Value: 6005.0,
-            Unit: "ft",
-            UnitType: 0
-          }
-        }
+            Unit: 'ft',
+            UnitType: 0,
+          },
+        },
       },
       IsAlias: false,
       SupplementalAdminAreas: [
         {
           Level: 2,
-          LocalizedName: "Sanpete",
-          EnglishName: "Sanpete"
-        }
+          LocalizedName: 'Sanpete',
+          EnglishName: 'Sanpete',
+        },
       ],
       DataSets: [
-        "AirQualityCurrentConditions",
-        "AirQualityForecasts",
-        "Alerts",
-        "DailyAirQualityForecast",
-        "DailyPollenForecast",
-        "ForecastConfidence",
-        "FutureRadar",
-        "MinuteCast",
-        "Radar"
-      ]
+        'AirQualityCurrentConditions',
+        'AirQualityForecasts',
+        'Alerts',
+        'DailyAirQualityForecast',
+        'DailyPollenForecast',
+        'ForecastConfidence',
+        'FutureRadar',
+        'MinuteCast',
+        'Radar',
+      ],
     },
     {
       Version: 1,
-      Key: "2202899",
-      Type: "City",
+      Key: '2202899',
+      Type: 'City',
       Rank: 385,
-      LocalizedName: "Jerusalem",
-      EnglishName: "Jerusalem",
-      PrimaryPostalCode: "37144",
+      LocalizedName: 'Jerusalem',
+      EnglishName: 'Jerusalem',
+      PrimaryPostalCode: '37144',
       Region: {
-        ID: "NAM",
-        LocalizedName: "North America",
-        EnglishName: "North America"
+        ID: 'NAM',
+        LocalizedName: 'North America',
+        EnglishName: 'North America',
       },
       Country: {
-        ID: "US",
-        LocalizedName: "United States",
-        EnglishName: "United States"
+        ID: 'US',
+        LocalizedName: 'United States',
+        EnglishName: 'United States',
       },
       AdministrativeArea: {
-        ID: "TN",
-        LocalizedName: "Tennessee",
-        EnglishName: "Tennessee",
+        ID: 'TN',
+        LocalizedName: 'Tennessee',
+        EnglishName: 'Tennessee',
         Level: 1,
-        LocalizedType: "State",
-        EnglishType: "State",
-        CountryID: "US"
+        LocalizedType: 'State',
+        EnglishType: 'State',
+        CountryID: 'US',
       },
       TimeZone: {
-        Code: "CDT",
-        Name: "America/Chicago",
+        Code: 'CDT',
+        Name: 'America/Chicago',
         GmtOffset: -5.0,
         IsDaylightSaving: true,
-        NextOffsetChange: "2024-11-03T07:00:00Z"
+        NextOffsetChange: '2024-11-03T07:00:00Z',
       },
       GeoPosition: {
         Latitude: 35.243,
@@ -1007,69 +1007,69 @@ export const getCityKey =
         Elevation: {
           Metric: {
             Value: 249.0,
-            Unit: "m",
-            UnitType: 5
+            Unit: 'm',
+            UnitType: 5,
           },
           Imperial: {
             Value: 816.0,
-            Unit: "ft",
-            UnitType: 0
-          }
-        }
+            Unit: 'ft',
+            UnitType: 0,
+          },
+        },
       },
       IsAlias: false,
       SupplementalAdminAreas: [
         {
           Level: 2,
-          LocalizedName: "Lincoln",
-          EnglishName: "Lincoln"
-        }
+          LocalizedName: 'Lincoln',
+          EnglishName: 'Lincoln',
+        },
       ],
       DataSets: [
-        "AirQualityCurrentConditions",
-        "AirQualityForecasts",
-        "Alerts",
-        "DailyAirQualityForecast",
-        "DailyPollenForecast",
-        "ForecastConfidence",
-        "FutureRadar",
-        "MinuteCast",
-        "Radar"
-      ]
+        'AirQualityCurrentConditions',
+        'AirQualityForecasts',
+        'Alerts',
+        'DailyAirQualityForecast',
+        'DailyPollenForecast',
+        'ForecastConfidence',
+        'FutureRadar',
+        'MinuteCast',
+        'Radar',
+      ],
     },
     {
       Version: 1,
-      Key: "2099014",
-      Type: "City",
+      Key: '2099014',
+      Type: 'City',
       Rank: 385,
-      LocalizedName: "Jerusalem",
-      EnglishName: "Jerusalem",
-      PrimaryPostalCode: "02879",
+      LocalizedName: 'Jerusalem',
+      EnglishName: 'Jerusalem',
+      PrimaryPostalCode: '02879',
       Region: {
-        ID: "NAM",
-        LocalizedName: "North America",
-        EnglishName: "North America"
+        ID: 'NAM',
+        LocalizedName: 'North America',
+        EnglishName: 'North America',
       },
       Country: {
-        ID: "US",
-        LocalizedName: "United States",
-        EnglishName: "United States"
+        ID: 'US',
+        LocalizedName: 'United States',
+        EnglishName: 'United States',
       },
       AdministrativeArea: {
-        ID: "RI",
-        LocalizedName: "Rhode Island",
-        EnglishName: "Rhode Island",
+        ID: 'RI',
+        LocalizedName: 'Rhode Island',
+        EnglishName: 'Rhode Island',
         Level: 1,
-        LocalizedType: "State",
-        EnglishType: "State",
-        CountryID: "US"
+        LocalizedType: 'State',
+        EnglishType: 'State',
+        CountryID: 'US',
       },
       TimeZone: {
-        Code: "EDT",
-        Name: "America/New_York",
+        Code: 'EDT',
+        Name: 'America/New_York',
         GmtOffset: -4.0,
         IsDaylightSaving: true,
-        NextOffsetChange: "2024-11-03T06:00:00Z"
+        NextOffsetChange: '2024-11-03T06:00:00Z',
       },
       GeoPosition: {
         Latitude: 41.377,
@@ -1077,70 +1077,70 @@ export const getCityKey =
         Elevation: {
           Metric: {
             Value: 1.0,
-            Unit: "m",
-            UnitType: 5
+            Unit: 'm',
+            UnitType: 5,
           },
           Imperial: {
             Value: 3.0,
-            Unit: "ft",
-            UnitType: 0
-          }
-        }
+            Unit: 'ft',
+            UnitType: 0,
+          },
+        },
       },
       IsAlias: false,
       SupplementalAdminAreas: [
         {
           Level: 2,
-          LocalizedName: "Washington",
-          EnglishName: "Washington"
-        }
+          LocalizedName: 'Washington',
+          EnglishName: 'Washington',
+        },
       ],
       DataSets: [
-        "AirQualityCurrentConditions",
-        "AirQualityForecasts",
-        "Alerts",
-        "DailyAirQualityForecast",
-        "DailyPollenForecast",
-        "ForecastConfidence",
-        "FutureRadar",
-        "MinuteCast",
-        "Radar",
-        "TidalForecast"
-      ]
+        'AirQualityCurrentConditions',
+        'AirQualityForecasts',
+        'Alerts',
+        'DailyAirQualityForecast',
+        'DailyPollenForecast',
+        'ForecastConfidence',
+        'FutureRadar',
+        'MinuteCast',
+        'Radar',
+        'TidalForecast',
+      ],
     },
     {
       Version: 1,
-      Key: "2214780",
-      Type: "City",
+      Key: '2214780',
+      Type: 'City',
       Rank: 385,
-      LocalizedName: "Jerusalem",
-      EnglishName: "Jerusalem",
-      PrimaryPostalCode: "45202",
+      LocalizedName: 'Jerusalem',
+      EnglishName: 'Jerusalem',
+      PrimaryPostalCode: '45202',
       Region: {
-        ID: "NAM",
-        LocalizedName: "North America",
-        EnglishName: "North America"
+        ID: 'NAM',
+        LocalizedName: 'North America',
+        EnglishName: 'North America',
       },
       Country: {
-        ID: "US",
-        LocalizedName: "United States",
-        EnglishName: "United States"
+        ID: 'US',
+        LocalizedName: 'United States',
+        EnglishName: 'United States',
       },
       AdministrativeArea: {
-        ID: "OH",
-        LocalizedName: "Ohio",
-        EnglishName: "Ohio",
+        ID: 'OH',
+        LocalizedName: 'Ohio',
+        EnglishName: 'Ohio',
         Level: 1,
-        LocalizedType: "State",
-        EnglishType: "State",
-        CountryID: "US"
+        LocalizedType: 'State',
+        EnglishType: 'State',
+        CountryID: 'US',
       },
       TimeZone: {
-        Code: "EDT",
-        Name: "America/New_York",
+        Code: 'EDT',
+        Name: 'America/New_York',
         GmtOffset: -4.0,
         IsDaylightSaving: true,
-        NextOffsetChange: "2024-11-03T06:00:00Z"
+        NextOffsetChange: '2024-11-03T06:00:00Z',
       },
       GeoPosition: {
         Latitude: 39.121,
@@ -1148,69 +1148,69 @@ export const getCityKey =
         Elevation: {
           Metric: {
             Value: 250.0,
-            Unit: "m",
-            UnitType: 5
+            Unit: 'm',
+            UnitType: 5,
           },
           Imperial: {
             Value: 820.0,
-            Unit: "ft",
-            UnitType: 0
-          }
-        }
+            Unit: 'ft',
+            UnitType: 0,
+          },
+        },
       },
       IsAlias: false,
       SupplementalAdminAreas: [
         {
           Level: 2,
-          LocalizedName: "Hamilton",
-          EnglishName: "Hamilton"
-        }
+          LocalizedName: 'Hamilton',
+          EnglishName: 'Hamilton',
+        },
       ],
       DataSets: [
-        "AirQualityCurrentConditions",
-        "AirQualityForecasts",
-        "Alerts",
-        "DailyAirQualityForecast",
-        "DailyPollenForecast",
-        "ForecastConfidence",
-        "FutureRadar",
-        "MinuteCast",
-        "Radar"
-      ]
+        'AirQualityCurrentConditions',
+        'AirQualityForecasts',
+        'Alerts',
+        'DailyAirQualityForecast',
+        'DailyPollenForecast',
+        'ForecastConfidence',
+        'FutureRadar',
+        'MinuteCast',
+        'Radar',
+      ],
     },
     {
       Version: 1,
-      Key: "2211188",
-      Type: "City",
+      Key: '2211188',
+      Type: 'City',
       Rank: 385,
-      LocalizedName: "Jerusalem",
-      EnglishName: "Jerusalem",
-      PrimaryPostalCode: "48118",
+      LocalizedName: 'Jerusalem',
+      EnglishName: 'Jerusalem',
+      PrimaryPostalCode: '48118',
       Region: {
-        ID: "NAM",
-        LocalizedName: "North America",
-        EnglishName: "North America"
+        ID: 'NAM',
+        LocalizedName: 'North America',
+        EnglishName: 'North America',
       },
       Country: {
-        ID: "US",
-        LocalizedName: "United States",
-        EnglishName: "United States"
+        ID: 'US',
+        LocalizedName: 'United States',
+        EnglishName: 'United States',
       },
       AdministrativeArea: {
-        ID: "MI",
-        LocalizedName: "Michigan",
-        EnglishName: "Michigan",
+        ID: 'MI',
+        LocalizedName: 'Michigan',
+        EnglishName: 'Michigan',
         Level: 1,
-        LocalizedType: "State",
-        EnglishType: "State",
-        CountryID: "US"
+        LocalizedType: 'State',
+        EnglishType: 'State',
+        CountryID: 'US',
       },
       TimeZone: {
-        Code: "EDT",
-        Name: "America/Detroit",
+        Code: 'EDT',
+        Name: 'America/Detroit',
         GmtOffset: -4.0,
         IsDaylightSaving: true,
-        NextOffsetChange: "2024-11-03T06:00:00Z"
+        NextOffsetChange: '2024-11-03T06:00:00Z',
       },
       GeoPosition: {
         Latitude: 42.275,
@@ -1218,69 +1218,69 @@ export const getCityKey =
         Elevation: {
           Metric: {
             Value: 273.0,
-            Unit: "m",
-            UnitType: 5
+            Unit: 'm',
+            UnitType: 5,
           },
           Imperial: {
             Value: 895.0,
-            Unit: "ft",
-            UnitType: 0
-          }
-        }
+            Unit: 'ft',
+            UnitType: 0,
+          },
+        },
       },
       IsAlias: false,
       SupplementalAdminAreas: [
         {
           Level: 2,
-          LocalizedName: "Washtenaw",
-          EnglishName: "Washtenaw"
-        }
+          LocalizedName: 'Washtenaw',
+          EnglishName: 'Washtenaw',
+        },
       ],
       DataSets: [
-        "AirQualityCurrentConditions",
-        "AirQualityForecasts",
-        "Alerts",
-        "DailyAirQualityForecast",
-        "DailyPollenForecast",
-        "ForecastConfidence",
-        "FutureRadar",
-        "MinuteCast",
-        "Radar"
-      ]
+        'AirQualityCurrentConditions',
+        'AirQualityForecasts',
+        'Alerts',
+        'DailyAirQualityForecast',
+        'DailyPollenForecast',
+        'ForecastConfidence',
+        'FutureRadar',
+        'MinuteCast',
+        'Radar',
+      ],
     },
     {
       Version: 1,
-      Key: "2106415",
-      Type: "City",
+      Key: '2106415',
+      Type: 'City',
       Rank: 385,
-      LocalizedName: "Jerusalem",
-      EnglishName: "Jerusalem",
-      PrimaryPostalCode: "21087",
+      LocalizedName: 'Jerusalem',
+      EnglishName: 'Jerusalem',
+      PrimaryPostalCode: '21087',
       Region: {
-        ID: "NAM",
-        LocalizedName: "North America",
-        EnglishName: "North America"
+        ID: 'NAM',
+        LocalizedName: 'North America',
+        EnglishName: 'North America',
       },
       Country: {
-        ID: "US",
-        LocalizedName: "United States",
-        EnglishName: "United States"
+        ID: 'US',
+        LocalizedName: 'United States',
+        EnglishName: 'United States',
       },
       AdministrativeArea: {
-        ID: "MD",
-        LocalizedName: "Maryland",
-        EnglishName: "Maryland",
+        ID: 'MD',
+        LocalizedName: 'Maryland',
+        EnglishName: 'Maryland',
         Level: 1,
-        LocalizedType: "State",
-        EnglishType: "State",
-        CountryID: "US"
+        LocalizedType: 'State',
+        EnglishType: 'State',
+        CountryID: 'US',
       },
       TimeZone: {
-        Code: "EDT",
-        Name: "America/New_York",
+        Code: 'EDT',
+        Name: 'America/New_York',
         GmtOffset: -4.0,
         IsDaylightSaving: true,
-        NextOffsetChange: "2024-11-03T06:00:00Z"
+        NextOffsetChange: '2024-11-03T06:00:00Z',
       },
       GeoPosition: {
         Latitude: 39.463,
@@ -1288,70 +1288,70 @@ export const getCityKey =
         Elevation: {
           Metric: {
             Value: 57.0,
-            Unit: "m",
-            UnitType: 5
+            Unit: 'm',
+            UnitType: 5,
           },
           Imperial: {
             Value: 186.0,
-            Unit: "ft",
-            UnitType: 0
-          }
-        }
+            Unit: 'ft',
+            UnitType: 0,
+          },
+        },
       },
       IsAlias: false,
       SupplementalAdminAreas: [
         {
           Level: 2,
-          LocalizedName: "Harford",
-          EnglishName: "Harford"
-        }
+          LocalizedName: 'Harford',
+          EnglishName: 'Harford',
+        },
       ],
       DataSets: [
-        "AirQualityCurrentConditions",
-        "AirQualityForecasts",
-        "Alerts",
-        "DailyAirQualityForecast",
-        "DailyPollenForecast",
-        "ForecastConfidence",
-        "FutureRadar",
-        "MinuteCast",
-        "Radar",
-        "TidalForecast"
-      ]
+        'AirQualityCurrentConditions',
+        'AirQualityForecasts',
+        'Alerts',
+        'DailyAirQualityForecast',
+        'DailyPollenForecast',
+        'ForecastConfidence',
+        'FutureRadar',
+        'MinuteCast',
+        'Radar',
+        'TidalForecast',
+      ],
     },
     {
       Version: 1,
-      Key: "2106413",
-      Type: "City",
+      Key: '2106413',
+      Type: 'City',
       Rank: 385,
-      LocalizedName: "Jerusalem",
-      EnglishName: "Jerusalem",
-      PrimaryPostalCode: "21773",
+      LocalizedName: 'Jerusalem',
+      EnglishName: 'Jerusalem',
+      PrimaryPostalCode: '21773',
       Region: {
-        ID: "NAM",
-        LocalizedName: "North America",
-        EnglishName: "North America"
+        ID: 'NAM',
+        LocalizedName: 'North America',
+        EnglishName: 'North America',
       },
       Country: {
-        ID: "US",
-        LocalizedName: "United States",
-        EnglishName: "United States"
+        ID: 'US',
+        LocalizedName: 'United States',
+        EnglishName: 'United States',
       },
       AdministrativeArea: {
-        ID: "MD",
-        LocalizedName: "Maryland",
-        EnglishName: "Maryland",
+        ID: 'MD',
+        LocalizedName: 'Maryland',
+        EnglishName: 'Maryland',
         Level: 1,
-        LocalizedType: "State",
-        EnglishType: "State",
-        CountryID: "US"
+        LocalizedType: 'State',
+        EnglishType: 'State',
+        CountryID: 'US',
       },
       TimeZone: {
-        Code: "EDT",
-        Name: "America/New_York",
+        Code: 'EDT',
+        Name: 'America/New_York',
         GmtOffset: -4.0,
         IsDaylightSaving: true,
-        NextOffsetChange: "2024-11-03T06:00:00Z"
+        NextOffsetChange: '2024-11-03T06:00:00Z',
       },
       GeoPosition: {
         Latitude: 39.524,
@@ -1359,69 +1359,69 @@ export const getCityKey =
         Elevation: {
           Metric: {
             Value: 291.0,
-            Unit: "m",
-            UnitType: 5
+            Unit: 'm',
+            UnitType: 5,
           },
           Imperial: {
             Value: 954.0,
-            Unit: "ft",
-            UnitType: 0
-          }
-        }
+            Unit: 'ft',
+            UnitType: 0,
+          },
+        },
       },
       IsAlias: false,
       SupplementalAdminAreas: [
         {
           Level: 2,
-          LocalizedName: "Frederick",
-          EnglishName: "Frederick"
-        }
+          LocalizedName: 'Frederick',
+          EnglishName: 'Frederick',
+        },
       ],
       DataSets: [
-        "AirQualityCurrentConditions",
-        "AirQualityForecasts",
-        "Alerts",
-        "DailyAirQualityForecast",
-        "DailyPollenForecast",
-        "ForecastConfidence",
-        "FutureRadar",
-        "MinuteCast",
-        "Radar"
-      ]
+        'AirQualityCurrentConditions',
+        'AirQualityForecasts',
+        'Alerts',
+        'DailyAirQualityForecast',
+        'DailyPollenForecast',
+        'ForecastConfidence',
+        'FutureRadar',
+        'MinuteCast',
+        'Radar',
+      ],
     },
     {
       Version: 1,
-      Key: "2180903",
-      Type: "City",
+      Key: '2180903',
+      Type: 'City',
       Rank: 385,
-      LocalizedName: "Jerusalem",
-      EnglishName: "Jerusalem",
-      PrimaryPostalCode: "30055",
+      LocalizedName: 'Jerusalem',
+      EnglishName: 'Jerusalem',
+      PrimaryPostalCode: '30055',
       Region: {
-        ID: "NAM",
-        LocalizedName: "North America",
-        EnglishName: "North America"
+        ID: 'NAM',
+        LocalizedName: 'North America',
+        EnglishName: 'North America',
       },
       Country: {
-        ID: "US",
-        LocalizedName: "United States",
-        EnglishName: "United States"
+        ID: 'US',
+        LocalizedName: 'United States',
+        EnglishName: 'United States',
       },
       AdministrativeArea: {
-        ID: "GA",
-        LocalizedName: "Georgia",
-        EnglishName: "Georgia",
+        ID: 'GA',
+        LocalizedName: 'Georgia',
+        EnglishName: 'Georgia',
         Level: 1,
-        LocalizedType: "State",
-        EnglishType: "State",
-        CountryID: "US"
+        LocalizedType: 'State',
+        EnglishType: 'State',
+        CountryID: 'US',
       },
       TimeZone: {
-        Code: "EDT",
-        Name: "America/New_York",
+        Code: 'EDT',
+        Name: 'America/New_York',
         GmtOffset: -4.0,
         IsDaylightSaving: true,
-        NextOffsetChange: "2024-11-03T06:00:00Z"
+        NextOffsetChange: '2024-11-03T06:00:00Z',
       },
       GeoPosition: {
         Latitude: 33.52,
@@ -1429,69 +1429,69 @@ export const getCityKey =
         Elevation: {
           Metric: {
             Value: 235.0,
-            Unit: "m",
-            UnitType: 5
+            Unit: 'm',
+            UnitType: 5,
           },
           Imperial: {
             Value: 770.0,
-            Unit: "ft",
-            UnitType: 0
-          }
-        }
+            Unit: 'ft',
+            UnitType: 0,
+          },
+        },
       },
       IsAlias: false,
       SupplementalAdminAreas: [
         {
           Level: 2,
-          LocalizedName: "Newton",
-          EnglishName: "Newton"
-        }
+          LocalizedName: 'Newton',
+          EnglishName: 'Newton',
+        },
       ],
       DataSets: [
-        "AirQualityCurrentConditions",
-        "AirQualityForecasts",
-        "Alerts",
-        "DailyAirQualityForecast",
-        "DailyPollenForecast",
-        "ForecastConfidence",
-        "FutureRadar",
-        "MinuteCast",
-        "Radar"
-      ]
+        'AirQualityCurrentConditions',
+        'AirQualityForecasts',
+        'Alerts',
+        'DailyAirQualityForecast',
+        'DailyPollenForecast',
+        'ForecastConfidence',
+        'FutureRadar',
+        'MinuteCast',
+        'Radar',
+      ],
     },
     {
       Version: 1,
-      Key: "2139592",
-      Type: "City",
+      Key: '2139592',
+      Type: 'City',
       Rank: 385,
-      LocalizedName: "Jerusalem",
-      EnglishName: "Jerusalem",
-      PrimaryPostalCode: "30143",
+      LocalizedName: 'Jerusalem',
+      EnglishName: 'Jerusalem',
+      PrimaryPostalCode: '30143',
       Region: {
-        ID: "NAM",
-        LocalizedName: "North America",
-        EnglishName: "North America"
+        ID: 'NAM',
+        LocalizedName: 'North America',
+        EnglishName: 'North America',
       },
       Country: {
-        ID: "US",
-        LocalizedName: "United States",
-        EnglishName: "United States"
+        ID: 'US',
+        LocalizedName: 'United States',
+        EnglishName: 'United States',
       },
       AdministrativeArea: {
-        ID: "GA",
-        LocalizedName: "Georgia",
-        EnglishName: "Georgia",
+        ID: 'GA',
+        LocalizedName: 'Georgia',
+        EnglishName: 'Georgia',
         Level: 1,
-        LocalizedType: "State",
-        EnglishType: "State",
-        CountryID: "US"
+        LocalizedType: 'State',
+        EnglishType: 'State',
+        CountryID: 'US',
       },
       TimeZone: {
-        Code: "EDT",
-        Name: "America/New_York",
+        Code: 'EDT',
+        Name: 'America/New_York',
         GmtOffset: -4.0,
         IsDaylightSaving: true,
-        NextOffsetChange: "2024-11-03T06:00:00Z"
+        NextOffsetChange: '2024-11-03T06:00:00Z',
       },
       GeoPosition: {
         Latitude: 34.442,
@@ -1499,69 +1499,69 @@ export const getCityKey =
         Elevation: {
           Metric: {
             Value: 377.0,
-            Unit: "m",
-            UnitType: 5
+            Unit: 'm',
+            UnitType: 5,
           },
           Imperial: {
             Value: 1236.0,
-            Unit: "ft",
-            UnitType: 0
-          }
-        }
+            Unit: 'ft',
+            UnitType: 0,
+          },
+        },
       },
       IsAlias: false,
       SupplementalAdminAreas: [
         {
           Level: 2,
-          LocalizedName: "Pickens",
-          EnglishName: "Pickens"
-        }
+          LocalizedName: 'Pickens',
+          EnglishName: 'Pickens',
+        },
       ],
       DataSets: [
-        "AirQualityCurrentConditions",
-        "AirQualityForecasts",
-        "Alerts",
-        "DailyAirQualityForecast",
-        "DailyPollenForecast",
-        "ForecastConfidence",
-        "FutureRadar",
-        "MinuteCast",
-        "Radar"
-      ]
+        'AirQualityCurrentConditions',
+        'AirQualityForecasts',
+        'Alerts',
+        'DailyAirQualityForecast',
+        'DailyPollenForecast',
+        'ForecastConfidence',
+        'FutureRadar',
+        'MinuteCast',
+        'Radar',
+      ],
     },
     {
       Version: 1,
-      Key: "2152761",
-      Type: "City",
+      Key: '2152761',
+      Type: 'City',
       Rank: 385,
-      LocalizedName: "Jerusalem",
-      EnglishName: "Jerusalem",
-      PrimaryPostalCode: "31568",
+      LocalizedName: 'Jerusalem',
+      EnglishName: 'Jerusalem',
+      PrimaryPostalCode: '31568',
       Region: {
-        ID: "NAM",
-        LocalizedName: "North America",
-        EnglishName: "North America"
+        ID: 'NAM',
+        LocalizedName: 'North America',
+        EnglishName: 'North America',
       },
       Country: {
-        ID: "US",
-        LocalizedName: "United States",
-        EnglishName: "United States"
+        ID: 'US',
+        LocalizedName: 'United States',
+        EnglishName: 'United States',
       },
       AdministrativeArea: {
-        ID: "GA",
-        LocalizedName: "Georgia",
-        EnglishName: "Georgia",
+        ID: 'GA',
+        LocalizedName: 'Georgia',
+        EnglishName: 'Georgia',
         Level: 1,
-        LocalizedType: "State",
-        EnglishType: "State",
-        CountryID: "US"
+        LocalizedType: 'State',
+        EnglishType: 'State',
+        CountryID: 'US',
       },
       TimeZone: {
-        Code: "EDT",
-        Name: "America/New_York",
+        Code: 'EDT',
+        Name: 'America/New_York',
         GmtOffset: -4.0,
         IsDaylightSaving: true,
-        NextOffsetChange: "2024-11-03T06:00:00Z"
+        NextOffsetChange: '2024-11-03T06:00:00Z',
       },
       GeoPosition: {
         Latitude: 30.978,
@@ -1569,70 +1569,70 @@ export const getCityKey =
         Elevation: {
           Metric: {
             Value: 12.0,
-            Unit: "m",
-            UnitType: 5
+            Unit: 'm',
+            UnitType: 5,
           },
           Imperial: {
             Value: 39.0,
-            Unit: "ft",
-            UnitType: 0
-          }
-        }
+            Unit: 'ft',
+            UnitType: 0,
+          },
+        },
       },
       IsAlias: false,
       SupplementalAdminAreas: [
         {
           Level: 2,
-          LocalizedName: "Camden",
-          EnglishName: "Camden"
-        }
+          LocalizedName: 'Camden',
+          EnglishName: 'Camden',
+        },
       ],
       DataSets: [
-        "AirQualityCurrentConditions",
-        "AirQualityForecasts",
-        "Alerts",
-        "DailyAirQualityForecast",
-        "DailyPollenForecast",
-        "ForecastConfidence",
-        "FutureRadar",
-        "MinuteCast",
-        "Radar",
-        "TidalForecast"
-      ]
+        'AirQualityCurrentConditions',
+        'AirQualityForecasts',
+        'Alerts',
+        'DailyAirQualityForecast',
+        'DailyPollenForecast',
+        'ForecastConfidence',
+        'FutureRadar',
+        'MinuteCast',
+        'Radar',
+        'TidalForecast',
+      ],
     },
     {
       Version: 1,
-      Key: "2112661",
-      Type: "City",
+      Key: '2112661',
+      Type: 'City',
       Rank: 385,
-      LocalizedName: "Jerusalem",
-      EnglishName: "Jerusalem",
-      PrimaryPostalCode: "72080",
+      LocalizedName: 'Jerusalem',
+      EnglishName: 'Jerusalem',
+      PrimaryPostalCode: '72080',
       Region: {
-        ID: "NAM",
-        LocalizedName: "North America",
-        EnglishName: "North America"
+        ID: 'NAM',
+        LocalizedName: 'North America',
+        EnglishName: 'North America',
       },
       Country: {
-        ID: "US",
-        LocalizedName: "United States",
-        EnglishName: "United States"
+        ID: 'US',
+        LocalizedName: 'United States',
+        EnglishName: 'United States',
       },
       AdministrativeArea: {
-        ID: "AR",
-        LocalizedName: "Arkansas",
-        EnglishName: "Arkansas",
+        ID: 'AR',
+        LocalizedName: 'Arkansas',
+        EnglishName: 'Arkansas',
         Level: 1,
-        LocalizedType: "State",
-        EnglishType: "State",
-        CountryID: "US"
+        LocalizedType: 'State',
+        EnglishType: 'State',
+        CountryID: 'US',
       },
       TimeZone: {
-        Code: "CDT",
-        Name: "America/Chicago",
+        Code: 'CDT',
+        Name: 'America/Chicago',
         GmtOffset: -5.0,
         IsDaylightSaving: true,
-        NextOffsetChange: "2024-11-03T07:00:00Z"
+        NextOffsetChange: '2024-11-03T07:00:00Z',
       },
       GeoPosition: {
         Latitude: 35.405,
@@ -1640,69 +1640,69 @@ export const getCityKey =
         Elevation: {
           Metric: {
             Value: 223.0,
-            Unit: "m",
-            UnitType: 5
+            Unit: 'm',
+            UnitType: 5,
           },
           Imperial: {
             Value: 731.0,
-            Unit: "ft",
-            UnitType: 0
-          }
-        }
+            Unit: 'ft',
+            UnitType: 0,
+          },
+        },
       },
       IsAlias: false,
       SupplementalAdminAreas: [
         {
           Level: 2,
-          LocalizedName: "Conway",
-          EnglishName: "Conway"
-        }
+          LocalizedName: 'Conway',
+          EnglishName: 'Conway',
+        },
       ],
       DataSets: [
-        "AirQualityCurrentConditions",
-        "AirQualityForecasts",
-        "Alerts",
-        "DailyAirQualityForecast",
-        "DailyPollenForecast",
-        "ForecastConfidence",
-        "FutureRadar",
-        "MinuteCast",
-        "Radar"
-      ]
+        'AirQualityCurrentConditions',
+        'AirQualityForecasts',
+        'Alerts',
+        'DailyAirQualityForecast',
+        'DailyPollenForecast',
+        'ForecastConfidence',
+        'FutureRadar',
+        'MinuteCast',
+        'Radar',
+      ],
     },
     {
       Version: 1,
-      Key: "2255026",
-      Type: "City",
+      Key: '2255026',
+      Type: 'City',
       Rank: 385,
-      LocalizedName: "Jerusalem",
-      EnglishName: "Jerusalem",
-      PrimaryPostalCode: "35643",
+      LocalizedName: 'Jerusalem',
+      EnglishName: 'Jerusalem',
+      PrimaryPostalCode: '35643',
       Region: {
-        ID: "NAM",
-        LocalizedName: "North America",
-        EnglishName: "North America"
+        ID: 'NAM',
+        LocalizedName: 'North America',
+        EnglishName: 'North America',
       },
       Country: {
-        ID: "US",
-        LocalizedName: "United States",
-        EnglishName: "United States"
+        ID: 'US',
+        LocalizedName: 'United States',
+        EnglishName: 'United States',
       },
       AdministrativeArea: {
-        ID: "AL",
-        LocalizedName: "Alabama",
-        EnglishName: "Alabama",
+        ID: 'AL',
+        LocalizedName: 'Alabama',
+        EnglishName: 'Alabama',
         Level: 1,
-        LocalizedType: "State",
-        EnglishType: "State",
-        CountryID: "US"
+        LocalizedType: 'State',
+        EnglishType: 'State',
+        CountryID: 'US',
       },
       TimeZone: {
-        Code: "CDT",
-        Name: "America/Chicago",
+        Code: 'CDT',
+        Name: 'America/Chicago',
         GmtOffset: -5.0,
         IsDaylightSaving: true,
-        NextOffsetChange: "2024-11-03T07:00:00Z"
+        NextOffsetChange: '2024-11-03T07:00:00Z',
       },
       GeoPosition: {
         Latitude: 34.705,
@@ -1710,69 +1710,69 @@ export const getCityKey =
         Elevation: {
           Metric: {
             Value: 185.0,
-            Unit: "m",
-            UnitType: 5
+            Unit: 'm',
+            UnitType: 5,
           },
           Imperial: {
             Value: 606.0,
-            Unit: "ft",
-            UnitType: 0
-          }
-        }
+            Unit: 'ft',
+            UnitType: 0,
+          },
+        },
       },
       IsAlias: false,
       SupplementalAdminAreas: [
         {
           Level: 2,
-          LocalizedName: "Lawrence",
-          EnglishName: "Lawrence"
-        }
+          LocalizedName: 'Lawrence',
+          EnglishName: 'Lawrence',
+        },
       ],
       DataSets: [
-        "AirQualityCurrentConditions",
-        "AirQualityForecasts",
-        "Alerts",
-        "DailyAirQualityForecast",
-        "DailyPollenForecast",
-        "ForecastConfidence",
-        "FutureRadar",
-        "MinuteCast",
-        "Radar"
-      ]
+        'AirQualityCurrentConditions',
+        'AirQualityForecasts',
+        'Alerts',
+        'DailyAirQualityForecast',
+        'DailyPollenForecast',
+        'ForecastConfidence',
+        'FutureRadar',
+        'MinuteCast',
+        'Radar',
+      ],
     },
     {
       Version: 1,
-      Key: "2090509",
-      Type: "City",
+      Key: '2090509',
+      Type: 'City',
       Rank: 385,
-      LocalizedName: "Jerusalem",
-      EnglishName: "Jerusalem",
-      PrimaryPostalCode: "35555",
+      LocalizedName: 'Jerusalem',
+      EnglishName: 'Jerusalem',
+      PrimaryPostalCode: '35555',
       Region: {
-        ID: "NAM",
-        LocalizedName: "North America",
-        EnglishName: "North America"
+        ID: 'NAM',
+        LocalizedName: 'North America',
+        EnglishName: 'North America',
       },
       Country: {
-        ID: "US",
-        LocalizedName: "United States",
-        EnglishName: "United States"
+        ID: 'US',
+        LocalizedName: 'United States',
+        EnglishName: 'United States',
       },
       AdministrativeArea: {
-        ID: "AL",
-        LocalizedName: "Alabama",
-        EnglishName: "Alabama",
+        ID: 'AL',
+        LocalizedName: 'Alabama',
+        EnglishName: 'Alabama',
         Level: 1,
-        LocalizedType: "State",
-        EnglishType: "State",
-        CountryID: "US"
+        LocalizedType: 'State',
+        EnglishType: 'State',
+        CountryID: 'US',
       },
       TimeZone: {
-        Code: "CDT",
-        Name: "America/Chicago",
+        Code: 'CDT',
+        Name: 'America/Chicago',
         GmtOffset: -5.0,
         IsDaylightSaving: true,
-        NextOffsetChange: "2024-11-03T07:00:00Z"
+        NextOffsetChange: '2024-11-03T07:00:00Z',
       },
       GeoPosition: {
         Latitude: 33.612,
@@ -1780,69 +1780,69 @@ export const getCityKey =
         Elevation: {
           Metric: {
             Value: 165.0,
-            Unit: "m",
-            UnitType: 5
+            Unit: 'm',
+            UnitType: 5,
           },
           Imperial: {
             Value: 541.0,
-            Unit: "ft",
-            UnitType: 0
-          }
-        }
+            Unit: 'ft',
+            UnitType: 0,
+          },
+        },
       },
       IsAlias: false,
       SupplementalAdminAreas: [
         {
           Level: 2,
-          LocalizedName: "Fayette",
-          EnglishName: "Fayette"
-        }
+          LocalizedName: 'Fayette',
+          EnglishName: 'Fayette',
+        },
       ],
       DataSets: [
-        "AirQualityCurrentConditions",
-        "AirQualityForecasts",
-        "Alerts",
-        "DailyAirQualityForecast",
-        "DailyPollenForecast",
-        "ForecastConfidence",
-        "FutureRadar",
-        "MinuteCast",
-        "Radar"
-      ]
+        'AirQualityCurrentConditions',
+        'AirQualityForecasts',
+        'Alerts',
+        'DailyAirQualityForecast',
+        'DailyPollenForecast',
+        'ForecastConfidence',
+        'FutureRadar',
+        'MinuteCast',
+        'Radar',
+      ],
     },
     {
       Version: 1,
-      Key: "2106414",
-      Type: "City",
+      Key: '2106414',
+      Type: 'City',
       Rank: 385,
-      LocalizedName: "Jerusalem",
-      EnglishName: "Jerusalem",
-      PrimaryPostalCode: "20837",
+      LocalizedName: 'Jerusalem',
+      EnglishName: 'Jerusalem',
+      PrimaryPostalCode: '20837',
       Region: {
-        ID: "NAM",
-        LocalizedName: "North America",
-        EnglishName: "North America"
+        ID: 'NAM',
+        LocalizedName: 'North America',
+        EnglishName: 'North America',
       },
       Country: {
-        ID: "US",
-        LocalizedName: "United States",
-        EnglishName: "United States"
+        ID: 'US',
+        LocalizedName: 'United States',
+        EnglishName: 'United States',
       },
       AdministrativeArea: {
-        ID: "MD",
-        LocalizedName: "Maryland",
-        EnglishName: "Maryland",
+        ID: 'MD',
+        LocalizedName: 'Maryland',
+        EnglishName: 'Maryland',
         Level: 1,
-        LocalizedType: "State",
-        EnglishType: "State",
-        CountryID: "US"
+        LocalizedType: 'State',
+        EnglishType: 'State',
+        CountryID: 'US',
       },
       TimeZone: {
-        Code: "EDT",
-        Name: "America/New_York",
+        Code: 'EDT',
+        Name: 'America/New_York',
         GmtOffset: -4.0,
         IsDaylightSaving: true,
-        NextOffsetChange: "2024-11-03T06:00:00Z"
+        NextOffsetChange: '2024-11-03T06:00:00Z',
       },
       GeoPosition: {
         Latitude: 39.159,
@@ -1850,69 +1850,69 @@ export const getCityKey =
         Elevation: {
           Metric: {
             Value: 125.0,
-            Unit: "m",
-            UnitType: 5
+            Unit: 'm',
+            UnitType: 5,
           },
           Imperial: {
             Value: 410.0,
-            Unit: "ft",
-            UnitType: 0
-          }
-        }
+            Unit: 'ft',
+            UnitType: 0,
+          },
+        },
       },
       IsAlias: false,
       SupplementalAdminAreas: [
         {
           Level: 2,
-          LocalizedName: "Montgomery",
-          EnglishName: "Montgomery"
-        }
+          LocalizedName: 'Montgomery',
+          EnglishName: 'Montgomery',
+        },
       ],
       DataSets: [
-        "AirQualityCurrentConditions",
-        "AirQualityForecasts",
-        "Alerts",
-        "DailyAirQualityForecast",
-        "DailyPollenForecast",
-        "ForecastConfidence",
-        "FutureRadar",
-        "MinuteCast",
-        "Radar"
-      ]
+        'AirQualityCurrentConditions',
+        'AirQualityForecasts',
+        'Alerts',
+        'DailyAirQualityForecast',
+        'DailyPollenForecast',
+        'ForecastConfidence',
+        'FutureRadar',
+        'MinuteCast',
+        'Radar',
+      ],
     },
     {
       Version: 1,
-      Key: "1475413",
-      Type: "City",
+      Key: '1475413',
+      Type: 'City',
       Rank: 600,
-      LocalizedName: "Jerusalem",
-      EnglishName: "Jerusalem",
-      PrimaryPostalCode: "",
+      LocalizedName: 'Jerusalem',
+      EnglishName: 'Jerusalem',
+      PrimaryPostalCode: '',
       Region: {
-        ID: "SAM",
-        LocalizedName: "South America",
-        EnglishName: "South America"
+        ID: 'SAM',
+        LocalizedName: 'South America',
+        EnglishName: 'South America',
       },
       Country: {
-        ID: "PE",
-        LocalizedName: "Peru",
-        EnglishName: "Peru"
+        ID: 'PE',
+        LocalizedName: 'Peru',
+        EnglishName: 'Peru',
       },
       AdministrativeArea: {
-        ID: "LOR",
-        LocalizedName: "Loreto",
-        EnglishName: "Loreto",
+        ID: 'LOR',
+        LocalizedName: 'Loreto',
+        EnglishName: 'Loreto',
         Level: 1,
-        LocalizedType: "Region",
-        EnglishType: "Region",
-        CountryID: "PE"
+        LocalizedType: 'Region',
+        EnglishType: 'Region',
+        CountryID: 'PE',
       },
       TimeZone: {
-        Code: "PET",
-        Name: "America/Lima",
+        Code: 'PET',
+        Name: 'America/Lima',
         GmtOffset: -5.0,
         IsDaylightSaving: false,
-        NextOffsetChange: null
+        NextOffsetChange: null,
       },
       GeoPosition: {
         Latitude: -3.45,
@@ -1920,59 +1920,59 @@ export const getCityKey =
         Elevation: {
           Metric: {
             Value: 111.0,
-            Unit: "m",
-            UnitType: 5
+            Unit: 'm',
+            UnitType: 5,
           },
           Imperial: {
             Value: 364.0,
-            Unit: "ft",
-            UnitType: 0
-          }
-        }
+            Unit: 'ft',
+            UnitType: 0,
+          },
+        },
       },
       IsAlias: false,
       SupplementalAdminAreas: [],
       DataSets: [
-        "AirQualityCurrentConditions",
-        "AirQualityForecasts",
-        "FutureRadar",
-        "MinuteCast",
-        "Radar"
-      ]
+        'AirQualityCurrentConditions',
+        'AirQualityForecasts',
+        'FutureRadar',
+        'MinuteCast',
+        'Radar',
+      ],
     },
     {
       Version: 1,
-      Key: "960749",
-      Type: "City",
+      Key: '960749',
+      Type: 'City',
       Rank: 600,
-      LocalizedName: "Jerusalem",
-      EnglishName: "Jerusalem",
-      PrimaryPostalCode: "",
+      LocalizedName: 'Jerusalem',
+      EnglishName: 'Jerusalem',
+      PrimaryPostalCode: '',
       Region: {
-        ID: "EUR",
-        LocalizedName: "Europe",
-        EnglishName: "Europe"
+        ID: 'EUR',
+        LocalizedName: 'Europe',
+        EnglishName: 'Europe',
       },
       Country: {
-        ID: "BE",
-        LocalizedName: "Belgium",
-        EnglishName: "Belgium"
+        ID: 'BE',
+        LocalizedName: 'Belgium',
+        EnglishName: 'Belgium',
       },
       AdministrativeArea: {
-        ID: "WBR",
-        LocalizedName: "Walloon Brabant",
-        EnglishName: "Walloon Brabant",
+        ID: 'WBR',
+        LocalizedName: 'Walloon Brabant',
+        EnglishName: 'Walloon Brabant',
         Level: 1,
-        LocalizedType: "Province",
-        EnglishType: "Province",
-        CountryID: "BE"
+        LocalizedType: 'Province',
+        EnglishType: 'Province',
+        CountryID: 'BE',
       },
       TimeZone: {
-        Code: "CEST",
-        Name: "Europe/Brussels",
+        Code: 'CEST',
+        Name: 'Europe/Brussels',
         GmtOffset: 2.0,
         IsDaylightSaving: true,
-        NextOffsetChange: "2024-10-27T01:00:00Z"
+        NextOffsetChange: '2024-10-27T01:00:00Z',
       },
       GeoPosition: {
         Latitude: 50.6,
@@ -1980,62 +1980,62 @@ export const getCityKey =
         Elevation: {
           Metric: {
             Value: 150.0,
-            Unit: "m",
-            UnitType: 5
+            Unit: 'm',
+            UnitType: 5,
           },
           Imperial: {
             Value: 492.0,
-            Unit: "ft",
-            UnitType: 0
-          }
-        }
+            Unit: 'ft',
+            UnitType: 0,
+          },
+        },
       },
       IsAlias: false,
       SupplementalAdminAreas: [],
       DataSets: [
-        "AirQualityCurrentConditions",
-        "AirQualityForecasts",
-        "Alerts",
-        "DailyPollenForecast",
-        "ForecastConfidence",
-        "FutureRadar",
-        "MinuteCast",
-        "Radar"
-      ]
+        'AirQualityCurrentConditions',
+        'AirQualityForecasts',
+        'Alerts',
+        'DailyPollenForecast',
+        'ForecastConfidence',
+        'FutureRadar',
+        'MinuteCast',
+        'Radar',
+      ],
     },
     {
       Version: 1,
-      Key: "899790",
-      Type: "City",
+      Key: '899790',
+      Type: 'City',
       Rank: 600,
-      LocalizedName: "Jerusalem",
-      EnglishName: "Jerusalem",
-      PrimaryPostalCode: "",
+      LocalizedName: 'Jerusalem',
+      EnglishName: 'Jerusalem',
+      PrimaryPostalCode: '',
       Region: {
-        ID: "AFR",
-        LocalizedName: "Africa",
-        EnglishName: "Africa"
+        ID: 'AFR',
+        LocalizedName: 'Africa',
+        EnglishName: 'Africa',
       },
       Country: {
-        ID: "GH",
-        LocalizedName: "Ghana",
-        EnglishName: "Ghana"
+        ID: 'GH',
+        LocalizedName: 'Ghana',
+        EnglishName: 'Ghana',
       },
       AdministrativeArea: {
-        ID: "CP",
-        LocalizedName: "Central",
-        EnglishName: "Central",
+        ID: 'CP',
+        LocalizedName: 'Central',
+        EnglishName: 'Central',
         Level: 1,
-        LocalizedType: "Region",
-        EnglishType: "Region",
-        CountryID: "GH"
+        LocalizedType: 'Region',
+        EnglishType: 'Region',
+        CountryID: 'GH',
       },
       TimeZone: {
-        Code: "GMT",
-        Name: "Africa/Accra",
+        Code: 'GMT',
+        Name: 'Africa/Accra',
         GmtOffset: 0.0,
         IsDaylightSaving: false,
-        NextOffsetChange: null
+        NextOffsetChange: null,
       },
       GeoPosition: {
         Latitude: 5.167,
@@ -2043,53 +2043,53 @@ export const getCityKey =
         Elevation: {
           Metric: {
             Value: 76.0,
-            Unit: "m",
-            UnitType: 5
+            Unit: 'm',
+            UnitType: 5,
           },
           Imperial: {
             Value: 249.0,
-            Unit: "ft",
-            UnitType: 0
-          }
-        }
+            Unit: 'ft',
+            UnitType: 0,
+          },
+        },
       },
       IsAlias: false,
       SupplementalAdminAreas: [],
-      DataSets: ["AirQualityCurrentConditions", "AirQualityForecasts", "MinuteCast"]
+      DataSets: ['AirQualityCurrentConditions', 'AirQualityForecasts', 'MinuteCast'],
     },
     {
       Version: 1,
-      Key: "1574579",
-      Type: "City",
+      Key: '1574579',
+      Type: 'City',
       Rank: 600,
-      LocalizedName: "Jerusalem",
-      EnglishName: "Jerusalem",
-      PrimaryPostalCode: "",
+      LocalizedName: 'Jerusalem',
+      EnglishName: 'Jerusalem',
+      PrimaryPostalCode: '',
       Region: {
-        ID: "CAC",
-        LocalizedName: "Central America",
-        EnglishName: "Central America"
+        ID: 'CAC',
+        LocalizedName: 'Central America',
+        EnglishName: 'Central America',
       },
       Country: {
-        ID: "HT",
-        LocalizedName: "Haiti",
-        EnglishName: "Haiti"
+        ID: 'HT',
+        LocalizedName: 'Haiti',
+        EnglishName: 'Haiti',
       },
       AdministrativeArea: {
-        ID: "SD",
-        LocalizedName: "South",
-        EnglishName: "South",
+        ID: 'SD',
+        LocalizedName: 'South',
+        EnglishName: 'South',
         Level: 1,
-        LocalizedType: "Department",
-        EnglishType: "Department",
-        CountryID: "HT"
+        LocalizedType: 'Department',
+        EnglishType: 'Department',
+        CountryID: 'HT',
       },
       TimeZone: {
-        Code: "EDT",
-        Name: "America/Port-au-Prince",
+        Code: 'EDT',
+        Name: 'America/Port-au-Prince',
         GmtOffset: -4.0,
         IsDaylightSaving: true,
-        NextOffsetChange: "2024-11-03T06:00:00Z"
+        NextOffsetChange: '2024-11-03T06:00:00Z',
       },
       GeoPosition: {
         Latitude: 18.267,
@@ -2097,65 +2097,65 @@ export const getCityKey =
         Elevation: {
           Metric: {
             Value: 400.0,
-            Unit: "m",
-            UnitType: 5
+            Unit: 'm',
+            UnitType: 5,
           },
           Imperial: {
             Value: 1312.0,
-            Unit: "ft",
-            UnitType: 0
-          }
-        }
+            Unit: 'ft',
+            UnitType: 0,
+          },
+        },
       },
       IsAlias: false,
       SupplementalAdminAreas: [
         {
           Level: 2,
-          LocalizedName: "Les Coteaux",
-          EnglishName: "Les Coteaux"
-        }
+          LocalizedName: 'Les Coteaux',
+          EnglishName: 'Les Coteaux',
+        },
       ],
       DataSets: [
-        "AirQualityCurrentConditions",
-        "AirQualityForecasts",
-        "FutureRadar",
-        "MinuteCast",
-        "Radar"
-      ]
+        'AirQualityCurrentConditions',
+        'AirQualityForecasts',
+        'FutureRadar',
+        'MinuteCast',
+        'Radar',
+      ],
     },
     {
       Version: 1,
-      Key: "877933",
-      Type: "City",
+      Key: '877933',
+      Type: 'City',
       Rank: 600,
-      LocalizedName: "Jerusalem",
-      EnglishName: "Jerusalem",
-      PrimaryPostalCode: "",
+      LocalizedName: 'Jerusalem',
+      EnglishName: 'Jerusalem',
+      PrimaryPostalCode: '',
       Region: {
-        ID: "AFR",
-        LocalizedName: "Africa",
-        EnglishName: "Africa"
+        ID: 'AFR',
+        LocalizedName: 'Africa',
+        EnglishName: 'Africa',
       },
       Country: {
-        ID: "LR",
-        LocalizedName: "Liberia",
-        EnglishName: "Liberia"
+        ID: 'LR',
+        LocalizedName: 'Liberia',
+        EnglishName: 'Liberia',
       },
       AdministrativeArea: {
-        ID: "GB",
-        LocalizedName: "Grand Bassa",
-        EnglishName: "Grand Bassa",
+        ID: 'GB',
+        LocalizedName: 'Grand Bassa',
+        EnglishName: 'Grand Bassa',
         Level: 1,
-        LocalizedType: "County",
-        EnglishType: "County",
-        CountryID: "LR"
+        LocalizedType: 'County',
+        EnglishType: 'County',
+        CountryID: 'LR',
       },
       TimeZone: {
-        Code: "GMT",
-        Name: "Africa/Monrovia",
+        Code: 'GMT',
+        Name: 'Africa/Monrovia',
         GmtOffset: 0.0,
         IsDaylightSaving: false,
-        NextOffsetChange: null
+        NextOffsetChange: null,
       },
       GeoPosition: {
         Latitude: 5.75,
@@ -2163,53 +2163,53 @@ export const getCityKey =
         Elevation: {
           Metric: {
             Value: 174.0,
-            Unit: "m",
-            UnitType: 5
+            Unit: 'm',
+            UnitType: 5,
           },
           Imperial: {
             Value: 570.0,
-            Unit: "ft",
-            UnitType: 0
-          }
-        }
+            Unit: 'ft',
+            UnitType: 0,
+          },
+        },
       },
       IsAlias: false,
       SupplementalAdminAreas: [],
-      DataSets: ["AirQualityCurrentConditions", "AirQualityForecasts", "MinuteCast"]
+      DataSets: ['AirQualityCurrentConditions', 'AirQualityForecasts', 'MinuteCast'],
     },
     {
       Version: 1,
-      Key: "2052098",
-      Type: "City",
+      Key: '2052098',
+      Type: 'City',
       Rank: 600,
-      LocalizedName: "Jerusalem",
-      EnglishName: "Jerusalem",
-      PrimaryPostalCode: "",
+      LocalizedName: 'Jerusalem',
+      EnglishName: 'Jerusalem',
+      PrimaryPostalCode: '',
       Region: {
-        ID: "AFR",
-        LocalizedName: "Africa",
-        EnglishName: "Africa"
+        ID: 'AFR',
+        LocalizedName: 'Africa',
+        EnglishName: 'Africa',
       },
       Country: {
-        ID: "NG",
-        LocalizedName: "Nigeria",
-        EnglishName: "Nigeria"
+        ID: 'NG',
+        LocalizedName: 'Nigeria',
+        EnglishName: 'Nigeria',
       },
       AdministrativeArea: {
-        ID: "CR",
-        LocalizedName: "Cross River",
-        EnglishName: "Cross River",
+        ID: 'CR',
+        LocalizedName: 'Cross River',
+        EnglishName: 'Cross River',
         Level: 1,
-        LocalizedType: "State",
-        EnglishType: "State",
-        CountryID: "NG"
+        LocalizedType: 'State',
+        EnglishType: 'State',
+        CountryID: 'NG',
       },
       TimeZone: {
-        Code: "WAT",
-        Name: "Africa/Lagos",
+        Code: 'WAT',
+        Name: 'Africa/Lagos',
         GmtOffset: 1.0,
         IsDaylightSaving: false,
-        NextOffsetChange: null
+        NextOffsetChange: null,
       },
       GeoPosition: {
         Latitude: 6.54,
@@ -2217,53 +2217,53 @@ export const getCityKey =
         Elevation: {
           Metric: {
             Value: 178.0,
-            Unit: "m",
-            UnitType: 5
+            Unit: 'm',
+            UnitType: 5,
           },
           Imperial: {
             Value: 583.0,
-            Unit: "ft",
-            UnitType: 0
-          }
-        }
+            Unit: 'ft',
+            UnitType: 0,
+          },
+        },
       },
       IsAlias: false,
       SupplementalAdminAreas: [],
-      DataSets: ["AirQualityCurrentConditions", "AirQualityForecasts", "MinuteCast"]
+      DataSets: ['AirQualityCurrentConditions', 'AirQualityForecasts', 'MinuteCast'],
     },
     {
       Version: 1,
-      Key: "1234290",
-      Type: "City",
+      Key: '1234290',
+      Type: 'City',
       Rank: 600,
-      LocalizedName: "Jerusalem",
-      EnglishName: "Jerusalem",
-      PrimaryPostalCode: "",
+      LocalizedName: 'Jerusalem',
+      EnglishName: 'Jerusalem',
+      PrimaryPostalCode: '',
       Region: {
-        ID: "SAM",
-        LocalizedName: "South America",
-        EnglishName: "South America"
+        ID: 'SAM',
+        LocalizedName: 'South America',
+        EnglishName: 'South America',
       },
       Country: {
-        ID: "VE",
-        LocalizedName: "Venezuela",
-        EnglishName: "Venezuela"
+        ID: 'VE',
+        LocalizedName: 'Venezuela',
+        EnglishName: 'Venezuela',
       },
       AdministrativeArea: {
-        ID: "V",
-        LocalizedName: "Zulia",
-        EnglishName: "Zulia",
+        ID: 'V',
+        LocalizedName: 'Zulia',
+        EnglishName: 'Zulia',
         Level: 1,
-        LocalizedType: "State",
-        EnglishType: "State",
-        CountryID: "VE"
+        LocalizedType: 'State',
+        EnglishType: 'State',
+        CountryID: 'VE',
       },
       TimeZone: {
-        Code: "VET",
-        Name: "America/Caracas",
+        Code: 'VET',
+        Name: 'America/Caracas',
         GmtOffset: -4.0,
         IsDaylightSaving: true,
-        NextOffsetChange: null
+        NextOffsetChange: null,
       },
       GeoPosition: {
         Latitude: 10.7,
@@ -2271,222 +2271,2110 @@ export const getCityKey =
         Elevation: {
           Metric: {
             Value: 6.0,
-            Unit: "m",
-            UnitType: 5
+            Unit: 'm',
+            UnitType: 5,
           },
           Imperial: {
             Value: 19.0,
-            Unit: "ft",
-            UnitType: 0
-          }
-        }
+            Unit: 'ft',
+            UnitType: 0,
+          },
+        },
       },
       IsAlias: false,
       SupplementalAdminAreas: [],
       DataSets: [
-        "AirQualityCurrentConditions",
-        "AirQualityForecasts",
-        "FutureRadar",
-        "MinuteCast",
-        "Radar",
-        "TidalForecast"
-      ]
-    }
+        'AirQualityCurrentConditions',
+        'AirQualityForecasts',
+        'FutureRadar',
+        'MinuteCast',
+        'Radar',
+        'TidalForecast',
+      ],
+    },
   ];
 
-export const getCurrentWeather = [
+export const getMockCurrentWeather = [
   // Array of 1 element
   {
-    LocalObservationDateTime: "2024-04-11T15:28:00+03:00",
-    EpochTime: 1712838480,
-    WeatherText: "Clouds and sun",
-    WeatherIcon: 4,
+    LocalObservationDateTime: '2024-04-19T01:18:00+03:00',
+    EpochTime: 1713478680,
+    WeatherText: 'Mostly clear',
+    WeatherIcon: 34,
     HasPrecipitation: false,
     PrecipitationType: null,
-    IsDayTime: true,
+    IsDayTime: false,
     Temperature: {
       Metric: {
-        Value: 18.4,
-        Unit: "C",
-        UnitType: 17
+        Value: 20.9,
+        Unit: 'C',
+        UnitType: 17,
       },
       Imperial: {
-        Value: 65.0,
-        Unit: "F",
-        UnitType: 18
-      }
+        Value: 70,
+        Unit: 'F',
+        UnitType: 18,
+      },
     },
-    MobileLink:
-      "http://www.accuweather.com/en/il/jerusalem/213225/current-weather/213225?lang=en-us",
-    Link: "http://www.accuweather.com/en/il/jerusalem/213225/current-weather/213225?lang=en-us"
-  }
+    RealFeelTemperature: {
+      Metric: {
+        Value: 20,
+        Unit: 'C',
+        UnitType: 17,
+        Phrase: 'Pleasant',
+      },
+      Imperial: {
+        Value: 68,
+        Unit: 'F',
+        UnitType: 18,
+        Phrase: 'Pleasant',
+      },
+    },
+    RealFeelTemperatureShade: {
+      Metric: {
+        Value: 20,
+        Unit: 'C',
+        UnitType: 17,
+        Phrase: 'Pleasant',
+      },
+      Imperial: {
+        Value: 68,
+        Unit: 'F',
+        UnitType: 18,
+        Phrase: 'Pleasant',
+      },
+    },
+    RelativeHumidity: 76,
+    IndoorRelativeHumidity: 76,
+    DewPoint: {
+      Metric: {
+        Value: 16.5,
+        Unit: 'C',
+        UnitType: 17,
+      },
+      Imperial: {
+        Value: 62,
+        Unit: 'F',
+        UnitType: 18,
+      },
+    },
+    Wind: {
+      Direction: {
+        Degrees: 0,
+        Localized: 'N',
+        English: 'N',
+      },
+      Speed: {
+        Metric: {
+          Value: 7.9,
+          Unit: 'km/h',
+          UnitType: 7,
+        },
+        Imperial: {
+          Value: 4.9,
+          Unit: 'mi/h',
+          UnitType: 9,
+        },
+      },
+    },
+    WindGust: {
+      Speed: {
+        Metric: {
+          Value: 9.4,
+          Unit: 'km/h',
+          UnitType: 7,
+        },
+        Imperial: {
+          Value: 5.8,
+          Unit: 'mi/h',
+          UnitType: 9,
+        },
+      },
+    },
+    UVIndex: 0,
+    UVIndexText: 'Low',
+    Visibility: {
+      Metric: {
+        Value: 16.1,
+        Unit: 'km',
+        UnitType: 6,
+      },
+      Imperial: {
+        Value: 10,
+        Unit: 'mi',
+        UnitType: 2,
+      },
+    },
+    ObstructionsToVisibility: '',
+    CloudCover: 15,
+    Ceiling: {
+      Metric: {
+        Value: 9144,
+        Unit: 'm',
+        UnitType: 5,
+      },
+      Imperial: {
+        Value: 30000,
+        Unit: 'ft',
+        UnitType: 0,
+      },
+    },
+    Pressure: {
+      Metric: {
+        Value: 1014.2,
+        Unit: 'mb',
+        UnitType: 14,
+      },
+      Imperial: {
+        Value: 29.95,
+        Unit: 'inHg',
+        UnitType: 12,
+      },
+    },
+    PressureTendency: {
+      LocalizedText: 'Steady',
+      Code: 'S',
+    },
+    Past24HourTemperatureDeparture: {
+      Metric: {
+        Value: -1.1,
+        Unit: 'C',
+        UnitType: 17,
+      },
+      Imperial: {
+        Value: -2,
+        Unit: 'F',
+        UnitType: 18,
+      },
+    },
+    ApparentTemperature: {
+      Metric: {
+        Value: 21.7,
+        Unit: 'C',
+        UnitType: 17,
+      },
+      Imperial: {
+        Value: 71,
+        Unit: 'F',
+        UnitType: 18,
+      },
+    },
+    WindChillTemperature: {
+      Metric: {
+        Value: 21.1,
+        Unit: 'C',
+        UnitType: 17,
+      },
+      Imperial: {
+        Value: 70,
+        Unit: 'F',
+        UnitType: 18,
+      },
+    },
+    WetBulbTemperature: {
+      Metric: {
+        Value: 18.2,
+        Unit: 'C',
+        UnitType: 17,
+      },
+      Imperial: {
+        Value: 65,
+        Unit: 'F',
+        UnitType: 18,
+      },
+    },
+    WetBulbGlobeTemperature: {
+      Metric: {
+        Value: 19.1,
+        Unit: 'C',
+        UnitType: 17,
+      },
+      Imperial: {
+        Value: 66,
+        Unit: 'F',
+        UnitType: 18,
+      },
+    },
+    Precip1hr: {
+      Metric: {
+        Value: 0,
+        Unit: 'mm',
+        UnitType: 3,
+      },
+      Imperial: {
+        Value: 0,
+        Unit: 'in',
+        UnitType: 1,
+      },
+    },
+    PrecipitationSummary: {
+      Precipitation: {
+        Metric: {
+          Value: 0,
+          Unit: 'mm',
+          UnitType: 3,
+        },
+        Imperial: {
+          Value: 0,
+          Unit: 'in',
+          UnitType: 1,
+        },
+      },
+      PastHour: {
+        Metric: {
+          Value: 0,
+          Unit: 'mm',
+          UnitType: 3,
+        },
+        Imperial: {
+          Value: 0,
+          Unit: 'in',
+          UnitType: 1,
+        },
+      },
+      Past3Hours: {
+        Metric: {
+          Value: 0,
+          Unit: 'mm',
+          UnitType: 3,
+        },
+        Imperial: {
+          Value: 0,
+          Unit: 'in',
+          UnitType: 1,
+        },
+      },
+      Past6Hours: {
+        Metric: {
+          Value: 0,
+          Unit: 'mm',
+          UnitType: 3,
+        },
+        Imperial: {
+          Value: 0,
+          Unit: 'in',
+          UnitType: 1,
+        },
+      },
+      Past9Hours: {
+        Metric: {
+          Value: 0,
+          Unit: 'mm',
+          UnitType: 3,
+        },
+        Imperial: {
+          Value: 0,
+          Unit: 'in',
+          UnitType: 1,
+        },
+      },
+      Past12Hours: {
+        Metric: {
+          Value: 0,
+          Unit: 'mm',
+          UnitType: 3,
+        },
+        Imperial: {
+          Value: 0,
+          Unit: 'in',
+          UnitType: 1,
+        },
+      },
+      Past18Hours: {
+        Metric: {
+          Value: 0,
+          Unit: 'mm',
+          UnitType: 3,
+        },
+        Imperial: {
+          Value: 0,
+          Unit: 'in',
+          UnitType: 1,
+        },
+      },
+      Past24Hours: {
+        Metric: {
+          Value: 0,
+          Unit: 'mm',
+          UnitType: 3,
+        },
+        Imperial: {
+          Value: 0,
+          Unit: 'in',
+          UnitType: 1,
+        },
+      },
+    },
+    TemperatureSummary: {
+      Past6HourRange: {
+        Minimum: {
+          Metric: {
+            Value: 20.9,
+            Unit: 'C',
+            UnitType: 17,
+          },
+          Imperial: {
+            Value: 70,
+            Unit: 'F',
+            UnitType: 18,
+          },
+        },
+        Maximum: {
+          Metric: {
+            Value: 22.1,
+            Unit: 'C',
+            UnitType: 17,
+          },
+          Imperial: {
+            Value: 72,
+            Unit: 'F',
+            UnitType: 18,
+          },
+        },
+      },
+      Past12HourRange: {
+        Minimum: {
+          Metric: {
+            Value: 20.9,
+            Unit: 'C',
+            UnitType: 17,
+          },
+          Imperial: {
+            Value: 70,
+            Unit: 'F',
+            UnitType: 18,
+          },
+        },
+        Maximum: {
+          Metric: {
+            Value: 24.9,
+            Unit: 'C',
+            UnitType: 17,
+          },
+          Imperial: {
+            Value: 77,
+            Unit: 'F',
+            UnitType: 18,
+          },
+        },
+      },
+      Past24HourRange: {
+        Minimum: {
+          Metric: {
+            Value: 20.9,
+            Unit: 'C',
+            UnitType: 17,
+          },
+          Imperial: {
+            Value: 70,
+            Unit: 'F',
+            UnitType: 18,
+          },
+        },
+        Maximum: {
+          Metric: {
+            Value: 25.7,
+            Unit: 'C',
+            UnitType: 17,
+          },
+          Imperial: {
+            Value: 78,
+            Unit: 'F',
+            UnitType: 18,
+          },
+        },
+      },
+    },
+    MobileLink: 'http://www.accuweather.com/en/il/ezra/215772/current-weather/215772?lang=en-us',
+    Link: 'http://www.accuweather.com/en/il/ezra/215772/current-weather/215772?lang=en-us',
+  },
 ];
 
-export const get5DayForecast = {
+export const getMock5DayForecast = {
   Headline: {
-    EffectiveDate: "2024-04-13T20:00:00+03:00",
-    EffectiveEpochDate: 1713027600,
+    EffectiveDate: '2024-04-19T02:00:00+03:00',
+    EffectiveEpochDate: 1713481200,
     Severity: 7,
-    Text: "Mild Saturday night",
-    Category: "heat",
-    EndDate: "2024-04-14T08:00:00+03:00",
-    EndEpochDate: 1713070800,
+    Text: 'Mild late Thursday night',
+    Category: 'heat',
+    EndDate: '2024-04-19T08:00:00+03:00',
+    EndEpochDate: 1713502800,
     MobileLink:
-      "http://www.accuweather.com/en/il/tel-aviv/215854/daily-weather-forecast/215854?lang=en-us",
-    Link: "http://www.accuweather.com/en/il/tel-aviv/215854/daily-weather-forecast/215854?lang=en-us"
+      'http://www.accuweather.com/en/il/ezra/215772/daily-weather-forecast/215772?unit=c&lang=en-us',
+    Link: 'http://www.accuweather.com/en/il/ezra/215772/daily-weather-forecast/215772?unit=c&lang=en-us',
   },
   DailyForecasts: [
     {
-      Date: "2024-04-11T07:00:00+03:00",
-      EpochDate: 1712808000,
+      Date: '2024-04-18T07:00:00+03:00',
+      EpochDate: 1713412800,
+      Sun: {
+        Rise: '2024-04-18T06:08:00+03:00',
+        EpochRise: 1713409680,
+        Set: '2024-04-18T19:13:00+03:00',
+        EpochSet: 1713456780,
+      },
+      Moon: {
+        Rise: '2024-04-18T14:21:00+03:00',
+        EpochRise: 1713439260,
+        Set: '2024-04-19T03:56:00+03:00',
+        EpochSet: 1713488160,
+        Phase: 'WaxingGibbous',
+        Age: 10,
+      },
       Temperature: {
         Minimum: {
-          Value: 58.0,
-          Unit: "F",
-          UnitType: 18
+          Value: 18.5,
+          Unit: 'C',
+          UnitType: 17,
         },
         Maximum: {
-          Value: 74.0,
-          Unit: "F",
-          UnitType: 18
-        }
+          Value: 25.7,
+          Unit: 'C',
+          UnitType: 17,
+        },
       },
-      Day: {
-        Icon: 3,
-        IconPhrase: "Partly sunny",
-        HasPrecipitation: false
-      },
-      Night: {
-        Icon: 35,
-        IconPhrase: "Partly cloudy",
-        HasPrecipitation: false
-      },
-      Sources: ["AccuWeather"],
-      MobileLink:
-        "http://www.accuweather.com/en/il/tel-aviv/215854/daily-weather-forecast/215854?day=1&lang=en-us",
-      Link: "http://www.accuweather.com/en/il/tel-aviv/215854/daily-weather-forecast/215854?day=1&lang=en-us"
-    },
-    {
-      Date: "2024-04-12T07:00:00+03:00",
-      EpochDate: 1712894400,
-      Temperature: {
+      RealFeelTemperature: {
         Minimum: {
-          Value: 59.0,
-          Unit: "F",
-          UnitType: 18
+          Value: 19.4,
+          Unit: 'C',
+          UnitType: 17,
+          Phrase: 'Pleasant',
         },
         Maximum: {
-          Value: 74.0,
-          Unit: "F",
-          UnitType: 18
-        }
+          Value: 27.5,
+          Unit: 'C',
+          UnitType: 17,
+          Phrase: 'Very Warm',
+        },
       },
-      Day: {
-        Icon: 2,
-        IconPhrase: "Mostly sunny",
-        HasPrecipitation: false
-      },
-      Night: {
-        Icon: 36,
-        IconPhrase: "Intermittent clouds",
-        HasPrecipitation: false
-      },
-      Sources: ["AccuWeather"],
-      MobileLink:
-        "http://www.accuweather.com/en/il/tel-aviv/215854/daily-weather-forecast/215854?day=2&lang=en-us",
-      Link: "http://www.accuweather.com/en/il/tel-aviv/215854/daily-weather-forecast/215854?day=2&lang=en-us"
-    },
-    {
-      Date: "2024-04-13T07:00:00+03:00",
-      EpochDate: 1712980800,
-      Temperature: {
+      RealFeelTemperatureShade: {
         Minimum: {
-          Value: 61.0,
-          Unit: "F",
-          UnitType: 18
+          Value: 19.4,
+          Unit: 'C',
+          UnitType: 17,
+          Phrase: 'Pleasant',
         },
         Maximum: {
-          Value: 74.0,
-          Unit: "F",
-          UnitType: 18
-        }
+          Value: 23.9,
+          Unit: 'C',
+          UnitType: 17,
+          Phrase: 'Pleasant',
+        },
       },
+      HoursOfSun: 11.5,
+      DegreeDaySummary: {
+        Heating: {
+          Value: 0,
+          Unit: 'C',
+          UnitType: 17,
+        },
+        Cooling: {
+          Value: 4,
+          Unit: 'C',
+          UnitType: 17,
+        },
+      },
+      AirAndPollen: [
+        {
+          Name: 'AirQuality',
+          Value: 0,
+          Category: 'Good',
+          CategoryValue: 1,
+          Type: 'Ozone',
+        },
+        {
+          Name: 'Grass',
+          Value: 0,
+          Category: 'Low',
+          CategoryValue: 1,
+        },
+        {
+          Name: 'Mold',
+          Value: 0,
+          Category: 'Low',
+          CategoryValue: 1,
+        },
+        {
+          Name: 'Ragweed',
+          Value: 0,
+          Category: 'Low',
+          CategoryValue: 1,
+        },
+        {
+          Name: 'Tree',
+          Value: 0,
+          Category: 'Low',
+          CategoryValue: 1,
+        },
+        {
+          Name: 'UVIndex',
+          Value: 10,
+          Category: 'Very High',
+          CategoryValue: 4,
+        },
+      ],
       Day: {
-        Icon: 2,
-        IconPhrase: "Mostly sunny",
-        HasPrecipitation: false
+        Icon: 1,
+        IconPhrase: 'Sunny',
+        HasPrecipitation: false,
+        ShortPhrase: 'Sunny and not as warm',
+        LongPhrase: 'Sunny and not as warm',
+        PrecipitationProbability: 1,
+        ThunderstormProbability: 0,
+        RainProbability: 1,
+        SnowProbability: 0,
+        IceProbability: 0,
+        Wind: {
+          Speed: {
+            Value: 18.5,
+            Unit: 'km/h',
+            UnitType: 7,
+          },
+          Direction: {
+            Degrees: 264,
+            Localized: 'W',
+            English: 'W',
+          },
+        },
+        WindGust: {
+          Speed: {
+            Value: 31.5,
+            Unit: 'km/h',
+            UnitType: 7,
+          },
+          Direction: {
+            Degrees: 196,
+            Localized: 'SSW',
+            English: 'SSW',
+          },
+        },
+        TotalLiquid: {
+          Value: 0,
+          Unit: 'mm',
+          UnitType: 3,
+        },
+        Rain: {
+          Value: 0,
+          Unit: 'mm',
+          UnitType: 3,
+        },
+        Snow: {
+          Value: 0,
+          Unit: 'cm',
+          UnitType: 4,
+        },
+        Ice: {
+          Value: 0,
+          Unit: 'mm',
+          UnitType: 3,
+        },
+        HoursOfPrecipitation: 0,
+        HoursOfRain: 0,
+        HoursOfSnow: 0,
+        HoursOfIce: 0,
+        CloudCover: 9,
+        Evapotranspiration: {
+          Value: 4.8,
+          Unit: 'mm',
+          UnitType: 3,
+        },
+        SolarIrradiance: {
+          Value: 8190.8,
+          Unit: 'W/m²',
+          UnitType: 33,
+        },
+        RelativeHumidity: {
+          Minimum: 55,
+          Maximum: 67,
+          Average: 61,
+        },
+        WetBulbTemperature: {
+          Minimum: {
+            Value: 18.4,
+            Unit: 'C',
+            UnitType: 17,
+          },
+          Maximum: {
+            Value: 19.8,
+            Unit: 'C',
+            UnitType: 17,
+          },
+          Average: {
+            Value: 19.3,
+            Unit: 'C',
+            UnitType: 17,
+          },
+        },
+        WetBulbGlobeTemperature: {
+          Minimum: {
+            Value: 20.8,
+            Unit: 'C',
+            UnitType: 17,
+          },
+          Maximum: {
+            Value: 23,
+            Unit: 'C',
+            UnitType: 17,
+          },
+          Average: {
+            Value: 22.1,
+            Unit: 'C',
+            UnitType: 17,
+          },
+        },
       },
       Night: {
         Icon: 38,
-        IconPhrase: "Mostly cloudy",
-        HasPrecipitation: false
+        IconPhrase: 'Mostly cloudy',
+        HasPrecipitation: false,
+        ShortPhrase: 'Mild with increasing clouds',
+        LongPhrase: 'Mild with increasing clouds',
+        PrecipitationProbability: 0,
+        ThunderstormProbability: 0,
+        RainProbability: 0,
+        SnowProbability: 0,
+        IceProbability: 0,
+        Wind: {
+          Speed: {
+            Value: 7.4,
+            Unit: 'km/h',
+            UnitType: 7,
+          },
+          Direction: {
+            Degrees: 281,
+            Localized: 'W',
+            English: 'W',
+          },
+        },
+        WindGust: {
+          Speed: {
+            Value: 16.7,
+            Unit: 'km/h',
+            UnitType: 7,
+          },
+          Direction: {
+            Degrees: 317,
+            Localized: 'NW',
+            English: 'NW',
+          },
+        },
+        TotalLiquid: {
+          Value: 0,
+          Unit: 'mm',
+          UnitType: 3,
+        },
+        Rain: {
+          Value: 0,
+          Unit: 'mm',
+          UnitType: 3,
+        },
+        Snow: {
+          Value: 0,
+          Unit: 'cm',
+          UnitType: 4,
+        },
+        Ice: {
+          Value: 0,
+          Unit: 'mm',
+          UnitType: 3,
+        },
+        HoursOfPrecipitation: 0,
+        HoursOfRain: 0,
+        HoursOfSnow: 0,
+        HoursOfIce: 0,
+        CloudCover: 40,
+        Evapotranspiration: {
+          Value: 0.3,
+          Unit: 'mm',
+          UnitType: 3,
+        },
+        SolarIrradiance: {
+          Value: 67.5,
+          Unit: 'W/m²',
+          UnitType: 33,
+        },
+        RelativeHumidity: {
+          Minimum: 69,
+          Maximum: 81,
+          Average: 76,
+        },
+        WetBulbTemperature: {
+          Minimum: {
+            Value: 18.1,
+            Unit: 'C',
+            UnitType: 17,
+          },
+          Maximum: {
+            Value: 18.5,
+            Unit: 'C',
+            UnitType: 17,
+          },
+          Average: {
+            Value: 18.3,
+            Unit: 'C',
+            UnitType: 17,
+          },
+        },
+        WetBulbGlobeTemperature: {
+          Minimum: {
+            Value: 19.6,
+            Unit: 'C',
+            UnitType: 17,
+          },
+          Maximum: {
+            Value: 21.1,
+            Unit: 'C',
+            UnitType: 17,
+          },
+          Average: {
+            Value: 20.6,
+            Unit: 'C',
+            UnitType: 17,
+          },
+        },
       },
-      Sources: ["AccuWeather"],
+      Sources: ['AccuWeather'],
       MobileLink:
-        "http://www.accuweather.com/en/il/tel-aviv/215854/daily-weather-forecast/215854?day=3&lang=en-us",
-      Link: "http://www.accuweather.com/en/il/tel-aviv/215854/daily-weather-forecast/215854?day=3&lang=en-us"
+        'http://www.accuweather.com/en/il/ezra/215772/daily-weather-forecast/215772?unit=c&lang=en-us',
+      Link: 'http://www.accuweather.com/en/il/ezra/215772/daily-weather-forecast/215772?unit=c&lang=en-us',
     },
     {
-      Date: "2024-04-14T07:00:00+03:00",
-      EpochDate: 1713067200,
+      Date: '2024-04-19T07:00:00+03:00',
+      EpochDate: 1713499200,
+      Sun: {
+        Rise: '2024-04-19T06:07:00+03:00',
+        EpochRise: 1713496020,
+        Set: '2024-04-19T19:13:00+03:00',
+        EpochSet: 1713543180,
+      },
+      Moon: {
+        Rise: '2024-04-19T15:17:00+03:00',
+        EpochRise: 1713529020,
+        Set: '2024-04-20T04:21:00+03:00',
+        EpochSet: 1713576060,
+        Phase: 'WaxingGibbous',
+        Age: 11,
+      },
       Temperature: {
         Minimum: {
-          Value: 63.0,
-          Unit: "F",
-          UnitType: 18
+          Value: 16.9,
+          Unit: 'C',
+          UnitType: 17,
         },
         Maximum: {
-          Value: 74.0,
-          Unit: "F",
-          UnitType: 18
-        }
+          Value: 23.7,
+          Unit: 'C',
+          UnitType: 17,
+        },
       },
-      Day: {
-        Icon: 3,
-        IconPhrase: "Partly sunny",
-        HasPrecipitation: false
-      },
-      Night: {
-        Icon: 35,
-        IconPhrase: "Partly cloudy",
-        HasPrecipitation: false
-      },
-      Sources: ["AccuWeather"],
-      MobileLink:
-        "http://www.accuweather.com/en/il/tel-aviv/215854/daily-weather-forecast/215854?day=4&lang=en-us",
-      Link: "http://www.accuweather.com/en/il/tel-aviv/215854/daily-weather-forecast/215854?day=4&lang=en-us"
-    },
-    {
-      Date: "2024-04-15T07:00:00+03:00",
-      EpochDate: 1713153600,
-      Temperature: {
+      RealFeelTemperature: {
         Minimum: {
-          Value: 61.0,
-          Unit: "F",
-          UnitType: 18
+          Value: 17.2,
+          Unit: 'C',
+          UnitType: 17,
+          Phrase: 'Pleasant',
         },
         Maximum: {
-          Value: 76.0,
-          Unit: "F",
-          UnitType: 18
-        }
+          Value: 26.4,
+          Unit: 'C',
+          UnitType: 17,
+          Phrase: 'Pleasant',
+        },
       },
+      RealFeelTemperatureShade: {
+        Minimum: {
+          Value: 17.2,
+          Unit: 'C',
+          UnitType: 17,
+          Phrase: 'Pleasant',
+        },
+        Maximum: {
+          Value: 21.9,
+          Unit: 'C',
+          UnitType: 17,
+          Phrase: 'Pleasant',
+        },
+      },
+      HoursOfSun: 10.7,
+      DegreeDaySummary: {
+        Heating: {
+          Value: 0,
+          Unit: 'C',
+          UnitType: 17,
+        },
+        Cooling: {
+          Value: 2,
+          Unit: 'C',
+          UnitType: 17,
+        },
+      },
+      AirAndPollen: [
+        {
+          Name: 'AirQuality',
+          Value: 0,
+          Category: 'Good',
+          CategoryValue: 1,
+          Type: 'Ozone',
+        },
+        {
+          Name: 'Grass',
+          Value: 0,
+          Category: 'Low',
+          CategoryValue: 1,
+        },
+        {
+          Name: 'Mold',
+          Value: 0,
+          Category: 'Low',
+          CategoryValue: 1,
+        },
+        {
+          Name: 'Ragweed',
+          Value: 0,
+          Category: 'Low',
+          CategoryValue: 1,
+        },
+        {
+          Name: 'Tree',
+          Value: 0,
+          Category: 'Low',
+          CategoryValue: 1,
+        },
+        {
+          Name: 'UVIndex',
+          Value: 10,
+          Category: 'Very High',
+          CategoryValue: 4,
+        },
+      ],
       Day: {
         Icon: 2,
-        IconPhrase: "Mostly sunny",
-        HasPrecipitation: false
+        IconPhrase: 'Mostly sunny',
+        HasPrecipitation: false,
+        ShortPhrase: 'Sunshine and patchy clouds',
+        LongPhrase: 'Sunshine and patchy clouds',
+        PrecipitationProbability: 0,
+        ThunderstormProbability: 0,
+        RainProbability: 0,
+        SnowProbability: 0,
+        IceProbability: 0,
+        Wind: {
+          Speed: {
+            Value: 14.8,
+            Unit: 'km/h',
+            UnitType: 7,
+          },
+          Direction: {
+            Degrees: 286,
+            Localized: 'WNW',
+            English: 'WNW',
+          },
+        },
+        WindGust: {
+          Speed: {
+            Value: 29.6,
+            Unit: 'km/h',
+            UnitType: 7,
+          },
+          Direction: {
+            Degrees: 316,
+            Localized: 'NW',
+            English: 'NW',
+          },
+        },
+        TotalLiquid: {
+          Value: 0,
+          Unit: 'mm',
+          UnitType: 3,
+        },
+        Rain: {
+          Value: 0,
+          Unit: 'mm',
+          UnitType: 3,
+        },
+        Snow: {
+          Value: 0,
+          Unit: 'cm',
+          UnitType: 4,
+        },
+        Ice: {
+          Value: 0,
+          Unit: 'mm',
+          UnitType: 3,
+        },
+        HoursOfPrecipitation: 0,
+        HoursOfRain: 0,
+        HoursOfSnow: 0,
+        HoursOfIce: 0,
+        CloudCover: 19,
+        Evapotranspiration: {
+          Value: 4.3,
+          Unit: 'mm',
+          UnitType: 3,
+        },
+        SolarIrradiance: {
+          Value: 8033.6,
+          Unit: 'W/m²',
+          UnitType: 33,
+        },
+        RelativeHumidity: {
+          Minimum: 59,
+          Maximum: 88,
+          Average: 67,
+        },
+        WetBulbTemperature: {
+          Minimum: {
+            Value: 17.4,
+            Unit: 'C',
+            UnitType: 17,
+          },
+          Maximum: {
+            Value: 18.7,
+            Unit: 'C',
+            UnitType: 17,
+          },
+          Average: {
+            Value: 18.2,
+            Unit: 'C',
+            UnitType: 17,
+          },
+        },
+        WetBulbGlobeTemperature: {
+          Minimum: {
+            Value: 19.3,
+            Unit: 'C',
+            UnitType: 17,
+          },
+          Maximum: {
+            Value: 21.6,
+            Unit: 'C',
+            UnitType: 17,
+          },
+          Average: {
+            Value: 20.7,
+            Unit: 'C',
+            UnitType: 17,
+          },
+        },
       },
       Night: {
         Icon: 36,
-        IconPhrase: "Intermittent clouds",
-        HasPrecipitation: false
+        IconPhrase: 'Intermittent clouds',
+        HasPrecipitation: false,
+        ShortPhrase: 'Mild with increasing clouds',
+        LongPhrase: 'Mild with increasing clouds',
+        PrecipitationProbability: 0,
+        ThunderstormProbability: 0,
+        RainProbability: 0,
+        SnowProbability: 0,
+        IceProbability: 0,
+        Wind: {
+          Speed: {
+            Value: 9.3,
+            Unit: 'km/h',
+            UnitType: 7,
+          },
+          Direction: {
+            Degrees: 31,
+            Localized: 'NNE',
+            English: 'NNE',
+          },
+        },
+        WindGust: {
+          Speed: {
+            Value: 20.4,
+            Unit: 'km/h',
+            UnitType: 7,
+          },
+          Direction: {
+            Degrees: 348,
+            Localized: 'NNW',
+            English: 'NNW',
+          },
+        },
+        TotalLiquid: {
+          Value: 0,
+          Unit: 'mm',
+          UnitType: 3,
+        },
+        Rain: {
+          Value: 0,
+          Unit: 'mm',
+          UnitType: 3,
+        },
+        Snow: {
+          Value: 0,
+          Unit: 'cm',
+          UnitType: 4,
+        },
+        Ice: {
+          Value: 0,
+          Unit: 'mm',
+          UnitType: 3,
+        },
+        HoursOfPrecipitation: 0,
+        HoursOfRain: 0,
+        HoursOfSnow: 0,
+        HoursOfIce: 0,
+        CloudCover: 82,
+        Evapotranspiration: {
+          Value: 0.3,
+          Unit: 'mm',
+          UnitType: 3,
+        },
+        SolarIrradiance: {
+          Value: 107.7,
+          Unit: 'W/m²',
+          UnitType: 33,
+        },
+        RelativeHumidity: {
+          Minimum: 69,
+          Maximum: 85,
+          Average: 77,
+        },
+        WetBulbTemperature: {
+          Minimum: {
+            Value: 15.5,
+            Unit: 'C',
+            UnitType: 17,
+          },
+          Maximum: {
+            Value: 17.6,
+            Unit: 'C',
+            UnitType: 17,
+          },
+          Average: {
+            Value: 16.7,
+            Unit: 'C',
+            UnitType: 17,
+          },
+        },
+        WetBulbGlobeTemperature: {
+          Minimum: {
+            Value: 17.2,
+            Unit: 'C',
+            UnitType: 17,
+          },
+          Maximum: {
+            Value: 19.8,
+            Unit: 'C',
+            UnitType: 17,
+          },
+          Average: {
+            Value: 18.2,
+            Unit: 'C',
+            UnitType: 17,
+          },
+        },
       },
-      Sources: ["AccuWeather"],
+      Sources: ['AccuWeather'],
       MobileLink:
-        "http://www.accuweather.com/en/il/tel-aviv/215854/daily-weather-forecast/215854?day=5&lang=en-us",
-      Link: "http://www.accuweather.com/en/il/tel-aviv/215854/daily-weather-forecast/215854?day=5&lang=en-us"
-    }
-  ]
+        'http://www.accuweather.com/en/il/ezra/215772/daily-weather-forecast/215772?day=1&unit=c&lang=en-us',
+      Link: 'http://www.accuweather.com/en/il/ezra/215772/daily-weather-forecast/215772?day=1&unit=c&lang=en-us',
+    },
+    {
+      Date: '2024-04-20T07:00:00+03:00',
+      EpochDate: 1713585600,
+      Sun: {
+        Rise: '2024-04-20T06:06:00+03:00',
+        EpochRise: 1713582360,
+        Set: '2024-04-20T19:14:00+03:00',
+        EpochSet: 1713629640,
+      },
+      Moon: {
+        Rise: '2024-04-20T16:11:00+03:00',
+        EpochRise: 1713618660,
+        Set: '2024-04-21T04:46:00+03:00',
+        EpochSet: 1713663960,
+        Phase: 'WaxingGibbous',
+        Age: 12,
+      },
+      Temperature: {
+        Minimum: {
+          Value: 19.3,
+          Unit: 'C',
+          UnitType: 17,
+        },
+        Maximum: {
+          Value: 23.6,
+          Unit: 'C',
+          UnitType: 17,
+        },
+      },
+      RealFeelTemperature: {
+        Minimum: {
+          Value: 18.5,
+          Unit: 'C',
+          UnitType: 17,
+          Phrase: 'Pleasant',
+        },
+        Maximum: {
+          Value: 27.1,
+          Unit: 'C',
+          UnitType: 17,
+          Phrase: 'Very Warm',
+        },
+      },
+      RealFeelTemperatureShade: {
+        Minimum: {
+          Value: 18.5,
+          Unit: 'C',
+          UnitType: 17,
+          Phrase: 'Pleasant',
+        },
+        Maximum: {
+          Value: 21.9,
+          Unit: 'C',
+          UnitType: 17,
+          Phrase: 'Pleasant',
+        },
+      },
+      HoursOfSun: 12.2,
+      DegreeDaySummary: {
+        Heating: {
+          Value: 0,
+          Unit: 'C',
+          UnitType: 17,
+        },
+        Cooling: {
+          Value: 3,
+          Unit: 'C',
+          UnitType: 17,
+        },
+      },
+      AirAndPollen: [
+        {
+          Name: 'AirQuality',
+          Value: 0,
+          Category: 'Good',
+          CategoryValue: 1,
+          Type: 'Ozone',
+        },
+        {
+          Name: 'Grass',
+          Value: 0,
+          Category: 'Low',
+          CategoryValue: 1,
+        },
+        {
+          Name: 'Mold',
+          Value: 0,
+          Category: 'Low',
+          CategoryValue: 1,
+        },
+        {
+          Name: 'Ragweed',
+          Value: 0,
+          Category: 'Low',
+          CategoryValue: 1,
+        },
+        {
+          Name: 'Tree',
+          Value: 0,
+          Category: 'Low',
+          CategoryValue: 1,
+        },
+        {
+          Name: 'UVIndex',
+          Value: 10,
+          Category: 'Very High',
+          CategoryValue: 4,
+        },
+      ],
+      Day: {
+        Icon: 1,
+        IconPhrase: 'Sunny',
+        HasPrecipitation: false,
+        ShortPhrase: 'Sunshine',
+        LongPhrase: 'Sunshine',
+        PrecipitationProbability: 0,
+        ThunderstormProbability: 0,
+        RainProbability: 0,
+        SnowProbability: 0,
+        IceProbability: 0,
+        Wind: {
+          Speed: {
+            Value: 14.8,
+            Unit: 'km/h',
+            UnitType: 7,
+          },
+          Direction: {
+            Degrees: 335,
+            Localized: 'NNW',
+            English: 'NNW',
+          },
+        },
+        WindGust: {
+          Speed: {
+            Value: 31.5,
+            Unit: 'km/h',
+            UnitType: 7,
+          },
+          Direction: {
+            Degrees: 346,
+            Localized: 'NNW',
+            English: 'NNW',
+          },
+        },
+        TotalLiquid: {
+          Value: 0,
+          Unit: 'mm',
+          UnitType: 3,
+        },
+        Rain: {
+          Value: 0,
+          Unit: 'mm',
+          UnitType: 3,
+        },
+        Snow: {
+          Value: 0,
+          Unit: 'cm',
+          UnitType: 4,
+        },
+        Ice: {
+          Value: 0,
+          Unit: 'mm',
+          UnitType: 3,
+        },
+        HoursOfPrecipitation: 0,
+        HoursOfRain: 0,
+        HoursOfSnow: 0,
+        HoursOfIce: 0,
+        CloudCover: 2,
+        Evapotranspiration: {
+          Value: 4.8,
+          Unit: 'mm',
+          UnitType: 3,
+        },
+        SolarIrradiance: {
+          Value: 8268,
+          Unit: 'W/m²',
+          UnitType: 33,
+        },
+        RelativeHumidity: {
+          Minimum: 52,
+          Maximum: 79,
+          Average: 61,
+        },
+        WetBulbTemperature: {
+          Minimum: {
+            Value: 15.9,
+            Unit: 'C',
+            UnitType: 17,
+          },
+          Maximum: {
+            Value: 17.8,
+            Unit: 'C',
+            UnitType: 17,
+          },
+          Average: {
+            Value: 17.2,
+            Unit: 'C',
+            UnitType: 17,
+          },
+        },
+        WetBulbGlobeTemperature: {
+          Minimum: {
+            Value: 18.2,
+            Unit: 'C',
+            UnitType: 17,
+          },
+          Maximum: {
+            Value: 21,
+            Unit: 'C',
+            UnitType: 17,
+          },
+          Average: {
+            Value: 20.2,
+            Unit: 'C',
+            UnitType: 17,
+          },
+        },
+      },
+      Night: {
+        Icon: 35,
+        IconPhrase: 'Partly cloudy',
+        HasPrecipitation: false,
+        ShortPhrase: 'Partly cloudy and warm',
+        LongPhrase: 'Clear to partly cloudy and warm',
+        PrecipitationProbability: 0,
+        ThunderstormProbability: 0,
+        RainProbability: 0,
+        SnowProbability: 0,
+        IceProbability: 0,
+        Wind: {
+          Speed: {
+            Value: 7.4,
+            Unit: 'km/h',
+            UnitType: 7,
+          },
+          Direction: {
+            Degrees: 111,
+            Localized: 'ESE',
+            English: 'ESE',
+          },
+        },
+        WindGust: {
+          Speed: {
+            Value: 18.5,
+            Unit: 'km/h',
+            UnitType: 7,
+          },
+          Direction: {
+            Degrees: 11,
+            Localized: 'N',
+            English: 'N',
+          },
+        },
+        TotalLiquid: {
+          Value: 0,
+          Unit: 'mm',
+          UnitType: 3,
+        },
+        Rain: {
+          Value: 0,
+          Unit: 'mm',
+          UnitType: 3,
+        },
+        Snow: {
+          Value: 0,
+          Unit: 'cm',
+          UnitType: 4,
+        },
+        Ice: {
+          Value: 0,
+          Unit: 'mm',
+          UnitType: 3,
+        },
+        HoursOfPrecipitation: 0,
+        HoursOfRain: 0,
+        HoursOfSnow: 0,
+        HoursOfIce: 0,
+        CloudCover: 35,
+        Evapotranspiration: {
+          Value: 0.3,
+          Unit: 'mm',
+          UnitType: 3,
+        },
+        SolarIrradiance: {
+          Value: 94.6,
+          Unit: 'W/m²',
+          UnitType: 33,
+        },
+        RelativeHumidity: {
+          Minimum: 67,
+          Maximum: 75,
+          Average: 73,
+        },
+        WetBulbTemperature: {
+          Minimum: {
+            Value: 16.5,
+            Unit: 'C',
+            UnitType: 17,
+          },
+          Maximum: {
+            Value: 18.1,
+            Unit: 'C',
+            UnitType: 17,
+          },
+          Average: {
+            Value: 17.5,
+            Unit: 'C',
+            UnitType: 17,
+          },
+        },
+        WetBulbGlobeTemperature: {
+          Minimum: {
+            Value: 18.8,
+            Unit: 'C',
+            UnitType: 17,
+          },
+          Maximum: {
+            Value: 20.9,
+            Unit: 'C',
+            UnitType: 17,
+          },
+          Average: {
+            Value: 20,
+            Unit: 'C',
+            UnitType: 17,
+          },
+        },
+      },
+      Sources: ['AccuWeather'],
+      MobileLink:
+        'http://www.accuweather.com/en/il/ezra/215772/daily-weather-forecast/215772?day=2&unit=c&lang=en-us',
+      Link: 'http://www.accuweather.com/en/il/ezra/215772/daily-weather-forecast/215772?day=2&unit=c&lang=en-us',
+    },
+    {
+      Date: '2024-04-21T07:00:00+03:00',
+      EpochDate: 1713672000,
+      Sun: {
+        Rise: '2024-04-21T06:05:00+03:00',
+        EpochRise: 1713668700,
+        Set: '2024-04-21T19:15:00+03:00',
+        EpochSet: 1713716100,
+      },
+      Moon: {
+        Rise: '2024-04-21T17:06:00+03:00',
+        EpochRise: 1713708360,
+        Set: '2024-04-22T05:10:00+03:00',
+        EpochSet: 1713751800,
+        Phase: 'WaxingGibbous',
+        Age: 13,
+      },
+      Temperature: {
+        Minimum: {
+          Value: 16.8,
+          Unit: 'C',
+          UnitType: 17,
+        },
+        Maximum: {
+          Value: 23.5,
+          Unit: 'C',
+          UnitType: 17,
+        },
+      },
+      RealFeelTemperature: {
+        Minimum: {
+          Value: 17.2,
+          Unit: 'C',
+          UnitType: 17,
+          Phrase: 'Pleasant',
+        },
+        Maximum: {
+          Value: 26.2,
+          Unit: 'C',
+          UnitType: 17,
+          Phrase: 'Pleasant',
+        },
+      },
+      RealFeelTemperatureShade: {
+        Minimum: {
+          Value: 17.2,
+          Unit: 'C',
+          UnitType: 17,
+          Phrase: 'Pleasant',
+        },
+        Maximum: {
+          Value: 21.6,
+          Unit: 'C',
+          UnitType: 17,
+          Phrase: 'Pleasant',
+        },
+      },
+      HoursOfSun: 10.5,
+      DegreeDaySummary: {
+        Heating: {
+          Value: 0,
+          Unit: 'C',
+          UnitType: 17,
+        },
+        Cooling: {
+          Value: 2,
+          Unit: 'C',
+          UnitType: 17,
+        },
+      },
+      AirAndPollen: [
+        {
+          Name: 'AirQuality',
+          Value: 0,
+          Category: 'Good',
+          CategoryValue: 1,
+          Type: 'Ozone',
+        },
+        {
+          Name: 'Grass',
+          Value: 0,
+          Category: 'Low',
+          CategoryValue: 1,
+        },
+        {
+          Name: 'Mold',
+          Value: 0,
+          Category: 'Low',
+          CategoryValue: 1,
+        },
+        {
+          Name: 'Ragweed',
+          Value: 0,
+          Category: 'Low',
+          CategoryValue: 1,
+        },
+        {
+          Name: 'Tree',
+          Value: 0,
+          Category: 'Low',
+          CategoryValue: 1,
+        },
+        {
+          Name: 'UVIndex',
+          Value: 10,
+          Category: 'Very High',
+          CategoryValue: 4,
+        },
+      ],
+      Day: {
+        Icon: 2,
+        IconPhrase: 'Mostly sunny',
+        HasPrecipitation: false,
+        ShortPhrase: 'Sunny to partly cloudy',
+        LongPhrase: 'Sunny to partly cloudy',
+        PrecipitationProbability: 0,
+        ThunderstormProbability: 0,
+        RainProbability: 0,
+        SnowProbability: 0,
+        IceProbability: 0,
+        Wind: {
+          Speed: {
+            Value: 14.8,
+            Unit: 'km/h',
+            UnitType: 7,
+          },
+          Direction: {
+            Degrees: 291,
+            Localized: 'WNW',
+            English: 'WNW',
+          },
+        },
+        WindGust: {
+          Speed: {
+            Value: 31.5,
+            Unit: 'km/h',
+            UnitType: 7,
+          },
+          Direction: {
+            Degrees: 323,
+            Localized: 'NW',
+            English: 'NW',
+          },
+        },
+        TotalLiquid: {
+          Value: 0,
+          Unit: 'mm',
+          UnitType: 3,
+        },
+        Rain: {
+          Value: 0,
+          Unit: 'mm',
+          UnitType: 3,
+        },
+        Snow: {
+          Value: 0,
+          Unit: 'cm',
+          UnitType: 4,
+        },
+        Ice: {
+          Value: 0,
+          Unit: 'mm',
+          UnitType: 3,
+        },
+        HoursOfPrecipitation: 0,
+        HoursOfRain: 0,
+        HoursOfSnow: 0,
+        HoursOfIce: 0,
+        CloudCover: 18,
+        Evapotranspiration: {
+          Value: 4.3,
+          Unit: 'mm',
+          UnitType: 3,
+        },
+        SolarIrradiance: {
+          Value: 8183.7,
+          Unit: 'W/m²',
+          UnitType: 33,
+        },
+        RelativeHumidity: {
+          Minimum: 51,
+          Maximum: 71,
+          Average: 58,
+        },
+        WetBulbTemperature: {
+          Minimum: {
+            Value: 16.5,
+            Unit: 'C',
+            UnitType: 17,
+          },
+          Maximum: {
+            Value: 17.4,
+            Unit: 'C',
+            UnitType: 17,
+          },
+          Average: {
+            Value: 16.9,
+            Unit: 'C',
+            UnitType: 17,
+          },
+        },
+        WetBulbGlobeTemperature: {
+          Minimum: {
+            Value: 19.6,
+            Unit: 'C',
+            UnitType: 17,
+          },
+          Maximum: {
+            Value: 20.6,
+            Unit: 'C',
+            UnitType: 17,
+          },
+          Average: {
+            Value: 20.1,
+            Unit: 'C',
+            UnitType: 17,
+          },
+        },
+      },
+      Night: {
+        Icon: 34,
+        IconPhrase: 'Mostly clear',
+        HasPrecipitation: false,
+        ShortPhrase: 'Mainly clear and mild',
+        LongPhrase: 'Mainly clear and mild',
+        PrecipitationProbability: 0,
+        ThunderstormProbability: 0,
+        RainProbability: 0,
+        SnowProbability: 0,
+        IceProbability: 0,
+        Wind: {
+          Speed: {
+            Value: 9.3,
+            Unit: 'km/h',
+            UnitType: 7,
+          },
+          Direction: {
+            Degrees: 84,
+            Localized: 'E',
+            English: 'E',
+          },
+        },
+        WindGust: {
+          Speed: {
+            Value: 20.4,
+            Unit: 'km/h',
+            UnitType: 7,
+          },
+          Direction: {
+            Degrees: 2,
+            Localized: 'N',
+            English: 'N',
+          },
+        },
+        TotalLiquid: {
+          Value: 0,
+          Unit: 'mm',
+          UnitType: 3,
+        },
+        Rain: {
+          Value: 0,
+          Unit: 'mm',
+          UnitType: 3,
+        },
+        Snow: {
+          Value: 0,
+          Unit: 'cm',
+          UnitType: 4,
+        },
+        Ice: {
+          Value: 0,
+          Unit: 'mm',
+          UnitType: 3,
+        },
+        HoursOfPrecipitation: 0,
+        HoursOfRain: 0,
+        HoursOfSnow: 0,
+        HoursOfIce: 0,
+        CloudCover: 29,
+        Evapotranspiration: {
+          Value: 0.3,
+          Unit: 'mm',
+          UnitType: 3,
+        },
+        SolarIrradiance: {
+          Value: 114.7,
+          Unit: 'W/m²',
+          UnitType: 33,
+        },
+        RelativeHumidity: {
+          Minimum: 62,
+          Maximum: 81,
+          Average: 72,
+        },
+        WetBulbTemperature: {
+          Minimum: {
+            Value: 15,
+            Unit: 'C',
+            UnitType: 17,
+          },
+          Maximum: {
+            Value: 16.9,
+            Unit: 'C',
+            UnitType: 17,
+          },
+          Average: {
+            Value: 16.1,
+            Unit: 'C',
+            UnitType: 17,
+          },
+        },
+        WetBulbGlobeTemperature: {
+          Minimum: {
+            Value: 17.3,
+            Unit: 'C',
+            UnitType: 17,
+          },
+          Maximum: {
+            Value: 19.7,
+            Unit: 'C',
+            UnitType: 17,
+          },
+          Average: {
+            Value: 18.7,
+            Unit: 'C',
+            UnitType: 17,
+          },
+        },
+      },
+      Sources: ['AccuWeather'],
+      MobileLink:
+        'http://www.accuweather.com/en/il/ezra/215772/daily-weather-forecast/215772?day=3&unit=c&lang=en-us',
+      Link: 'http://www.accuweather.com/en/il/ezra/215772/daily-weather-forecast/215772?day=3&unit=c&lang=en-us',
+    },
+    {
+      Date: '2024-04-22T07:00:00+03:00',
+      EpochDate: 1713758400,
+      Sun: {
+        Rise: '2024-04-22T06:04:00+03:00',
+        EpochRise: 1713755040,
+        Set: '2024-04-22T19:15:00+03:00',
+        EpochSet: 1713802500,
+      },
+      Moon: {
+        Rise: '2024-04-22T18:00:00+03:00',
+        EpochRise: 1713798000,
+        Set: '2024-04-23T05:35:00+03:00',
+        EpochSet: 1713839700,
+        Phase: 'WaxingGibbous',
+        Age: 14,
+      },
+      Temperature: {
+        Minimum: {
+          Value: 18.7,
+          Unit: 'C',
+          UnitType: 17,
+        },
+        Maximum: {
+          Value: 24.6,
+          Unit: 'C',
+          UnitType: 17,
+        },
+      },
+      RealFeelTemperature: {
+        Minimum: {
+          Value: 18.1,
+          Unit: 'C',
+          UnitType: 17,
+          Phrase: 'Pleasant',
+        },
+        Maximum: {
+          Value: 27.1,
+          Unit: 'C',
+          UnitType: 17,
+          Phrase: 'Very Warm',
+        },
+      },
+      RealFeelTemperatureShade: {
+        Minimum: {
+          Value: 18.1,
+          Unit: 'C',
+          UnitType: 17,
+          Phrase: 'Pleasant',
+        },
+        Maximum: {
+          Value: 22.6,
+          Unit: 'C',
+          UnitType: 17,
+          Phrase: 'Pleasant',
+        },
+      },
+      HoursOfSun: 12,
+      DegreeDaySummary: {
+        Heating: {
+          Value: 0,
+          Unit: 'C',
+          UnitType: 17,
+        },
+        Cooling: {
+          Value: 4,
+          Unit: 'C',
+          UnitType: 17,
+        },
+      },
+      AirAndPollen: [
+        {
+          Name: 'AirQuality',
+          Value: 0,
+          Category: 'Good',
+          CategoryValue: 1,
+          Type: 'Ozone',
+        },
+        {
+          Name: 'Grass',
+          Value: 0,
+          Category: 'Low',
+          CategoryValue: 1,
+        },
+        {
+          Name: 'Mold',
+          Value: 0,
+          Category: 'Low',
+          CategoryValue: 1,
+        },
+        {
+          Name: 'Ragweed',
+          Value: 0,
+          Category: 'Low',
+          CategoryValue: 1,
+        },
+        {
+          Name: 'Tree',
+          Value: 0,
+          Category: 'Low',
+          CategoryValue: 1,
+        },
+        {
+          Name: 'UVIndex',
+          Value: 10,
+          Category: 'Very High',
+          CategoryValue: 4,
+        },
+      ],
+      Day: {
+        Icon: 1,
+        IconPhrase: 'Sunny',
+        HasPrecipitation: false,
+        ShortPhrase: 'Sunny',
+        LongPhrase: 'Sunny',
+        PrecipitationProbability: 0,
+        ThunderstormProbability: 0,
+        RainProbability: 0,
+        SnowProbability: 0,
+        IceProbability: 0,
+        Wind: {
+          Speed: {
+            Value: 14.8,
+            Unit: 'km/h',
+            UnitType: 7,
+          },
+          Direction: {
+            Degrees: 9,
+            Localized: 'N',
+            English: 'N',
+          },
+        },
+        WindGust: {
+          Speed: {
+            Value: 40.7,
+            Unit: 'km/h',
+            UnitType: 7,
+          },
+          Direction: {
+            Degrees: 344,
+            Localized: 'NNW',
+            English: 'NNW',
+          },
+        },
+        TotalLiquid: {
+          Value: 0,
+          Unit: 'mm',
+          UnitType: 3,
+        },
+        Rain: {
+          Value: 0,
+          Unit: 'mm',
+          UnitType: 3,
+        },
+        Snow: {
+          Value: 0,
+          Unit: 'cm',
+          UnitType: 4,
+        },
+        Ice: {
+          Value: 0,
+          Unit: 'mm',
+          UnitType: 3,
+        },
+        HoursOfPrecipitation: 0,
+        HoursOfRain: 0,
+        HoursOfSnow: 0,
+        HoursOfIce: 0,
+        CloudCover: 9,
+        Evapotranspiration: {
+          Value: 4.8,
+          Unit: 'mm',
+          UnitType: 3,
+        },
+        SolarIrradiance: {
+          Value: 8303.5,
+          Unit: 'W/m²',
+          UnitType: 33,
+        },
+        RelativeHumidity: {
+          Minimum: 48,
+          Maximum: 75,
+          Average: 56,
+        },
+        WetBulbTemperature: {
+          Minimum: {
+            Value: 15.6,
+            Unit: 'C',
+            UnitType: 17,
+          },
+          Maximum: {
+            Value: 17.3,
+            Unit: 'C',
+            UnitType: 17,
+          },
+          Average: {
+            Value: 16.8,
+            Unit: 'C',
+            UnitType: 17,
+          },
+        },
+        WetBulbGlobeTemperature: {
+          Minimum: {
+            Value: 18.1,
+            Unit: 'C',
+            UnitType: 17,
+          },
+          Maximum: {
+            Value: 21.3,
+            Unit: 'C',
+            UnitType: 17,
+          },
+          Average: {
+            Value: 20.4,
+            Unit: 'C',
+            UnitType: 17,
+          },
+        },
+      },
+      Night: {
+        Icon: 33,
+        IconPhrase: 'Clear',
+        HasPrecipitation: false,
+        ShortPhrase: 'Clear and warm',
+        LongPhrase: 'Clear and warm',
+        PrecipitationProbability: 0,
+        ThunderstormProbability: 0,
+        RainProbability: 0,
+        SnowProbability: 0,
+        IceProbability: 0,
+        Wind: {
+          Speed: {
+            Value: 7.4,
+            Unit: 'km/h',
+            UnitType: 7,
+          },
+          Direction: {
+            Degrees: 34,
+            Localized: 'NE',
+            English: 'NE',
+          },
+        },
+        WindGust: {
+          Speed: {
+            Value: 25.9,
+            Unit: 'km/h',
+            UnitType: 7,
+          },
+          Direction: {
+            Degrees: 9,
+            Localized: 'N',
+            English: 'N',
+          },
+        },
+        TotalLiquid: {
+          Value: 0,
+          Unit: 'mm',
+          UnitType: 3,
+        },
+        Rain: {
+          Value: 0,
+          Unit: 'mm',
+          UnitType: 3,
+        },
+        Snow: {
+          Value: 0,
+          Unit: 'cm',
+          UnitType: 4,
+        },
+        Ice: {
+          Value: 0,
+          Unit: 'mm',
+          UnitType: 3,
+        },
+        HoursOfPrecipitation: 0,
+        HoursOfRain: 0,
+        HoursOfSnow: 0,
+        HoursOfIce: 0,
+        CloudCover: 0,
+        Evapotranspiration: {
+          Value: 0.5,
+          Unit: 'mm',
+          UnitType: 3,
+        },
+        SolarIrradiance: {
+          Value: 124.7,
+          Unit: 'W/m²',
+          UnitType: 33,
+        },
+        RelativeHumidity: {
+          Minimum: 60,
+          Maximum: 66,
+          Average: 64,
+        },
+        WetBulbTemperature: {
+          Minimum: {
+            Value: 15,
+            Unit: 'C',
+            UnitType: 17,
+          },
+          Maximum: {
+            Value: 17.5,
+            Unit: 'C',
+            UnitType: 17,
+          },
+          Average: {
+            Value: 16.4,
+            Unit: 'C',
+            UnitType: 17,
+          },
+        },
+        WetBulbGlobeTemperature: {
+          Minimum: {
+            Value: 18,
+            Unit: 'C',
+            UnitType: 17,
+          },
+          Maximum: {
+            Value: 20.4,
+            Unit: 'C',
+            UnitType: 17,
+          },
+          Average: {
+            Value: 19.3,
+            Unit: 'C',
+            UnitType: 17,
+          },
+        },
+      },
+      Sources: ['AccuWeather'],
+      MobileLink:
+        'http://www.accuweather.com/en/il/ezra/215772/daily-weather-forecast/215772?day=4&unit=c&lang=en-us',
+      Link: 'http://www.accuweather.com/en/il/ezra/215772/daily-weather-forecast/215772?day=4&unit=c&lang=en-us',
+    },
+  ],
 };
 
-export const mockCity = "Jerusalem";
+export const mockCity = 'Jerusalem';
