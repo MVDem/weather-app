@@ -3,6 +3,7 @@ import axiosInstance from '.';
 // import axiosInstance from '.';
 import { API_KEY } from '../config/index';
 
+
 export async function searchCity(searchStr) {
   // We don't search with less them 3 letters
   if (searchStr.length < 3) return null;
@@ -29,7 +30,7 @@ export async function getCityKey(cityNameStr) {
 }
 
 export async function getCurrentWeather(cityKeyStr, details = false) {
-  if (cityKeyStr.length == 0 || isNaN(cityKeyStr)) return null;
+  if (cityKeyStr?.length == 0 || isNaN(cityKeyStr)) return null;
 
   try {
     const urlStr = `currentconditions/v1/${Number(cityKeyStr)}?apikey=${API_KEY}&details=${details}`;
@@ -42,7 +43,7 @@ export async function getCurrentWeather(cityKeyStr, details = false) {
 }
 
 export async function get5DayForecast(cityKeyStr, details = false, metric = true) {
-  if (cityKeyStr.length == 0 || isNaN(cityKeyStr)) return null;
+  if (cityKeyStr?.length == 0 || isNaN(cityKeyStr)) return null;
 
   try {
     const urlStr = `forecasts/v1/daily/5day/${Number(
@@ -79,7 +80,7 @@ export async function getLocationCity() {
       };
       return globalLocationCity;
     } catch (error) {
-      console.error('Error while getting location city:', error);
+      console.info('Error while getting location city:', error.message);
     }
     globalLocationCity = defaultLocationCity;
   }
