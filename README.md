@@ -89,4 +89,3 @@ BONUSES
    EXAMPLE
    We’ve created a UI mockup, so you’ll have a basic idea of what we expect to see.
 
-Good luck,
